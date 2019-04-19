@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>小工具-採買清單</title>
+	<meta name="title" content="小工具-採買清單">
+	<meta name="keywords" content="小工具-採買清單">
+	<meta name="description" content="可以增加你的購買清單，已購買的可以打勾，也可刪除清單，資料儲存在你的瀏覽器中。">
+	<meta property="og:title" content="小工具-採買清單">
+	<meta property="og:description" content="可以增加你的購買清單，已購買的可以打勾，也可刪除清單，資料儲存在你的瀏覽器中。">
+	<meta property="og:image" content="img/shopping.jpg">
+	<meta property="og:site_name" content="小工具-採買清單">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://frankguoo.github.io/shoppinglist/">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+
+	
+</head>
+
+<body>
+  <div class="list">
+    <div class="list-title">採買清單</div>
+    <div class="list-add">
+      <input id="add-text" class="add-text" type="text" placeholder="請輸入採買的名稱" maxlength="20" />
+      <button class="add">加入</button>
+    </div>
+    <div class="list-body">
+      <ul id="sortable">
+      </ul>
+    </div>
+    <button id="save" class="btn btn-primary" style='margin: 15px 0;'>儲存更新</button>
+  </div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  var listnum = 1;
+  var list = $("ul");
+  var sortableList = $( "#sortable" );
+  var taskInput = $(".add-text");
+  var addButton = $(".add");
+
+  //增加項目規則//
+  function additem (){
+    var addtext = taskInput.val();
+    var listitem = $("<li><div><input type='checkbox' value='None' name='check' ></div><p>" + addtext + "</p><a class='close'>X</a></li>");
+    
+    //輸入框大於等於1字時可增加//
+    if(addtext.length > 0) {
+      list.prepend(listitem);
+      taskInput.val("");
+    }
+  }
+
+  //按下Enter鍵也可以增加//
+  addButton.click(function(){
+     additem(); 
+  });
+  
+  //儲存html//
+  $('#save').click(function() {    
+    localStorage.setItem("test", $('#sortable').html());
+    alert('已成功儲存');
+  });
+
+  //按下Enter鍵也可以增加//
+  taskInput.keypress(function( event ) {
+     if ( event.which == 13 ) {
+       additem();
+     }
+  });
+
+  //checkbox 打勾項目下橫線 移至最上層//
+  list.on('click', 'input[type=checkbox]', function () {
+      if ( $(this).parents("li").hasClass("compvared") ) {
+        $(this).removeAttr('checked');
+        $(this).parents("li").removeClass("compvared");
+        $(this).parents("li").appendTo("ul");
+      } else {
+        $(this).attr('checked', true);
+        $(this).parents("li").addClass("compvared");
+        $(this).parents("li").prependTo("ul"); 
+      }
+  });
+ 
+  //按下X 取消項目//
+  list.on('click', '.close', function () {
+      $(this).parent().remove();
+  });
+
+  //讀取html//
+  $('#sortable').html(localStorage.getItem("test"));
+
+});
+</script>
+</body>	
+</html>

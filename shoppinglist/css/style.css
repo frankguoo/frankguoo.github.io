@@ -1,0 +1,126 @@
+body {
+  font-family: 'Open-sans', sans-serif;
+  background: #e0e0e0;
+}
+body .list {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+body .list .list-title {
+  background: #a0d662;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 24px;
+}
+body .list .list-add {
+  width: 100%;
+  background: #384454;
+  display: flex;
+}
+body .list .list-add input {
+  background: #384454;
+  color: #b9b9b9;
+  font-size: 18px;
+  padding: 12px 18px;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+body .list .list-add button {
+  background: #5ebf62;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+body .list .list-add button:hover {
+  background: #6fcc73;
+}
+body .list .list-body {
+  background: #fff;
+}
+body .list .list-body ul {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  cursor: pointer;
+}
+body .list .list-body ul li {
+  list-style: none;
+  padding: 16px 18px;
+  display: flex;
+  position: relative;
+  background: #fff;
+  z-index: 4;
+}
+body .list .list-body ul li:hover {
+  background: #f3f3f3;
+}
+body .list .list-body ul li p {
+  text-align: left;
+  color: #384454;
+  font-size: 18px;
+  margin: 0;
+  width: 100%;
+  padding-left: 5px;
+  cursor: text;
+  z-index: 5;
+}
+body .list .list-body ul li span {
+  font-weight: bold;
+}
+
+.close {
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  color: #b9b9b9;
+  font-size: 18px;
+  padding: 4px;
+  transition: all 0.3s;
+}
+.close:hover {
+  color: #384454;
+}
+#clear {
+  background: #f97360;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1em;
+}
+#clear:hover {
+  background: #ff8775;
+}
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 3px solid #b9b9b9;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+input[type=checkbox]:hover {
+  border: 3px solid #384454;
+}
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+input[type=checkbox]:checked{
+  border: 3px solid #384454;
+  background: #384454;
+}
+
+.compvared p {
+  text-decoration: line-through!important;
+}
