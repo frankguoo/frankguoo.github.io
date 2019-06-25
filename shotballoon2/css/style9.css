@@ -195,7 +195,7 @@ html, body{
 	color: #ffffff;
 	font-size: 1.5em;
 	font-weight: bold;
-	z-index: 999;
+	z-index: 9;
 	display: block;
 	background: #e71a19;
 	padding: 10px 30px;
@@ -208,7 +208,7 @@ html, body{
 	color: #ffffff;
 	font-size: 1.5em;
 	font-weight: bold;
-	z-index: 999;
+	z-index: 9;
 	display: block;
 	background: #e71a19;
 	padding: 10px 30px;
@@ -417,7 +417,7 @@ html, body{
 	.btn_intro_box{bottom: 1%;}
 }
 @media only screen and (max-width: 420px) {
-	.btn_intro_box{bottom: 10%;}
+	.btn_intro_box{bottom: 5%;}
 	#totalScore {
 		font-size: 1.2em;
 	}
