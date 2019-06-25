@@ -320,6 +320,7 @@ $(function() {
         }, 200)
         $('#totalScore').html('得分: ' + score);
         $('#popscore').html(score);
+        $('#popscore2').html(score);
         console.log(score);
         console.log(sc);
       }
