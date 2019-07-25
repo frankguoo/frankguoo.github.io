@@ -10,7 +10,7 @@
   box-sizing: border-box;
   margin: 100px auto 10px;
   overflow: hidden;
-  padding: 60px;
+  padding: 20px;
   box-sizing: border-box;
   
 }
@@ -58,7 +58,7 @@ input:focus {
 button.nameSubmit {
   outline: none;
   background: #4285f4;
-  width: 50%;
+  width: 60%;
   border: 0;
   font-size: 20px;
   border-radius: 4px;
