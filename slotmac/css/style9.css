@@ -45,9 +45,7 @@ html, body{
 	position: relative;
 	box-sizing: border-box;
 	overflow: hidden;
-	background: url(../img/bg.jpg);
-  	background-size: cover;
-  	background-position: center top;
+
 }
 .section_intro {
 	width: 100%;
@@ -56,6 +54,7 @@ html, body{
 	position: relative;
 	z-index: 99;
 	position: absolute;
+	background: #cc0101;
 }
 .section_intro .tittle{
 	position: relative;
@@ -121,6 +120,61 @@ html, body{
 	vertical-align: bottom;
 	padding:0 10px;
 }
+
+.section_valentine{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	position: absolute;
+	background: #abab9e;
+}
+
+.section_valentine_input{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	position: absolute;
+	background: yellow;
+}
+
+.section_valentine_slot{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	position: absolute;
+	background: blue;
+}
+
+.section_valentine_final{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 98;
+	position: absolute;
+	background: green;
+}
+
+.section_valentine_final h2{
+	font-size: 24px;
+    padding: 20px 10px;
+}
+.section_valentine_final h3{
+	display: inline-block;
+    padding: 0 0 0 15px;
+    font-size: 16px;
+}
+.section_valentine_final h4{
+	text-align: right;
+    padding: 10px 10px 10px 0;
+}
+
 
 /*--- 遊戲開始 ---*/
 #game {

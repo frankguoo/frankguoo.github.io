@@ -3,25 +3,48 @@ $(function() {
   $(".closeGetit").on("click", function() {
     $('.poppop').hide();
   });
-
     
-    $('.open-popup-link').magnificPopup({
-      type:'inline',
-      fixedBgPos: 'true',
-      removalDelay: 100,
-      mainClass: 'my-mfp-zoom-in'
-    });
-  
-    $('.click_start').click(function(){
-      $('.header_mobile').hide();
-      $('.wrap').addClass('active');
-      $('.section_intro').hide();
-      $('.section_valentine').show();
-    });
+  $('.open-popup-link').magnificPopup({
+    type:'inline',
+    fixedBgPos: 'true',
+    removalDelay: 100,
+    mainClass: 'my-mfp-zoom-in'
+  });
+
+  $('.click_start').click(function(){
+    $('.header_mobile').hide();
+    $('.wrap').addClass('active');
+    $('.section_intro').hide();
+    $('.section_valentine').show();
+    $('.section_valentine_input').show();
+  });
 
 
-     
+  $("#nameSubmit").click(function (e) {
+    var id_check=/[^a-zA-Z\u4E00-\u9FA5]/g;//帳號只能是英文加上數字//
 
+    if ($("#name").val()==""){
+        alert("請輸入您的名稱!");
+        $("#name").focus();
+        return false;
+    }
+    else if ($("#name").val().indexOf(' ')>=0){
+        alert("請不要在帳號中使用空格!!");
+        $("#name").focus();
+        return false;
+    } 
+    else if ($("#name").val().match(id_check)){
+        alert("請勿使用非中英文字當做名稱!");
+        $("#name").focus();
+        return false;
+    }else{
+      e.preventDefault();
+      $('#t4').text($('#name').val());
+      $('.section_valentine_input').hide();
+      $('.section_valentine_slot').show();
+    }
+
+  });
 
 
 $(function(){	
@@ -40,14 +63,15 @@ $(function(){
       $('#bar2 ul').css('top', '');
     });
   };
-function moveDown3() { 
-  $('#bar3 ul').animate({
-    top: + barHeight
-  }, 70, function () {
-    $('#bar3 ul li:last-child').prependTo('#bar3 ul');
-    $('#bar3 ul').css('top', '');
-  });
-}; 
+
+  function moveDown3() { 
+    $('#bar3 ul').animate({
+      top: + barHeight
+    }, 70, function () {
+      $('#bar3 ul li:last-child').prependTo('#bar3 ul');
+      $('#bar3 ul').css('top', '');
+    });
+  }; 
 
   function moveTop() {
     $('#bar ul').animate({
@@ -58,8 +82,7 @@ function moveDown3() {
     });
   };
 
-
-  $('button').on("click", function() {
+  $('#play').on("click", function() {
 
     a = getRandom(70,80);
     b = getRandom(81,90);
@@ -83,24 +106,29 @@ function moveDown3() {
 
     for (var i=0; i<=c; i++) {
       (function(x){
-
         setTimeout(function () {
-
           moveDown3();
-
           if (x == c){
             setTimeout(function () {
-              var answer1 = $('#bar ul li:nth-child(5)').text();
-              var answer2 = $('#bar2 ul li:nth-child(5)').text();
-              var answer3 = $('#bar3 ul li:nth-child(5)').text();
-              alert(answer1+answer2+answer3);
+              $('.section_valentine_final').show();
+              var answer1 = $('#bar ul li:nth-child(5) p').text();
+              var answer2 = $('#bar2 ul li:nth-child(5) p').text();
+              var answer3 = $('#bar3 ul li:nth-child(5) p').text();
+
+              $('#t1').text(answer1);
+              $('#t2').text(answer2);
+              $('#t3').text(answer3);
+
+              $('.section_valentine_slot').hide();
+
+              
             }, 2000);
           }
-
         }, x * i * 1.1);
-
       })(i);
     }
+
+
 
   });
 

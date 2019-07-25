@@ -61,18 +61,21 @@
 
 <body>
 	<style>
+
 		.bar{
 			width: 30%;
     		margin: -360px 1.5% 0 1.5%;
 			float: left;
 		}
+
 		.bar ul{
 			position: relative;
 			top:0px;
 			box-shadow: inset 0px 20px 20px -10px #696868, inset 0px -20px 20px -10px #696868;
 		}
+
 		.bar ul li{
-			font-size: 1em;
+			font-size: 0.9em;
 			background-color: #fff;
 			padding: 10px 5px;
 			text-align: center;
@@ -80,31 +83,36 @@
 			margin: 5px 0;
 			line-height: 20px;			
 		}
+
 		.bar:nth-child(1) ul li p{
-			line-height: 60px;		
+			line-height: 60px;
 		}
+
 		.bar:nth-child(2) ul li p{	
 			margin-top: 20px;
 		}
+		
 		.bar:nth-child(3) ul li p{	
 			margin-top: 20px;
 		}
 
 		.overlay{
 			width: 100%;
-			height:140px;
+			height:	140px;
 			position: absolute;
 			top: 360px;
 			overflow: hidden;
 		}	
+
 		#play{
 			padding: 10px;
     		font-size: 38px;
 			margin: 0 auto;
 			display: table;
 			position: absolute;
-			bottom:50px;
+			bottom:	50px;
 		}
+		
 	</style>
 <!-- Desktop header -->
 <ul class="header_desktop">
@@ -164,49 +172,63 @@
 
 	<!-- 情人節場景 -->
 	<div class="section_valentine animated" style="display: none;">
-
-
-		<!--輸入姓名-->
-		<form class="form">
-			<div class="form-group">
-				<label for="name">請輸入姓名:</label><input type="text" id="name" name="name" required maxlength="12" size="10">
-			</div>
-			<div class="form-group" style="text-align: center;"><button class="nameSubmit" type="submit">開始遊戲</button></div>
-		</form>
-
-		<div class="overlay">
-			<div id="bar" class="bar">
-				<ul>
-					<li><p>北鼻！</p></li>
-					<li><p>親愛的~</p></li>
-					<li><p>小乖乖~</p></li>
-					<li><p>達令~</p></li>
-					<li><p>寶貝~</p></li>
-					<li><p>臭豬豬!</p></li>
-				</ul>
-			</div>
-			<div id="bar2" class="bar">
-				<ul>
-					<li><p>我愛你！</p></li>
-					<li><p>我不講...</p></li>
-					<li><p>你有個缺點。</p></li>
-					<li><p>想和你喝酒是假的，</p></li>
-					<li><p>耀眼的人很多，</p></li>
-					<li><p>你重要嗎？</p></li>
-				</ul>
-			</div>
-			<div id="bar3" class="bar">
-				<ul>
-					<li><p>雖然你那麼歹逗陣～又嘸講理~</p></li>
-					<li><p>你都不知道我內心其實多在乎你！</p></li>
-					<li><p>缺點我。</p></li>
-					<li><p>想醉你懷裡是真的。</p></li>
-					<li><p>但閃到我的只有你一個。</p></li>
-					<li><p>再重都要。</p></li>
-				</ul>
-			</div>
+		
+		<div class="section_valentine_input animated" style="display: none;">
+			<!--輸入姓名-->
+			<form class="form">
+				<div class="form-group">
+					<label for="name">請輸入姓名:</label><input type="text" id="name" name="name" required maxlength="12" size="10">
+				</div>
+				<div class="form-group" style="text-align: center;"><button id="nameSubmit" class="nameSubmit" type="submit">開始遊戲</button></div>
+			</form>
 		</div>
-		<button id="play">play</button>
+
+		<div class="section_valentine_slot animated" style="display: none;">
+			<div class="overlay">
+				<div id="bar" class="bar">
+					<ul>
+						<li><p>北鼻！</p></li>
+						<li><p>親愛的~</p></li>
+						<li><p>小乖乖~</p></li>
+						<li><p>達令~</p></li>
+						<li><p>寶貝~</p></li>
+						<li><p>臭豬豬!</p></li>
+					</ul>
+				</div>
+				<div id="bar2" class="bar">
+					<ul>
+						<li><p>我愛你！</p></li>
+						<li><p>我不講...</p></li>
+						<li><p>你有個缺點。</p></li>
+						<li><p>想和你喝酒是假的，</p></li>
+						<li><p>耀眼的人很多，</p></li>
+						<li><p>你重要嗎？</p></li>
+					</ul>
+				</div>
+				<div id="bar3" class="bar">
+					<ul>
+						<li><p>雖然你那麼歹逗陣～又嘸講理~</p></li>
+						<li><p>你都不知道我內心其實多在乎你！</p></li>
+						<li><p>缺點我。</p></li>
+						<li><p>想醉你懷裡是真的。</p></li>
+						<li><p>但閃到我的只有你一個。</p></li>
+						<li><p>再重都要。</p></li>
+					</ul>
+				</div>
+				
+			</div>
+			<button id="play">play</button>
+		</div>
+
+		<div class="section_valentine_final animated" style="display: none;">
+			<div style="background:#fff;width:80%;max-width:500px;height:500px;position: relative;margin:0 auto;">
+				<h2 id="t1"></h2>
+				<h3 id="t2"></h3>
+				<h3 id="t3"></h3>
+				<h4 id="t4"></h4>
+			</div>
+		</div>	
+
 
 
 	</div>
@@ -268,7 +290,8 @@
 		        }  
 		        lastTouchEnd=now;  
 		    },false)  
-		} 
+		}
+
     </script>
 
 <style>
