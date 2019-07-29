@@ -1,0 +1,509 @@
+@charset "utf-8";
+body,div,span,h1,p,a,img,dl,dt,dd {margin:0;padding:0;border:0;vertical-align:baseline;background:transparent;}
+img, object, embed, video {
+	max-width: 100%;
+}
+img {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.ie6 img { width:100%; }
+a, img   { outline: none !important; }
+div 	 { box-sizing: border-box; }
+html, body{
+	background-color: #ffe8ea;
+	color:#000;
+	font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.loading_mask {
+	width: 100%;
+	/* height: calc(100% - 40px);  */
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	z-index: 99999;
+	background-color: #ffe8ea;
+}
+[data-loader=rectangle]{
+	width: 10px;
+    height: 30px;
+    margin: 40vh auto 0;
+}
+.wrap {
+	width: 768px;
+	height: calc(100% - 40px);
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+/*----------開場畫面----------*/
+.section_intro {
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.jpg) #ffe8ea no-repeat center top;
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	position: absolute;
+}
+.section_intro .tittle{
+	position: relative;
+	z-index: 10;
+}
+
+.section_intro .startBox{
+	position: relative;
+	width: 95%;
+	margin: 0 auto;
+	top: 20px;
+	bottom: 10%;
+	z-index: 99;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.section_intro .startBox .bocc{
+	width: 100%;
+	position: absolute;
+}
+
+.section_intro .startBox .startbtnf, .section_intro .startBox .startbtnv{
+	z-index: 99;
+	width: 45%;
+	margin: 0 2%;
+	cursor: pointer;
+}
+
+.section_intro ul.btn_intro_box {
+	width: 95%;
+	position: absolute;
+	margin-left: 2.5%;
+    bottom: 5%;
+	z-index: 99;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.section_intro .btn_intro_box img {
+	width: auto;
+	max-width: 100%;
+	margin: auto;
+	cursor: pointer;
+}
+
+
+/*----------情人節畫面----------*/
+.section_valentine{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg-s2.jpg) #ffe8ea no-repeat center top;
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+	position: absolute;
+
+}
+
+.section_valentine_input{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	position: absolute;
+
+}
+
+.section_valentine_slot{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 99;
+	position: absolute;
+}
+
+.section_valentine_final{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 98;
+	position: absolute;
+}
+
+.section_valentine_final h2{
+	font-size: 36px;
+	padding: 20px 15px;
+	font-weight: 700;
+	color:#fff;
+}
+.section_valentine_final .contenth3{
+	padding: 0 0 0 15px;
+}
+.section_valentine_final h3{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+    color: #fff;
+    line-height: 33px;
+}
+.section_valentine_final h4{
+	text-align: right;
+	padding: 15px;
+	font-weight: 700;
+    color: #fff;
+    font-size: 19px;
+}
+
+
+/*--- 遊戲開始 ---*/
+#game {
+	position: relative;
+	z-index: 1;
+	background: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center top;
+	overflow: hidden;
+  }
+  .hinder {
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+  }
+  .target {
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+  }
+  .gong {
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	bottom: 0px;
+  
+  }
+  #talk {
+	position: absolute;
+	z-index: 200;
+	left: 0px;
+	top: 0px;
+  }
+  .score {
+	position: absolute;
+	z-index: 999999;
+	left: 0px;
+	top: 0px;
+	color: #000
+  }
+  .arrow {
+	position: absolute;
+	z-index: 20;
+	left: 50%;
+	top: 0px;
+  }
+  .startcountdown{
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	
+  }
+  .startcountdownNum{
+	color: #fff;
+	font-size: 8rem;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  #totalScore{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: bold;
+	z-index: 9;
+	display: block;
+	background: #e71a19;
+	padding: 10px 30px;
+	border-radius: 35px;
+  }
+  .counter {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: bold;
+	z-index: 9;
+	display: block;
+	background: #e71a19;
+	padding: 10px 30px;
+	border-radius: 35px;
+  }
+  
+
+@keyframes click_start {
+	0% 	 { margin-top: 0; }
+	100% { margin-top: 20px; }
+}
+
+/*----- 燈箱分數區塊 -----*/
+.pop {
+	background: rgba(0, 0, 0, 0.8) !important;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	z-index: 999;
+	display: none;
+  }
+  .pop_bg {
+	width: 90%;
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+	top: 40%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-mos-transform: translateY(-50%);
+	color: #fff;
+	text-align: center;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+  }
+  .losebtn{
+	width: 70%;
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+	top: 24%;
+	color: #fff;
+	text-align: center;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+  }
+  .winnerbtn{
+	width: 70%;
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	position: relative;
+	top: 24%;
+	color: #fff;
+	text-align: center;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+  }
+  .pop_content {
+	line-height: 41px;
+	position: absolute;
+	color: #ffffff;
+	font-size: 1.5em;
+	width: 80%;
+	left: 10%;
+  }
+  .pop_content h2 {
+	font-size: 1.7em;
+  }
+  .pop  .hide {
+	display: none;
+  }  
+  #popscore{
+	font-size: 1.3em;
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  
+
+
+/*--- 燈箱 活動辦法 ---*/
+#game-popup {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width: auto;
+	max-width: 95%;
+	margin: 20px auto;
+}
+#game-popup h2 {
+	width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #cc0101;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    padding: 10px 0;
+}
+#game-popup h2:nth-child(1) {
+	border-top: 0;
+	padding-top: 0;
+}
+#game-popup ul {
+    list-style-type: decimal;
+    margin: 10px 0 20px 20px;
+}
+#game-popup ul li {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+#game-popup ul > ul  {
+    display: flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	flex-direction: -moz-row;
+	flex-direction: -ms-row;
+	flex-direction: -webkit-row;
+	flex-wrap: wrap; 
+	align-items: flex-start;
+	margin: 0;
+}
+#game-popup ul > ul li {
+	width: 24%;
+	padding: 0 .5%;
+    list-style: none;
+}
+
+/* animate in */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+ /* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8);
+	opacity: 0;
+}
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+/*--- 共用 ---*/
+.over-hide { overflow: hidden; }
+.nomargin  { margin: 0 !important; }
+.wrap img {
+	/* width: 100%; */
+	display: block;
+}
+@media only screen and (max-width: 950px) {
+	.wrap { height: calc(100% - 30px); }
+}
+@media only screen and (max-width: 768px) {
+	.wrap { height: calc(100% - 39px); }
+	.wrap.active {height:100%;background-color: #c79961;}
+	.btn_intro_box{bottom: 1%;}
+}
+@media only screen and (max-width: 420px) {
+	.btn_intro_box{bottom: 5%;}
+	#totalScore {
+		font-size: 1.2em;
+	}
+	.counter {
+		font-size: 1.2em;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#game-popup ul > ul li {
+		width: 49%;
+		margin: 0 .5%;
+		padding: 30px;
+	}
+}
