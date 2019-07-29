@@ -111,9 +111,9 @@ $(function(){
           if (x == c){
             setTimeout(function () {
               $('.section_valentine_final').show();
-              var answer1 = $('#bar ul li:nth-child(5) p').text();                                                                                                                              
-              var answer2 = $('#bar2 ul li:nth-child(5) p').text();
-              var answer3 = $('#bar3 ul li:nth-child(5) p').text();
+              var answer1 = $('#bar ul li:eq(4) p').text();                                                                                                                              
+              var answer2 = $('#bar2 ul li:eq(4) p').text();
+              var answer3 = $('#bar3 ul li:eq(4) p').text();
 
               $('#t1').text(answer1);
               $('#t2').text(answer2);
