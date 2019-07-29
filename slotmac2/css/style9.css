@@ -68,7 +68,7 @@ html, body{
 	position: relative;
 	width: 95%;
 	margin: 0 auto;
-	top: 20px;
+	top: 0px;
 	bottom: 10%;
 	z-index: 99;
 	display: -webkit-box;
@@ -105,7 +105,7 @@ html, body{
 	width: 95%;
 	position: absolute;
 	margin-left: 2.5%;
-    bottom: 5%;
+    bottom: 2.5%;
 	z-index: 99;
 	display: -webkit-box;
     display: -ms-flexbox;
