@@ -122,7 +122,7 @@ $(function(){
               $('.section_valentine_slot').hide();
 
               
-            }, 2000);
+            }, 5000);
           }
         }, x * i * 1.1);
       })(i);
