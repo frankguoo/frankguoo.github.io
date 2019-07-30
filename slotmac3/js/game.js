@@ -18,6 +18,7 @@ $(function() {
     $('#fGame').remove();
     $('.section_valentine').show();
     $('.section_valentine_input').show();
+    $( ".form" ).animate({top: 100}, 1500);
   });
   $('#startbtnf').click(function(){
     $('.header_mobile').hide();
@@ -26,6 +27,7 @@ $(function() {
     $('#vGame').remove();
     $('.section_valentine').show();
     $('.section_valentine_input').show();
+    $( ".form" ).animate({top: 100}, 1500);
   });
 
 
@@ -49,9 +51,15 @@ $(function() {
     }else{
       e.preventDefault();
       $('#t4').text($('#name').val());
-      $('.section_valentine_input').hide();
-      $('.section_valentine_slot').show();
+      $( ".form" ).animate({top: -500}, 1500, function(){
+        $('.section_valentine_input').hide();
+        $('.section_valentine_slot').show().animate({top: 0}, 1000);
+      });
+      
+      
     }
+
+
 
   });
 

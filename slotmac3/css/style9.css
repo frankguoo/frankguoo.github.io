@@ -60,6 +60,10 @@ div 	 { box-sizing: border-box; }
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
 	opacity: 0;
 }
+
+.mfp-content {
+    max-width: 700px;
+}
 html, body{
 	background-color: #ffe8ea;
 	color:#000;
@@ -110,9 +114,9 @@ html, body{
 
 .section_intro .startBox{
 	position: relative;
-	width: 95%;
+	width: 50%;
 	margin: 0 auto;
-	top: 20px;
+	top: 0px;
 	bottom: 10%;
 	z-index: 99;
 	display: -webkit-box;
@@ -140,7 +144,7 @@ html, body{
 
 .section_intro .startBox .startbtnf, .section_intro .startBox .startbtnv{
 	z-index: 99;
-	width: 45%;
+	width: 80%;
 	margin: 0 2%;
 	cursor: pointer;
 }
@@ -149,7 +153,7 @@ html, body{
 	width: 95%;
 	position: absolute;
 	margin-left: 2.5%;
-    bottom: 5%;
+    bottom: 2%;
 	z-index: 99;
 	display: -webkit-box;
     display: -ms-flexbox;
@@ -159,8 +163,8 @@ html, body{
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-direction: row;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -moz-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
@@ -168,8 +172,11 @@ html, body{
     -ms-align-items: center;
     align-items: center;
 }
+.section_intro .btn_intro_box li{
+	width: 50%;
+}
 
-.section_intro .btn_intro_box img {
+.section_intro .btn_intro_box li img {
 	width: auto;
 	max-width: 100%;
 	margin: auto;
@@ -204,6 +211,7 @@ html, body{
 	position: relative;
 	z-index: 99;
 	position: absolute;
+	top:-100%;
 }
 
 .section_valentine_final{
@@ -583,7 +591,7 @@ html, body{
 	margin: 0;
 }
 #game-popup ul > ul li {
-	width: 24%;
+	width: 100%;
 	padding: 0 .5%;
     list-style: none;
 }
@@ -612,6 +620,12 @@ html, body{
 	.section_valentine_final h3 {
 		font-size: 21px;
 	}
+	.section_intro .startBox{
+		margin: 10px 0;
+	}
+	.section_intro .startBox .startbtnf, .section_intro .startBox .startbtnv{
+		width: 95%;
+	}
 }
 @media only screen and (max-width: 500px) {
 	.overlay{
@@ -632,9 +646,9 @@ html, body{
 }
 @media only screen and (max-width: 500px) {
 	#game-popup ul > ul li {
-		width: 49%;
+		width: 100%;
 		margin: 0 .5%;
-		padding: 30px;
+		padding: 0px;
 	}
 }
 
