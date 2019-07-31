@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="pragram" content="no-cache" />
+	<title>幸運扭蛋機 好康試手氣</title>
+	<link href="css/reset.css" type="text/css" rel="stylesheet">
+	<link href="css/style_08311603.css" type="text/css" rel="stylesheet">
+	<link href="css/common_08311603.css" type="text/css" rel="stylesheet">
+
+
+	<script type="text/javascript">
+	    var phoneWidth =  parseInt(window.screen.width);
+	    var phoneScale = phoneWidth/640;
+	    var ua = navigator.userAgent;
+	    if (/Android (\d+\.\d+)/.test(ua)){
+	        var version = parseFloat(RegExp.$1);
+	        // andriod 2.3
+	        if(version>2.3){
+	            document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi, user-scalable=no, user-scalable=0">');
+	        // andriod 2.3以上
+	        }else{
+	            document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no, user-scalable=0">');
+	        }
+	        // 其他系统
+	    } else {
+	        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no, user-scalable=0">');
+	    }
+	</script>
+
+    <script>
+    window.dataLayer = window.dataLayer || [] ;
+    window.dataLayer.push({'site':'24h'});
+    window.dataLayer && window.dataLayer.push({'event':'custom.event.pageview'}) ;
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    
+	
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TKSM5PF');</script>
+
+	<style type="text/css">
+	  body,div,span,h1,p,a,img,dl,dt,dd{margin:0;padding:0;border:0;vertical-align:none!important;background:transparent;}
+	</style> 
+
+</head>
+<body>
+
+	<!-- Desktop header -->
+	<ul class="header_desktop">
+		<li><a href="https://24h.pchome.com.tw/"><img src="img/header_01.png"></a></li>
+		<li><a href="https://ecvip.pchome.com.tw/?m=myaccount&f=show24hHelp"><img src="img/header_02.png"></a></li>
+		<li class="description"><a href="https://ecvip.pchome.com.tw/?m=myaccount&f=show24hHelp">例外及說明</a></li>
+		<li class="description appDonload">| <span>APP下載</span> 
+		<div class="appQRcode"><a href="https://24h.m.pchome.com.tw/appget.php" target="_blank"><img src="img/QRCode.png"></a></div>
+		</li>
+		<li class="FBicon"><a href="javascript: void(window.open('https://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));" target="_blank"><img src="img/FB_icon.png"></a></li>
+	</ul>
+	<!-- Desktop header // END -->
+   	<!-- Mobile header -->
+	<div class="header_mobile">
+		<a href="https://24h.m.pchome.com.tw/"><img src="img/24HLOGO.png"></a>
+	</div>
+	<!-- Mobile header // END -->
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKSM5PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+	<div class="wrap">
+		<!-- 扭蛋機 -->
+		<div class="game_box">
+			<div class="click"></div>
+	        <div class="game_go"><span></span></div>
+
+	    </div>
+	    
+	    <!-- 球球們 -->
+	    <div class="ball_box">
+	        <span class="ball_1 ani_1"></span>
+	        <span class="ball_2 ani_2"></span>
+	        <span class="ball_3 ani_3"></span>
+	        <span class="ball_4 ani_4"></span>
+	        <span class="ball_5 ani_5"></span>
+	        <span class="ball_6 ani_6"></span>
+	        <span class="ball_7 ani_7"></span>
+	        <span class="ball_8 ani_8"></span>
+	        <span class="ball_9 ani_9"></span>
+	        <span class="ball_10 ani_10"></span> 
+	        <span class="ball_11 ani_11"></span>
+	    </div>
+
+		<!-- 中獎掉落 -->
+	   	<div class="getBall none">
+			<span class="drop"></span>
+	   	</div>
+
+		<!-- 遊戲資訊 -->
+	   	<div class="info_box">
+	   		<div class="title"><img src="img/title_01.png"></div>
+	   		<div class="logos"><img src="img/logos.png" usemap="#logos"></div>
+			<map name="logos">
+				<area shape="rect" coords="3,3,236,127" href="https://24h.pchome.com.tw/region/DXAO" target="_blank">
+				<area shape="rect" coords="244,2,478,123" href="https://24h.pchome.com.tw/store/DAAK4K" target="_blank">
+				<area shape="rect" coords="486,1,719,123" href="https://24h.pchome.com.tw/region/DDBF" target="_blank">
+				<area shape="rect" coords="1,132,232,259" href="https://24h.pchome.com.tw/region/DSAR" target="_blank">
+				<area shape="rect" coords="241,132,479,260" href="https://24h.pchome.com.tw/region/DYAL" target="_blank">
+				<area shape="rect" coords="486,129,717,258" href="https://24h.pchome.com.tw/store/DRAH7G" target="_blank">
+			</map>
+	   		<div class="title"><img src="img/title_02.png"></div>
+	   		<div class="info_text">
+	   			<p>活動時間：2018/9/1 00:00~9/30 23:59</p>
+	   			<p>活動方式：<br>
+週週換好康，每週五10:00更新，點擊GO就有機會獲得特價傳送門喔！</p>
+	   			<p>注意事項：<br>
+PChome保留隨時修改、終止或變更本活動內容之權利。修改後之活動內容將於本活動網頁中更新，恕不另行通知。</p>
+
+	   		</div>
+	   	</div>
+	</div>
+
+	<!-- 中獎 一等獎-->
+	<div class="popup none" id="gift_01">
+	    <div class="gift_text gift_ani">
+	    	<!-- <div class="close"><img src="img/close.png"></div> -->
+	    	<div class="result"> </div>
+	    </div>
+	</div>
+	
+	<!-- Footer -->
+	<div class="footer">
+		本活動頁商品規格、顏色、價位、贈品如與銷售網頁不符，<span>以銷售網頁標示為準！</span><br />
+		網路家庭版權所有 Copyright PChome Online <span>版權所有，轉載必究</span>
+    </div>
+	<!-- END // Footer -->
+
+	<script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+
+
+</body>
+</html>

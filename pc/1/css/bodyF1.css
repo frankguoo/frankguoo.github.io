@@ -1,0 +1,108 @@
+ @charset "utf-8";
+
+
+
+
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    background: transparent;
+    padding: 5px 2px 2px 5px;
+  }
+  .boxF1 ul li {
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+  }
+  .boxF1 .hotF1 {
+    background-color: #c80202;
+    color: #fff;
+  }
+	
+	
+	ul.pd_wrapF1 li:nth-child(7) .hot_priceF1 small:before { 
+		content: "折後";
+		font-size: 16px;
+	}
+
+
+
+/*--- 產品內容 ---*/
+ul.pd_wrapF1 {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.hotF1, .pd_titleF1, ul.pd_wrapF1 p {
+	width: 100%;
+	font-weight: bold;
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+}
+ul.pd_wrapF1 li { 
+	width: calc(100% / 4);
+	font-size: 16px;
+	float: left;
+	background-color: transparent;	
+}
+.pd_titleF1 {
+	color: #000;
+}
+ul.pd_wrapF1 p {
+	color: #666;
+	font-weight: normal;
+}
+ul.pd_wrapF1 span {
+	vertical-align: baseline;
+}
+span.old_priceF1 {
+	text-decoration: line-through;
+	font-size: 15px;
+}
+span.hot_priceF1 {
+	color: #d00;
+	font-size: 24px;
+	margin: 0 4px;
+}
+
+span.hot_priceF1 > span {
+    font-size: 16px;
+    margin-right: 0px;
+}
+
+
+span.hot_priceF1 small {
+	font-size: 60%;
+}
+span.buyF1 {
+	background-color: #d00!important;
+	color: #fffa1e;
+	font-size: 11px;
+	padding: 1px 3px;
+	vertical-align: 3px !important;
+}
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+ul.pd_wrapF1 img  	{ width: 100%; max-width: 100%; }
+
+
+@media only screen and (max-width: 931px) {
+	ul.pd_wrapF1  	{ background: #fff!important; }
+	.boxF1 ul.pd_wrapF1 li 	{ width: calc(100% / 2); padding: 2px;}
+}
+
+@media only screen and (max-width: 450px) {
+	.hotF1, .pd_titleF1, ul.pd_wrapF1 p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrapF1 p 					{ letter-spacing: -1px; }
+	span.old_priceF1 					{ font-size: 2vw; }
+	span.hot_priceF1 					{ font-size: 6vw; }
+	span.buyF1						{ font-size: 2vw; }
+}
+
+

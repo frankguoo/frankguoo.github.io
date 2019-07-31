@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身五</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/bodyF3.css" rel="stylesheet" type="text/css">
+	  
+	  
+<!-- (1) 將css資料夾的bodyF.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<script>
+ 
+$( function(){
+	
+	
+	/* 版身顯示主視覺內容 */ 
+	var myArray1= new Array();
+	myArray1 = [
+        {         
+      "LINK": "http://24h.pchome.com.tw/store/DEAWAI",
+      "PIC": "m_3.jpg",
+      "NAME": "安博盒子 限時殺88折",
+    }, 
+  ];
+
+
+
+	/* 版身顯示商品內容 */ 
+	var myArray= new Array();
+	myArray = [
+        {
+            "排序": "1",
+            "LINK": "http://24h.pchome.com.tw/store/DEAW37",
+            "PIC": "JD5555.jpg",
+            "HIGHLIGHT": "日本無毒認證▼55折 ",
+            "NAME": "必仕達Peacetar蛋包飯料理鍋",
+            "PRICE": "999",
+            "PRICE-S": "$1800",
+            "PCS": ""
+        },
+        {
+            "排序": "2",
+            "LINK": "http://24h.pchome.com.tw/store/DEAW8T",
+            "PIC": "JD2.jpg",
+            "HIGHLIGHT": "不沾平煎鍋+不沾單柄湯鍋",
+            "NAME": "義大利FLONAL石器系列雙鍋組",
+            "PRICE": "990",
+            "PRICE-S": "$3840",
+            "PCS": ""
+        },
+        {
+            "排序": "3",
+            "LINK": "http://24h.pchome.com.tw/store/DECF32",
+            "PIC": "400sc.jpg",
+            "HIGHLIGHT": "法國原裝進口",
+            "NAME": "電子溫度計刮刀",
+            "PRICE": "595",
+            "PRICE-S": "850",
+            "PCS": ""
+        },
+        {
+            "排序": "4",
+            "LINK": "http://24h.pchome.com.tw/store/DEAWGD",
+            "PIC": "JD4.jpg",
+            "HIGHLIGHT": "日式廚刀+H.I磨刀器",
+            "NAME": "德國雙人Style廚刀組合",
+            "PRICE": "999",
+            "PRICE-S": "$2250",
+            "PCS": ""
+        },
+        {
+            "排序": "5",
+            "LINK": "http://24h.pchome.com.tw/store/DEBMCQ",
+            "PIC": "3-5.jpg",
+            "HIGHLIGHT": "完美規格，霸氣全包!",
+            "NAME": "韓國超值保鮮盒12件組",
+            "PRICE": "1111",
+            "PRICE-S": "$1799",
+            "PCS": ""
+        },
+        {
+            "排序": "6",
+            "LINK": "http://24h.pchome.com.tw/store/DEBWDH",
+            "PIC": "3-6.jpg",
+            "HIGHLIGHT": "天然瓷製，無金屬異味",
+            "NAME": "曲線陶瓷保溫杯",
+            "PRICE": "999",
+            "PRICE-S": "$2300",
+            "PCS": ""
+        }
+       
+  ];
+	
+ /* 版身顯示主視覺內容 */ 	
+ var htmlKV = ''; 
+    htmlKV += '<li class="pd_kvF3">';
+    htmlKV += '<a href="' + myArray1[0]['LINK'] + '" target="_blank">';
+    htmlKV += '<img src="pm/' + myArray1[0]['PIC'] + '" title="' + myArray1[0].NAME + '">';
+    htmlKV += '</a></li>';
+	
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF3">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF3">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF3">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_priceF3"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF3">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF3').html(htmlKV).append(htmlPD);	
+  
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+  /*--- box ---*/
+  .boxF3 { 
+    width: 100%; 
+  }
+	
+  .boxF3 ul {
+
+  }
+  .boxF3 ul li {
+    padding: 5px;
+  }
+
+</style>
+
+	  
+</head>
+
+<body>
+  <div class="wrap boxF3">
+    <ul class="pd_wrapF3">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

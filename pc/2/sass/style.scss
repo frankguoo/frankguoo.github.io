@@ -1,0 +1,24 @@
+
+//宣告語系
+@charset 'UTF-8';
+
+body{background-color:#f12c2e!important; }
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+div,*{box-sizing:border-box;-webkit-box-sizing:border-box;font-family:'微軟正黑體',Arial,Helvetica,sans-serif}
+body{background-color:#f12c2e!important;color:#000;font-family:'微軟正黑體',Arial,Helvetica,sans-serif;position:relative;height:100%}
+
+.mobile{display:none}
+@media only screen and (max-width: 931px) {
+.mobile{display:block!important}
+.desktop{display:none!important}
+}
+@import 'others';
+@import 'kv';
+@import 'bank';
+@import 'sixgift';
+@import 'discount1';
+@import 'discount2';
+@import 'adbox';
+@import 'sport';

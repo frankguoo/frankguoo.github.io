@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+
+/*--- BODY產品內容 ---*/
+ul.pd_wrap {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	}
+.hot, .pd_title, ul.pd_wrap p {
+	width: 100%;
+	font-weight: bold;
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+	border-radius:4px;
+    font-size: 13px;
+	
+}
+ul.pd_wrap li { 
+	width: calc(100% / 4);
+	font-size: 15px;
+	float: left;
+	background-color: #fff;	
+}
+
+.pd_title {
+	color: #000;
+}
+ul.pd_wrap p {
+	color: #666;
+	font-weight: normal;
+	
+}
+
+ul.pd_wrap span {
+	vertical-align: baseline;
+}
+
+
+span.old_price {
+	text-decoration: line-through;
+	font-size: 15px;
+}
+span.hot_price {
+	font-family: Impact, Verdana, Geneva, sans-serif;
+	color: #d00;
+	font-size: 37px;
+}
+span.hot_price small {
+	font-size: 60%;
+	vertical-align: 0px !important;	
+}
+span.buy {
+	background-color: #000;
+	border-radius:4px;
+	color: #fffa1e;
+	font-size: 11px;
+	padding: 1px 7px 1px 7px;
+	vertical-align: 5px !important;
+}
+
+
+
+
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+.wrap img  	{ width: 100%; max-width: 100%; }
+.mobile img { width: 100%;}
+
+
+@media only screen and (max-width: 931px) {
+	.mainBody {background: no-repeat #fff;}
+	.mobile  { display: block!important; }
+	.desktop 		{ display: none!important; }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	.hot, .pd_title, ul.pd_wrap p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrap p 					{ letter-spacing: -1px; }
+	span.old_price 					{ font-size: 2vw; }
+	span.hot_price 					{ font-size: 6vw; }
+	span.buy 						{ font-size: 2vw; }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	ul.pd_wrap li 	{ width: calc(100% / 2); }
+	
+}

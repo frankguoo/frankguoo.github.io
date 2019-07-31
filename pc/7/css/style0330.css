@@ -1,0 +1,215 @@
+ @charset "utf-8";
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img { width:100%; }
+div, * { 
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+}
+body{
+	background: url('../img/bg0403.jpg') top center no-repeat #fff!important;
+	color:#fff;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 100%;
+	overflow-x: hidden!important;
+}
+.mainBody {
+		}
+
+/*--- HOT標題文字 ---*/
+
+#hot-title p{
+	float:left;
+    font-size:29px;color:#900;
+	font-family:Verdana, Geneva, sans-serif, 微軟正黑體;
+	padding: -6px 0 0 0;
+	}
+
+#hot-title p2{
+	float:left;
+	font-size:15px;color:#000;
+	padding: 15px 0 0 0;
+	}
+
+
+/*--- BRAND標題文字 ---*/
+
+#brand-title p{
+	float:left;
+    font-size:29px;color:#e97900;
+	font-family:Verdana, Geneva, sans-serif, 微軟正黑體;
+	padding: -6px 0 0 0;
+	}
+
+#brand-title p2{
+	float:left;
+	font-size:15px;color:#111;
+	padding: 15px 0;
+	}
+
+
+/*--- ICON ---*/
+
+.icon-hot {
+	float:left;
+	width:40px;
+	height:30px;
+	margin-top:4px;
+}
+
+.icon-colock {
+	float:left;
+	width:55px;
+	height:30px;
+	margin-top:-4px;
+}
+/*--- COUNT倒數器 ---*/
+
+
+#countend {
+	float:right;
+	position: relative;
+    top: -2px;
+    margin-right: 0px !important;
+	font-family:"微軟正黑體", Arial, Helvetica, sans-serif;
+    font-size: 31px;
+	line-height: 26px;
+    color: #900000;
+	font-weight:bold;
+}
+#countend span {
+	vertical-align: baseline;
+	padding: 0 3px;
+}
+.countend-p {
+	float:left;
+    font-family:"微軟正黑體", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+	line-height: 30px;
+	padding: 1px 2px;
+    color: #222;
+	font-weight:bold;
+}
+
+
+
+
+
+
+/*--- 補間隔 ---*/
+#border00 {
+	height:10px;
+	}
+
+
+/*--- 版頭物件 ---*/
+
+
+
+#maintitle{
+	position: absolute;
+	margin: 23px 0 0 169px;
+	width: 580px;
+	height: 370px;
+	}
+	
+#main_pd{
+	position: absolute;
+	margin: 210px 0 0 25px;
+	width: 700px;
+	height: 360px;
+	z-index: 9999;
+	}
+
+
+
+
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+.wrap img  	{ width: 100%; max-width: 100%; }
+
+
+@media only screen and (max-width: 931px) {
+	.desktop 		{ display: none!important; }
+	
+	#countend {
+	float:left;
+    position: relative;
+    margin: 20px 0 0 0!important;
+}
+
+.countend-p {
+	float: left;
+	margin: 20px 0 0 10px!important;
+    font-family:"微軟正黑體", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	line-height: 30px;
+	padding: 0px 2px;
+    color: #222;
+	font-weight:bold;
+}
+
+	
+
+}
+@media only screen and (max-width: 450px) {
+	.hot, .pd_title, ul.pd_wrap p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrap p 					{ letter-spacing: -1px; }
+	span.old_price 					{ font-size: 2vw; }
+	span.hot_price 					{ font-size: 6vw; }
+	span.buy 						{ font-size: 2vw; }
+
+
+    #countend {
+    font-size: 32px;
+    }	
+	
+    .countend-p {
+	float: left;
+	margin: 20px 0 0 5px!important;
+    font-family:"微軟正黑體", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+	line-height: 30px;
+    color: #222;
+	font-weight:bold;
+}
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+	#hot-title p2{
+	display: none;
+	}
+	#brand-title p2{
+	display: none;
+	}
+	
+    #countend {
+    font-size: 28px;
+    }	
+	
+    .countend-p {
+	float: left;
+	margin: 20px 0 0 5px!important;
+    font-family:"微軟正黑體", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #222;
+	font-weight:bold;
+}
+
+}
+
+

@@ -1,0 +1,65 @@
+//變數
+@import 'base';
+
+
+.section01{
+    margin-top: -45px;
+    @include breakpoint(m){
+        margin-top: 0px;
+    } 
+    .wrap{
+         width: 100%;
+         max-width: 1180px;
+         margin: 0 auto;
+         position: relative;
+         
+         img.balloon{
+            transition:transform 0.5s ease;
+            animation:balloons01 4s ease-in-out infinite;
+            transform-origin:bottom center;
+            position: absolute;
+            z-index: 0;
+            width: 200px;
+            right:70px;
+            top: -10px;
+         }   
+         
+         .content{
+            width: 100%;
+            position: relative;
+            z-index: 9;
+
+            @include breakpoint(s){
+                position: relative;
+                padding: 20px 10px 0px 10px;
+                background: #74e3ff;
+            }
+
+            .bigtittle{
+                position: absolute;
+                left: 192px;
+                padding-top:40px; 
+                @include breakpoint(m){
+                    position: relative;
+                    left:0px;
+                    padding-top:0px; 
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+
+   
+            
+        }
+    }
+}
+
+
+
+
+@keyframes balloons01 {
+0%{transform:translateY(0) rotate(20deg);-webkit-transform:translateY(0) rotate(20deg);-moz-transform:translateY(0) rotate(20deg);-ms-transform:translateY(0) rotate(20deg)}
+50%{transform:translateY(-25px) rotate(4deg);-webkit-transform:translateY(-25px) rotate(4deg);-moz-transform:translateY(-25px) rotate(4deg);-ms-transform:translateY(-25px) rotate(4deg)}
+100%{transform:translateY(0) rotate(20deg);-webkit-transform:translateY(0) rotate(20deg);-moz-transform:translateY(0) rotate(20deg);-ms-transform:translateY(0) rotate(20deg)}
+}

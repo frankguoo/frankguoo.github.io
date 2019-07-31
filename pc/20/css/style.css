@@ -1,0 +1,151 @@
+ @charset "utf-8";
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img { width:100%; }
+div, * { 
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+}
+body{
+	background-color: #000 !important;
+	color:#000;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 100%;
+}
+.mainBody {
+	background: url('../img/bgm1214.jpg') top center no-repeat #000;
+}
+.top_KV {
+	width: 932px;
+	margin: 0 auto;
+	transition: 0s;
+    -webkit-transition: 0s;
+}
+.wrap {
+	width: 932px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.imgBox2{
+	float: left;
+}
+
+/*--- 倒數計時 ---*/
+#clock {
+	color: #f9ff00;
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    right: 88px;
+    top: 152px;
+	font-size: 24px;
+    width: 230px;
+}
+#clock span {
+	vertical-align: baseline;
+	padding: 0 3px;
+	font-size: 30px;
+}
+
+
+/*--- 產品內容 ---*/
+ul.pd_wrap {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.hot, .pd_title, ul.pd_wrap p {
+	width: 100%;
+	font-weight: bold;
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+}
+ul.pd_wrap li { 
+	width: calc(100% / 4);
+	font-size: 16px;
+	float: left;
+	background-color: #fff;	
+}
+.pd_title {
+	color: #000;
+}
+ul.pd_wrap p {
+	color: #666;
+	font-weight: normal;
+}
+ul.pd_wrap span {
+	vertical-align: baseline;
+}
+span.old_price {
+	text-decoration: line-through;
+	font-size: 15px;
+}
+span.hot_price {
+	color: #d00;
+	font-size: 26px;
+}
+span.hot_price small {
+	font-size: 60%;
+}
+span.buy {
+	background-color: #d00;
+	color: #fffa1e;
+	font-size: 11px;
+	padding: 1px 3px;
+	vertical-align: 3px !important;
+}
+.section_03 {
+	margin-top: 10px;
+}
+
+
+/*--- section_01 ---*/
+#section_01 ul li {
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+#section_01 .hot {
+	background-color: #da0000;
+	color: #fff;
+}
+
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+.wrap img  	{ width: 100%; max-width: 100%; }
+
+
+@media only screen and (max-width: 931px) {
+	.desktop 		{ display: none; }
+	#clock 			{ top: 0; right: 0; margin: 35.2% 17% 0 0; font-size: 4.5vw; width: 45%; }
+	#clock span 	{ font-size: 6vw; }
+	ul.pd_wrap li 	{ width: calc(100% / 2); }
+	.section_03 	{ margin-top: 0; }
+
+}
+@media only screen and (max-width: 450px) {
+	.hot, .pd_title, ul.pd_wrap p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrap p 					{ letter-spacing: -1px; }
+	span.old_price 					{ font-size: 2vw; }
+	span.hot_price 					{ font-size: 6vw; }
+	span.buy 						{ font-size: 2vw; }
+}
+
+@media only screen and (max-width: 320px) {
+
+}

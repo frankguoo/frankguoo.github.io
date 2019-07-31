@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "https://24h.pchome.com.tw/store/DYAO40",
+      "PIC": "A2.jpg",
+      "HIGHLIGHT": "狂降1.5折 出遊必備",
+      "NAME": "WiFi分享行動電源",
+      "PRICE": "149",
+      "PRICE-S": "999",
+      "PCS": "",
+	  "CODE": "setIframe1(); _gaq.push(['_trackEvent', '24h_AC15423840_dm', 'Hit1']);"
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/prod/DYAO40-19008SBEU?q=/S/DYAO40",
+      "PIC": "22.jpg",
+      "HIGHLIGHT": "新春限時下殺 獨家特惠",
+      "NAME": "Qi無線+行電(超值組)",
+      "PRICE": "1590",
+      "PRICE-S": "2589",
+	  "PCS": "",
+	  "CODE": "setIframe2(); _gaq.push(['_trackEvent', '24h_AC15423840_dm', 'Hit2']);"
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/prod/DCAQ2C-A9006L7QX?q=/S/DYAO40",
+      "PIC": "P1.jpg",
+      "HIGHLIGHT": "輕巧好攜 再送車充線組",
+      "NAME": "迷你行動電源(粉/白)",
+      "PRICE": "499",
+      "PRICE-S": "1098",
+      "PCS": "",
+	  "CODE": "setIframe4(); _gaq.push(['_trackEvent', '24h_AC15423840_dm', 'Hit4']);"
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/prod/DCAQ0G-A9006T60L?q=/S/DYAO40",
+      "PIC": "blue.jpg",
+      "HIGHLIGHT": "1.1cm+送車充線組",
+      "NAME": "大容量極薄行動電源",
+      "PRICE": "1199",
+      "PRICE-S": "1698",
+      "PCS": "",
+	  "CODE": "setIframe5(); _gaq.push(['_trackEvent', '24h_AC15423840_dm', 'Hit5']);"
+    }
+		
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank" onclick="' + myArray[i]['CODE'] + '">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+	htmlPD += '<span class="pcs1">' + myArray[i]['PCS'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    padding: 0px 19px 0 59px;
+  }
+  .boxF1 ul li {
+
+    padding: 10px;
+	 -webkit-transition: all 0.2s ease;
+						 -moz-transition: all 0.2s ease;
+						  -ms-transition: all 0.2s ease;
+						   -o-transition: all 0.2s ease;
+							  transition: all 0.2s ease; 
+  }
+    ul.pd_wrapF1 li:nth-child(10) .hot_priceF1{ 
+		text-decoration: line-through;
+	}		
+  .boxF1 ul li:hover {
+	 -webkit-transform:translateY(-6px); transform:translateY(-6px); box-shadow:0 0 20px rgba(0,0,0,0.2);
+	} 
+	
+   .boxF1 .hotF1 {
+    background-color: #af8f5f;
+    color: #ffffff;
+  }
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+  
+<script language="javascript">
+
+
+<!-- Button1-->
+function setIframe1() {
+  document.getElementById('dd1').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_21.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+	
+<!-- Button2-->
+function setIframe2() {
+  document.getElementById('dd2').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_22.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button3-->
+function setIframe3() {
+  document.getElementById('dd3').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_23.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button4-->
+function setIframe4() {
+  document.getElementById('dd4').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_24.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button5-->
+function setIframe5() {
+  document.getElementById('dd5').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_25.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button6-->
+function setIframe6() {
+  document.getElementById('dd6').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_26.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button7-->
+function setIframe7() {
+  document.getElementById('dd7').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_27.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button8-->
+function setIframe8() {
+  document.getElementById('dd8').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_28.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button9-->
+function setIframe9() {
+  document.getElementById('dd9').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_29.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button10-->
+function setIframe10() {
+  document.getElementById('dd10').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_30.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button11-->
+function setIframe11() { 
+  document.getElementById('dd11').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_31.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button12-->
+function setIframe12() {
+  document.getElementById('dd12').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC15423840&n=index_32.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+</script>
+
+<div id="dd1" style="display:none;">
+<div id="dd2" style="display:none;">
+<div id="dd3" style="display:none;">
+<div id="dd4" style="display:none;">
+<div id="dd5" style="display:none;">
+<div id="dd6" style="display:none;">
+<div id="dd7" style="display:none;">
+<div id="dd8" style="display:none;">
+<div id="dd9" style="display:none;">
+<div id="dd10" style="display:none;">
+<div id="dd11" style="display:none;">
+<div id="dd12" style="display:none;">
+
+</body>
+</html>

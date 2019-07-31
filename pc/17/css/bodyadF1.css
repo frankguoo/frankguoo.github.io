@@ -1,0 +1,43 @@
+ @charset "utf-8";
+
+/*--- 產品內容 ---*/
+
+ul.ad_wrapF1 {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+ul.ad_wrapF1 li { 
+	width: calc(100% / 2);
+	font-size: 16px;
+	float: left;
+	background-color: #fff;	
+	border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+ul.ad_wrapF1 li img{ 
+	width: 100%;
+	max-width: 100%;
+}
+
+.section_03 {
+	margin-top: 10px;
+}
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+
+
+@media only screen and (max-width: 931px) {
+	ul.ad_wrapF1 li 	{ width: calc(100% / 1); }
+}
+
+
+

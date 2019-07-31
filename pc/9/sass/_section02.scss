@@ -1,0 +1,47 @@
+//變數
+//變數
+@import 'base';
+
+
+.section02{
+    .wrap{
+         width: 100%;
+         max-width: 1180px;
+         margin: 0 auto;
+         position: relative; 
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         
+        .content{
+            width: 100%;
+
+            @include breakpoint(s){
+                position: relative;
+                padding: 20px 0px;
+                background: #74e3ff;
+            }
+
+            .bigtittle{
+                position: absolute;
+                left: 192px;
+                padding-top:20px; 
+                @include breakpoint(m){
+                    position: relative;
+                    left:0px;
+                    padding-top:0px; 
+                    padding: 0px 10px 20px 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+
+   
+            
+        }
+    }
+}
+
+
+

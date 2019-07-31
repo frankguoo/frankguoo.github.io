@@ -1,0 +1,90 @@
+//變數
+@import 'base';
+
+
+.section07{
+    .wrap{
+         width: 100%;
+         max-width: 1180px;
+         margin: 0 auto;
+         position: relative; 
+         display: flex;
+         justify-content: center;
+         align-content: center;
+
+        img.bg{
+            @include breakpoint(m){
+                display:none;
+            }
+        }
+         
+        .content{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding-top:30px; 
+            @include breakpoint(m){
+                position: relative;
+                padding: 20px 10px;
+                background: #6200cb;
+            }
+
+            .bigtittle{
+                position: relative;
+                left: 192px;
+                @include breakpoint(m){
+                    left:0px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .linecontent{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(nowrap);
+                @include justify-content(center);
+                @include align-items(center);
+                max-width: 780px;
+                margin: 0px auto 0 auto;
+                @include breakpoint(m){
+                    margin: 0px auto 0 auto;
+                }
+                a{
+                    display: block;
+                    padding: 0 20px;
+                    @include breakpoint(m){
+                        width: 100%;
+                        text-align: center;
+                        padding: 0 5px;
+                    }
+                    h3{
+                        color:#fff;
+                        font-size: 25px;
+                        margin: 20px 0 10px 0;
+                        text-align: center;
+                    }
+                    img{
+                        box-shadow: 4px 4px 0px #4a0691;
+                    }
+                }
+            }
+
+           .linecontent{
+                @include breakpoint(m){
+                    padding:0 15px;
+
+                }
+                .item{
+                    padding: 0 5px;
+                }
+            }
+
+   
+            
+        }
+    }
+}
+
+
+

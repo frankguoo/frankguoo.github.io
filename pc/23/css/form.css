@@ -1,0 +1,86 @@
+
+.form {
+  z-index: 15;
+  position: relative;
+  background: #6f2d06;
+  border:solid 5px #a15021;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px;
+  top:-500px;
+  box-sizing: border-box;
+  
+}
+label {
+  display: inline-block;
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+h5 {
+  display: block;
+  margin: 0 0 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}	
+input {
+  outline: none;
+  display: block;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  transition: 0.3s ease;
+  text-indent: 40px;
+}
+input:focus {
+  text-indent: 12px;
+  color: rgba(0, 0, 0, 0.8);
+}
+button.nameSubmit {
+  outline: none;
+  background: #92bfe8;
+  width: 100%;
+  border: 0;
+  font-size: 21px!important;
+  border-radius: 4px;
+  padding: 12px 15px;
+  margin-top: 20px;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow:1px 1px 0px 2px #b7d5f0 inset,  2px 2px 1px 2px #7bade0;
+}
+input[type='checkbox'] , input[type='radio']{
+  display: inline-block;
+  width: auto;
+  margin: 0 10px 0 0;
+}
+label.text {
+  margin: 0 15px 0 0;
+}
+	

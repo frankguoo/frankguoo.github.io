@@ -1,0 +1,23 @@
+
+
+
+
+.moresite{
+	font-family:Verdana,Helvetica,Arial,微軟正黑體;
+	}
+.moresite a{
+	position:absolute;right:0px;top:383px ;color:#999;letter-spacing:0;font-size:9px; background:#e7e7e7; padding:0 2px 0px 5px;}
+.moresite a:hover{text-decoration:underline;color:#fff; background:#c1c1c1}
+.site_nav .body{margin:3px;margin-right:0}
+.site_nav .body dl{height:25px;overflow:hidden}
+.site_nav .body li{margin:3.7px 0}
+.site_nav .body dt a{padding-right:10px;color:#069;font:15px/25px Verdana,Helvetica,Arial,微軟正黑體;}
+.site_nav .body dt a:hover{padding-right:2px;color:#fff; background:#069;}
+.site_nav .body dt,.site_nav .body dd li{float:left}
+.site_nav .body dd{display:inline}
+.site_nav .body dd a{padding-right:6px;color:#999;font:12px Arial;vertical-align:middle;letter-spacing:1.1px;}
+.site_nav .body dd a:hover{text-decoration:underline}
+
+#CONTENT .site_nav .head a,#CONTENT .site_nav .body dt
+a{text-decoration:underline}
+.site_nav .body .col2f li{float:left;margin:7px 0}

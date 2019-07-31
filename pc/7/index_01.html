@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/body123.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" defer></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+ 
+$( function(){
+	
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "https://24h.pchome.com.tw/prod/DBBC02-19008W591",
+      "PIC": "a1-1_0416.jpg",
+      "HIGHLIGHT": "買2送3結帳再折100",
+      "NAME": "永信HAC 綜合B群錠(90粒)",
+      "PRICE": "<s>999</s>",
+      "PRICE-S": "$2495",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DAAG0S-A9008WMOT?q=/S/DAAG0S",
+      "PIC": "a1-2_0416.jpg",
+      "HIGHLIGHT": "限時限量8折",
+      "NAME": "舒潔 柔韌潔淨抽取衛生紙",
+      "PRICE": "799",
+      "PRICE-S": "$999",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAX0Z-A9008G0QQ",
+      "PIC": "a1-3_0416.jpg",
+      "HIGHLIGHT": "限時折6000",
+      "NAME": "Panasonic 立式手提兩用電動吸塵器",
+      "PRICE": "6490",
+      "PRICE-S": "$12900",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DYAL67",
+      "PIC": "a1-4_0416.jpg",
+      "HIGHLIGHT": "送1000現金積點",
+      "NAME": "Samsung Galaxy S9+(6G/128G)",
+      "PRICE": "29900",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+
+
+       
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hot">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_title">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_price">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_price"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buy">搶購</span></p></a></li>';
+  }
+  $('.pd_wrap').html(htmlPD);
+  
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background:#ff1640;
+
+  }
+  /*--- box ---*/
+  .box { 
+    width: 100%; 
+  }
+  .box ul {
+    background: #ff1640;
+    padding: 8px 8px 8px 8px;
+	  }
+  .box ul li {
+    border-right: 1px solid #ff1640;
+    border-bottom: 1px solid #ff1640;
+    padding: 10px;
+	
+  }
+  
+  .box ul li img{
+	padding: 0px;
+	overflow: hidden;
+  }
+  
+  .box ul li a:hover img{
+	padding: 0px;
+	overflow: hidden;
+  }
+	  
+  .box .hot {
+    background-color: #960000;
+    color: #fff;
+  }
+  
+</style>
+</head>
+
+<body>
+  <div class="wrap box">
+    <ul class="pd_wrap">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

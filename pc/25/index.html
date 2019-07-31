@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>飛天箱折價券</title>
+    <meta property="og:title" content="【PChome24h購物】飛天箱折價券">
+    <meta property="og:description" content="台北市6小時到貨(試營運)，全台灣24小時到貨！"/>
+    <meta property="og:image" content="http://a.ecimg.tw/img/activity/v1/AC77266/AC77266635/200x200_fb.jpg">
+    <link rel="apple-touch-icon" href="img/fb200.jpg">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+    <!--CSS-->
+    <link href="css/reset-1006.css" rel="stylesheet" type="text/css">
+    <link href="css/style-0208.css" rel="stylesheet" type="text/css">
+    <link href="css/common-1006-2.css" rel="stylesheet" type="text/css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105792616-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-105792616-2');
+	</script>
+    
+</head>
+
+<body class="game_bg">
+    <div class="wrap">
+        <!-- 開場 -->
+        <div class="countdown">
+            <div class="countdown_num">3</div>
+        </div>
+        <!-- 開場 END -->
+
+        <!-- 遊戲場景 -->
+        <div class="boxmain"><img src="images/boxman.png"></div>
+        <div class="counter">倒數計時<span class="count_num">30</span>秒</div>
+        <div class="score">得分：<span class="click">0</span> 分</div>
+        <div class="scenes_title"><img src="images/title.png"></div>
+        <!--<div class="curtain_header"><img src="images/curtain_header.png"></div>-->
+        <!--<div class="curtain_body"><img src="images/curtain_body.png"></div>-->
+        <!--<div class="curtain_body curtain_right"><img src="images/curtain_body.png"></div>-->
+        <div class="money"><img src="images/money.png"></div>
+        <div class="board"><img src="images/board.png"></div>
+        <div class="board board_right"><img src="images/board.png"></div>
+        <!--<div class="top_bg"></div>-->
+        <!-- 遊戲場景 END -->
+
+        <!-- 飛天箱 -->
+        <div class="rain-wrap hide"></div>
+        <!-- 飛天箱 END -->
+
+        <!-- 結束燈箱 -->
+        <div class="pop hide" id="endGame">
+            <div class="pop_bg">
+                <div class="pop_content">
+                    <div class="lose">
+                        <div class="close" onclick="reLoadPage()">X</div>
+                        <h2>時間到!!</h2>
+                        <div class="get_num">總得分:<span class="click">0</span>分</div>
+                        <div class="info">還沒準備好嗎？<br>重玩拿獎品吧！</div>             
+                    </div>
+                    <div class="winner hide">
+                        <h2>恭喜你中獎了！</h2>
+                        <div class="cupon"></div>
+                        <!--<div class="cupon_text"></div>-->
+                        <div class="winnder_pic"><img src="images/winner.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 結束燈箱 END -->
+
+        <!-- 說明燈箱 -->
+        <div class="pop" id="explain">
+            <div class="pop_bg">
+                <div class="pop_content">
+                    <p class="worrying">請使用行動裝置，以取得最佳瀏覽體驗</p>
+                    <p class="title">遊戲說明</p>
+                    <p class="attention">點擊START即倒數3秒開始，<br>進入遊戲後將有很多藏有獎品的箱子飛出！<br><span>限時10秒內，請使吃出奶的力氣、最快的速度點擊打開箱子哦！</span></p>
+
+                    <p class="title">注意事項</p>
+                    <ul>
+                        <li>本活動時間：<br>02/21 10:00~03/06 09:59</li>
+                        <li>建議先<a href="https://ecvip.pchome.com.tw/" target="_blank">登入帳號</a>，玩遊戲後即可直接前往折價券區使用，遊戲中顯示之折價券時間以該折價券區顯示為主，逾期則失效。</li>
+                        <li>折價券每個PChome線上購物帳號僅可使用一次，以該折價券區顯示為主。</li>
+                        <li>日用可抵用之商品以折價券專區顯示為主。</li>
+                        <li>折價券請於有效期間內使用，效期屆滿即使您沒有使用完畢，即自動失效。關於折價券使用規則，遵循PChome線上購物(<a href="https://ecvip.pchome.com.tw/web/pages/couponinfo.htm" target="_blank">折價券使用說明</a>)相關規定。</li>
+                        <li>「PChome」保留隨時修改、終止或變更本活動內容之權利。修改後之活動內容將於本活動網頁中更新，恕不另行通知。</li>
+                    </ul>
+                    <div class="close_btn">關閉</div>
+                </div>
+            </div>
+        </div>
+        <!-- 說明燈箱 END -->
+
+        <!-- MENU -->
+        <div class="footer_menu">
+            <div class="game_start">START</div>
+            <div class="event_more">遊戲說明</div>
+            <a href="http://www.pchomeec.tw/activity/AC15423840?utm_source=Shopping&utm_medium=APP_GAME&utm_campaign=SALE02"><div class="back_event">回APP活動會場</div></a>
+        </div>
+        <!-- MENU END -->
+
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/rain-3.js"></script>
+    <script type="text/javascript" src="js/common-1103a.js"></script>
+    <script>
+    function reLoadPage() {
+        window.history.go(0);
+    }
+    </script>
+</body>
+</html>

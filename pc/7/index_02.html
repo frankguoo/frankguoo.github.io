@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/body123.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" defer></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+ 
+$( function(){
+	
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "http://24h.pchome.com.tw/store/DBAB11",
+      "PIC": "1-1.jpg",
+      "HIGHLIGHT": "雙效認證21.9/入",
+      "NAME": "每朝健康雙纖綠茶650ml(24入/箱)",
+      "PRICE": "525",
+      "PRICE-S": "$840",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DBAG0L-A90088NLR?q=/S/DBAG0L",
+      "PIC": "1-2.jpg",
+      "HIGHLIGHT": "滿千再折$100",
+      "NAME": "台鹽海洋鹼性離子水(600mlx24瓶/箱)",
+      "PRICE": "399",
+      "PRICE-S": "$625",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DBACA9",
+      "PIC": "1-3.jpg",
+      "HIGHLIGHT": "全系列4件$385",
+      "NAME": "【自然主意】奇亞籽藍藻蔥蘇打餅180g",
+      "PRICE": "120",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DBAK2Z-19007IAES",
+      "PIC": "1-4.jpg",
+      "HIGHLIGHT": "★富含維生素C與鐵★",
+      "NAME": "家樂氏Special K 水果優格 香脆麥米片354g",
+      "PRICE": "199",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+        {         
+      "LINK": "http://24h.pchome.com.tw/prod/DBAE7B-A60269731",
+      "PIC": "1-5.jpg",
+      "HIGHLIGHT": "★日本大廠 嚴選素材★",
+      "NAME": "nora津輕完熟蘋果汁箱購",
+      "PRICE": "1250",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DBAC89-A900627CV",
+      "PIC": "1-6.jpg",
+      "HIGHLIGHT": "★採用新鮮水果製成★",
+      "NAME": "每日優果 綜合水果脆片",
+      "PRICE": "118",
+      "PRICE-S": "$150",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DBBY0E-A9008D5RE",
+      "PIC": "1-7.jpg",
+      "HIGHLIGHT": "平均只要$67/入",
+      "NAME": "南僑膳纖熟飯 健康多穀飯",
+      "PRICE": "799",
+      "PRICE-S": "$900",
+      "PCS": "12入"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DBBR1G-19008XDIZ?q=/S/DBBR1G",
+      "PIC": "1-8.jpg",
+      "HIGHLIGHT": "加碼送葵花油300ml",
+      "NAME": "《得意的一天》五珍寶健康油(2L)",
+      "PRICE": "536",
+      "PRICE-S": "$629",
+      "PCS": "3瓶"
+    },
+	{
+      "LINK": "http://24h.pchome.com.tw/prod/DBAT88-19008WLFX",
+      "PIC": "1-9.jpg",
+      "HIGHLIGHT": "無糖(15入/盒)平均單入$9.4",
+      "NAME": "西雅圖貝瑞斯塔極品咖啡二加一",
+      "PRICE": "649",
+      "PRICE-S": "$995",
+      "PCS": "5盒"
+    },
+	{
+      "LINK": "http://24h.pchome.com.tw/prod/DBAU33-A9006DO6V?q=/S/DBCC05",
+      "PIC": "1-10.jpg",
+      "HIGHLIGHT": "為您存好菌 ",
+      "NAME": "娘家益生菌 NTU 101乳酸菌",
+      "PRICE": "2090",
+      "PRICE-S": "$2200",
+      "PCS": "60入"
+    },
+	{
+      "LINK": "https://24h.pchome.com.tw/store/DBBB0G",
+      "PIC": "1-11.jpg",
+      "HIGHLIGHT": "$單粒只要$8.6★加碼送好禮",
+      "NAME": "葡萄王 認證靈芝 共210粒",
+      "PRICE": "1800",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+	{
+      "LINK": "https://24h.pchome.com.tw/store/DBBB56",
+      "PIC": "1-12.jpg",
+      "HIGHLIGHT": "送永信B群+滿額送",
+      "NAME": "白蘭氏 傳統雞精手提禮盒(70gx20瓶)",
+      "PRICE": "999",
+      "PRICE-S": "$1042",
+      "PCS": ""
+    },
+       
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hot">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_title">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_price">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_price"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buy">搶購</span></p></a></li>';
+  }
+  $('.pd_wrap').html(htmlPD);
+  
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background: #e99400;
+
+  }
+  /*--- box ---*/
+  .box { 
+    width: 100%; 
+  }
+  .box ul {
+    background: #e99400;
+    padding: 8px 8px 8px 8px;
+  }
+  .box ul li {
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 10px;
+  }
+  
+  .box ul li img{
+	padding: 5px;
+	overflow: hidden;
+  }
+  
+  .box ul li a:hover img{
+	padding: 0px;
+	overflow: hidden;
+  }
+	
+  .box .hot {
+    background-color: #f85800;
+    color: #fff;
+  }
+  
+</style>
+</head>
+
+<body>
+  <div class="wrap box">
+    <ul class="pd_wrap">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

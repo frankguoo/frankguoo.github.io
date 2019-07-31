@@ -1,0 +1,36 @@
+.unblock {
+    display: none;
+}
+.fade-ready {
+    opacity: 0;
+    visibility: hidden;
+}
+.fade-in {
+    -webkit-animation: fade-in .4s forwards;
+    animation: fade-in .4s forwards;
+}
+.overlay-lightbox {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #444;
+    z-index: 101;
+    font: 15px/1 Verdana,Helvetica,Arial;
+}
+.overlay-shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    cursor: pointer;
+    z-index: 100;
+}
+.tilt-down {
+    -webkit-animation: tilt-down .4s forwards;
+    animation: tilt-down .4s forwards;
+}

@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/* CSS Document */
+a{
+	text-decoration: none;
+}
+
+.desktopF{
+	display: block;
+}
+
+.mobileF{
+	display: none;
+}
+
+
+/*--- 側邊選單開關按鈕樣式 ---*/
+.RmenuArrowF {
+    position: fixed;
+    width: 40px;
+    z-index: 999999;
+    top: 60px;
+    right: 0;
+    cursor: pointer;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    margin-bottom: 1px;
+    text-align: right;
+    background-color: #2d2d2d;
+}
+.RmenuArrowF:hover {
+    background-color: #838383;
+}
+#RMenuInF {
+    display: none;
+}
+/*--- end 側邊選單開關按鈕樣式 ---*/
+
+
+/*--- 電腦版側邊選單樣式 ---*/
+#sliderRightF{
+	font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 13px;
+	line-height: 2.1;
+	position:fixed;
+	opacity: 1;
+	display: block;
+	top: 43px;
+	right: 40px;
+	padding: 5px;
+	cursor: pointer;
+	z-index: 999999;
+
+}
+	
+#slidermenuF{
+	background: rgba(0, 0, 0, 0.63); /* Old browsers */
+	padding: 10px;
+	font-family: "微軟正黑體", Helvetica, Arial, "sans-serif";
+	opacity: 1;
+	font-weight: 500;
+	border-radius: 65px 65px 0 0;
+}
+
+.sliderlogoF{
+	display: block;
+	margin: 5px 0 15px 0;
+	border-bottom: solid 1px #eec88a;
+}
+
+.sliderlogoF img{
+	width: 120px!important;
+}
+
+#sdrsubtitleF-A a > div , #sdrsubtitleF-B a > div{
+	margin: 0px 0;
+}
+
+#sdrsubtitleF-A a:hover{
+	color:#fff;
+}
+
+#slidertopF{
+	padding-top: 5px;
+	border-top: 1px solid #edc98b;
+}
+
+.sdrtitleF{
+	background: #edc98b; /* Old browsers */
+	font-size: 18px;
+	margin: 5px;
+	color: #000;
+	text-align: center;
+	line-height: 30px;
+	font-weight:400;
+}
+.sdrtitleF2{
+	border-bottom: solid 1px #eec88a;
+	font-size: 18px;
+	margin: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-weight:400;
+}
+.sdrsubtitleaF, .sdrsubtitlebF, .sdrsubtitlecF{
+	background: none;
+	font-size: 15px;
+	color: #efc98b;
+	text-align: center;
+	line-height: 26px;
+	margin: 0 10px;
+	letter-spacing: 0.3em;
+}
+.sdrsubtitleaF:hover{
+	background: #efc98b;
+	border-radius: 3px;
+	color:#000!important;
+
+}
+
+.sdrsubtitlebF:hover{
+	background: transparent;
+	border-radius: 3px;
+}
+.sdrsubtitlecF:hover{
+	background: #efc98b;
+	color: #000;
+	margin: 0 5px;
+}
+
+#sdrtitleF-B:hover, #sdrtitleF-C:hover{
+	background: #7b6236;
+	color: #FFF!important;
+}
+
+/*--- end 電腦版側邊選單樣式 ---*/
+
+
+
+/*--- 手機版選單底部開關樣式 ---*/
+.fixedbarAreaF {
+	z-index: 999999;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background: #fe00fe; /* Old browsers */
+
+	background: linear-gradient(to right, #8f7051 0%,#b99269 10%,#bd936b 30%,#735b41 50%,#735b41 50%,#bd936b 70%,#bd936b 90%,#8f7051 100%); /* FF3.6-15 */	
+
+		
+}
+.fixedbarAreaF .fixedBoxF {
+	z-index: 2;
+	position: relative;
+	height: inherit;
+	overflow: hidden;
+}
+.fixedbarAreaF .fixedBoxF p {
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+.fixedbarAreaF .fixedBoxF a {
+	display: block;
+	height: inherit;
+	font-size: 24px;
+	line-height: 60px;
+	color: #fff;
+	text-decoration: none;
+}
+.fixedbarAreaF .fixedBoxF a:hover {
+	color: #362a21;
+}
+.fixedbarAreaF .fixedBoxF a img {
+	position: relative;
+	margin-right: 10px;
+	width: auto;
+	height: 22px;
+}
+.fixedbarAreaF .fixedBoxF p:after {
+	content: "";
+	position: absolute;
+	top: 15%;
+	right: 0;
+	display: block;
+	width: 1px;
+	height: 70%;
+	background-color: #fff;
+	opacity: .7;
+}
+.fixedbarAreaF .fixedBoxF p:last-child::after {
+	display: none;
+}
+
+.openF.active{
+	color: #362a21!important;
+}
+/*--- end 手機版選單底部開關樣式 ---*/
+
+/*--- 手機版選單黑底透明樣式 ---*/
+.blackBoxF {
+	display: none;
+	z-index: 999;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(34,34,34,0.75);
+}
+
+.blackBoxF.active {
+	display: block;
+
+}
+.blackBoxF * {
+	box-sizing: border-box;
+}
+.blackBox a {
+	text-decoration: none;
+}
+/*--- end 手機版選單黑底透明樣式 ---*/
+
+
+/*--- 手機版子選單樣式 ---*/
+.RsubmenuF {
+	z-index: 999999;
+	position: fixed;
+	bottom: 75px;
+	background-color: #362920;
+	margin: 0 ;
+	border-radius: 0px;
+	width: 100%;
+	display: none;
+}
+
+.RsubmenuF.active {
+	display: block;
+}
+
+.RsubmenuF * {
+	box-sizing: border-box;
+}
+.RsubmenuF .trangleF {
+	position: absolute;
+	bottom: -10px;
+	right:17%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 10px 0px 10px;
+	border-color: #362a21 transparent;
+}
+.RsubmenuF ul {
+	margin: 0 ;
+	padding: 3% 5%;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.RsubmenuF li {
+	float: left;
+	display: block;
+	margin: 2% 1%;
+	padding: 0 3%;
+	width: 31.33333%;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 50px;
+	text-align: center;
+	color: #000;
+	/*background-color: rgba(0,0,0,0.2);*/
+	background-color: #b68e6a;
+}
+.RsubmenuF li: nth-child(3n+1) {
+	margin-left: 0;
+}
+.RsubmenuF li a {
+	display: block;
+	color: #fff;
+}
+.RsubmenuF li:hover {
+	filter: brightness(80%);
+}
+
+
+.arrawsF img{
+	display: inline-block;
+	width: 13px!important;
+}
+	
+/*--- end 手機版子選單樣式 ---*/
+
+
+@media only screen and (max-width: 932px) {
+	.desktopF{
+		display: none;
+	}
+
+	.mobileF{
+		display: block;
+	}
+}

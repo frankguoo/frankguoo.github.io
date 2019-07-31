@@ -1,0 +1,159 @@
+//變數
+@import 'base';
+
+#menu {
+    width: 100%;
+    position: relative;
+    z-index: 999999;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    &.mFixed {
+        position: fixed;
+        top: -1px !important;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .menu_arrow {
+        position: fixed;
+        top: 100px;
+        right: 0;
+        width: 40px;
+        padding: 8px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, .65);
+        line-height: 0;
+
+        &.arrow_left {
+            display: none;
+        }
+
+        &:hover {
+            background-color: #dd0202;
+        }
+
+        @include breakpoint(s) {
+            display: none;
+        }
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    ul.menu_box {
+        width: 120px;
+        position: fixed;
+        z-index: 999999;
+        right: 0;
+        top: 142px;
+        background-color: rgba(0, 0, 0, .65);
+        text-align: center;
+        color: #fff;
+        &.scroll_pc::-webkit-scrollbar{
+            height: 5px
+        }
+        &.scroll_pc::-webkit-scrollbar-track {
+            background-color: #EAEAEA;
+        }
+        &.scroll_pc::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+        }
+        &.scroll_mob::-webkit-scrollbar {
+            height: 0px
+        }
+        @include breakpoint(s) {
+            width: 100%;
+            z-index: 999;
+            text-align: left;
+            color: #777;
+            font-size: 18px;
+            line-height: 20px;
+            padding: 7px 0 7px 5px;
+            font-weight: bold;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            transition: 0s;
+            -webkit-transition: 0s;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            white-space: nowrap;
+            position: relative;
+            right: auto;
+            top: auto;
+        }
+
+        li {
+            margin-bottom: 1px;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                background-color: #dd0202;
+                @include breakpoint(-webkit-overflow-scrolling) {
+                    background-color: transparent;
+                }
+                @include breakpoint(s) {
+                    background-color: transparent;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 86%;
+                height: 1px;
+                bottom: -1px;
+                right: 7%;
+                background: rgba(0, 0, 0, .5);
+                z-index: 9;
+                @include breakpoint(s) {
+                    display:none;
+                }
+            }
+
+            @include breakpoint(s) {
+                padding: 0;
+                margin-bottom: 0px;
+                font-size: 14px;
+                display: inline-block;
+            }
+
+            a {
+                color: #fff;
+                padding: 12px 0;
+                text-decoration: none;
+                display:block;
+                @include breakpoint(s) {
+                    padding: 0;
+                    color: #777;
+                    text-decoration: none;
+                    display:inline-block;
+
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            span {
+                display: none;
+                @include breakpoint(s) {
+                    display: inline-block;
+                    vertical-align: baseline;
+                    font-weight: normal;
+                    color: #cacaca;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+

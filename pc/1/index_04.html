@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+		
+         {
+            "LINK": "http://24h.pchome.com.tw/store/DICY0F",
+            "PIC": "AT.jpg",
+            "HIGHLIGHT": "新年出遊必備，多款下殺6折起",
+            "NAME": "AT美國旅行者 20吋行李箱",
+            "PRICE": "1999",
+            "PRICE-S": "$3,700",
+            "PCS": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/prod/DMAGBA-A9008APEI",
+            "PIC": "2-2.jpg",
+            "HIGHLIGHT": "限時狂降，加碼再送烤盤",
+            "NAME": "PERFECT玫瑰金蒸氣烤箱",
+            "PRICE": "1980",
+            "PRICE-S": "$3,280",
+            "PCS": ""
+        },
+        {
+            "LINK": "http://24h.pchome.com.tw/prod/DICK9L-A90081P7J?q=/S/DICK9L",
+            "PIC": "tiffany.jpg",
+            "HIGHLIGHT": "★偶像劇女星配戴款★",
+            "NAME": "微笑Smile經典玫瑰金色項鍊",
+            "PRICE": "25800",
+            "PRICE-S": "$28,000",
+            "PCS": ""
+        },
+        {
+            "LINK": "http://24h.pchome.com.tw/store/DEAW9Y",
+            "PIC": "JD1212.jpg",
+            "HIGHLIGHT": "加碼送湯杓★限定款更輕量",
+            "NAME": "法國畢耶鐵塔柄平底鍋28cm",
+            "PRICE": "1990",
+            "PRICE-S": "$3,100",
+            "PCS": ""
+        },
+        {
+            "LINK": "http://24h.pchome.com.tw/store/DDAD2Y",
+            "PIC": "jessie.jpg",
+            "HIGHLIGHT": "長效保濕鎖水★品牌王牌狂降",
+            "NAME": "CLINIQUE倩碧保濕凝膠75ml",
+            "PRICE": "799",
+            "PRICE-S": "$2,250",
+            "PCS": ""
+        },
+        {
+            "LINK": "http://24h.pchome.com.tw/store/?q=/A/87789",
+            "PIC": "wings.jpg",
+            "HIGHLIGHT": "任2件84折，滿千再送花皂禮盒",
+            "NAME": "燦動閃耀方晶鋯石美鑽項鍊",
+            "PRICE": "739",
+            "PRICE-S": "$880",
+            "PCS": ""
+        },
+        {
+            "LINK": "http://24h.pchome.com.tw/store/DEBC7Z",
+            "PIC": "BBL.jpg",
+            "HIGHLIGHT": "蓄熱溫感技術升溫保暖",
+            "NAME": "BBL JIS65/35雙人羽絨冬被",
+            "PRICE": "5680",
+            "PRICE-S": "$17,120",
+            "PCS": ""
+        },
+        {
+            "LINK": "http://24h.pchome.com.tw/store/DDATI1",
+            "PIC": "TIFF02.jpg",
+            "HIGHLIGHT": "跑趴必備 滿額贈好禮",
+            "NAME": "wet n wild完美底妝限量套組",
+            "PRICE": "549",
+            "PRICE-S": "$599",
+            "PCS": ""
+        },
+		
+		
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    background: #eee;
+    padding: 5px 2px 2px 5px;
+  }
+  .boxF1 ul li {
+
+    padding: 10px;
+  }
+  .boxF1 .hotF1 {
+    background-color: #c70304;
+    color: #fff;
+  }
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

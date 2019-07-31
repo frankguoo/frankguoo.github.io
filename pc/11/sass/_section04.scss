@@ -1,0 +1,122 @@
+//變數
+@import 'base';
+
+
+#section_04{
+    margin: 0 auto;
+    padding: 0px;
+    background: url(../img/bg-4.png) no-repeat;
+    background-position: center top;
+    background-size: auto;
+    visibility: visible;
+    @include breakpoint(m){
+        background: none;
+        padding: 0px;
+    }
+    .content_box{
+        .titlebox{
+            text-align:center;
+            padding:0px;
+        }
+        .main_box{
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content(flex-start);
+            @include align-items(flex-start);
+            margin-bottom: 140px;
+            @include breakpoint(m){
+                padding: 5px 10px 10px 10px;
+                margin-bottom: 20px;
+            }
+
+            .left_box{
+                width:40%;
+                @include breakpoint(m){
+                    width:80%;
+                    margin: 0 auto;
+                }
+            }
+            .right_box{
+                width:60%;
+                padding: 0 30px;
+                @include breakpoint(m){
+                    width:100%;
+                    margin: 0 auto;
+                    padding: 0 10px;
+                }
+
+                img{
+                    padding: 20px 0;
+                }
+
+                h4{
+                    font-size: 1.2em;
+                    letter-spacing: 4px;
+                    line-height: 39px;
+                    @include breakpoint(m){
+                        font-size: 1em;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+        .main_box2{
+            max-width: 850px;
+            margin: 0 auto 400px auto;
+            @include breakpoint(m){
+                margin: 0 auto 30px auto;
+                padding: 0 10px;
+            }
+            h4{
+                margin: 50px 0;
+                font-size: 1.3em;
+                letter-spacing: 4px;
+                line-height: 39px;
+                color:#783b00;
+                @include breakpoint(m){
+                    margin: 10px 0 0 0 ;
+                    font-size: 1em;
+                    line-height: 28px;
+                }
+            }
+        }
+        .main_box3{
+            max-width: 850px;
+            margin: 0 auto 225px auto;
+            @include breakpoint(m){
+                margin: 0 auto 30px auto;
+                padding: 0 10px;
+            }
+            > img{
+                display: block;
+                margin: 0 auto;
+            }
+            h4{
+                margin: 50px 0;
+                font-size: 1.3em;
+                letter-spacing: 4px;
+                line-height: 39px;
+                color:#004c14;
+                @include breakpoint(m){
+                    margin: 20px 0;
+                    font-size: 1em;
+                    line-height: 28px;
+                }
+            }
+            .photobox{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(space-between);
+                @include align-items(flex-start);
+                @include breakpoint(m){
+                    @include justify-content(center);
+                }
+            }
+        }
+    }
+}
+
+
+

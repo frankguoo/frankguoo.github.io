@@ -1,0 +1,59 @@
+//變數
+@import 'base';
+
+.section05{
+    .wrap{
+         width: 100%;
+         max-width: 1180px;
+         margin: 0 auto;
+         position: relative; 
+         display: flex;
+         justify-content: center;
+         align-content: center;
+
+        img.bg{
+            @include breakpoint(m){
+                display:none;
+            }
+        }
+         
+        .content{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding-top:30px; 
+            @include breakpoint(m){
+                position: relative;
+                padding: 20px 10px;
+                background: #4187ce;
+            }
+
+            .bigtittle{
+                position: relative;
+                left: 192px;
+                @include breakpoint(m){
+                    left:0px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            a.btn{
+                display: table;
+                margin: 20px auto;
+                img{
+                    max-width: 1050px;
+                    @include breakpoint(m){
+                        margin: 0 auto;
+                        width: 80%;
+                        max-width: 80%;
+                    }
+                }
+            }  
+            
+        }
+    }
+}
+
+
+

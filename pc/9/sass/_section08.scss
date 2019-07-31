@@ -1,0 +1,121 @@
+//變數
+@import 'base';
+
+
+.section08{
+    .wrap{
+         width: 100%;
+         max-width: 1180px;
+         margin: 0 auto;
+         position: relative; 
+         display: flex;
+         justify-content: center;
+         align-content: center;
+
+        img.bg{
+            @include breakpoint(m){
+                display:none;
+            }
+        }
+         
+        .content{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            padding-top:30px; 
+            @include breakpoint(m){
+                position: relative;
+                padding: 20px 10px;
+                background: #ffd603;
+            }
+
+            .bigtittle{
+                position: relative;
+                left: 192px;
+                @include breakpoint(m){
+                    left:0px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .appcontent{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(center);
+                @include align-items(center);
+                padding: 40px 100px;
+                @include breakpoint(m){
+                    padding: 10px 10px;
+                }
+                .appitem{   
+                    padding: 0 20px;
+                    width: 50%;
+                    text-align: center;
+                    @include breakpoint(m){
+                        width: 100%;
+                        padding: 20px 10px;
+                        
+                    }
+                    .apptxt{
+                        text-align: left;
+                        color: #000;
+                        @include breakpoint(m){
+                            
+                            text-align: center;
+                        }
+                        h5{
+                            font-size: 25px;
+                            font-weight: 400;
+                        }
+                        h2{
+                            font-size: 48px;
+                            font-weight: 700;
+                            display: table;
+                            margin: 20px 0;
+                            padding: 10px 10px 10px 0;
+                            border-bottom: solid 3px #000;
+                            @include breakpoint(m){
+                                font-size: 36px;
+                                margin: 10px auto;
+                            }
+                        }
+                        h4{
+                            font-size: 31px;
+                            font-weight: 700;
+                            line-height: 40px;
+                            @include breakpoint(m){
+                                font-size: 21px;
+                                line-height: 27px;
+                            }
+
+                            &.red{
+                                color: red;
+                            }
+                        }
+                    }
+
+                    img{
+                        margin: 20px 0;
+                    }
+                    a{
+                        display: table;
+                        color: #fff;
+                        background: #000;
+                        font-size: 24px;
+                        padding: 10px 20px;
+                        margin: 0 auto;
+                        border-radius: 15px;
+                    }
+                }    
+            }
+
+   
+            
+        }
+    }
+}
+
+
+

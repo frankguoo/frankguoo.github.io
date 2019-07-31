@@ -1,0 +1,45 @@
+.footer_menu {
+    width: 100%;
+    height: 110px;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    /*background: #7f2328;*/
+    text-align: center;
+    padding: 10px 0;
+    max-width: 600px;
+    /*background: url('../images/footer_menu_bg.png') top center repeat-x;*/
+    /*background-size: 9%;*/
+}
+.footer_menu div {
+    display: inline-block;
+    padding: 10px 5px 15px;
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #002d07;
+    border-radius: 30px;
+    background-color: #ffe000;
+    text-shadow: 0 3px 1px #ffffff;
+    box-shadow: inset 0 -0.4rem 0 0 #b59f00;
+    -webkit-box-shadow: inset 0 -0.4rem 0 0 #b59f00;
+}
+.footer_menu .game_start {
+    width: 82%;
+    margin-bottom: 8px;
+}
+.footer_menu .event_more, .footer_menu .back_event {
+    font-size: 16px;
+    padding: 8px 5px 13px;
+    box-shadow: inset 0 -0.32rem 0 0 #b59f00;
+    -webkit-box-shadow: inset 0 -0.32rem 0 0 #b59f00;
+}
+.footer_menu div:active {
+    box-shadow: inset 0 -0.3rem 0 0 #b59f00;
+    -webkit-box-shadow: inset 0 -0.3rem 0 0 #b59f00;
+    padding: 7px 5px 13px;
+    margin-top: 5px;
+}
+.footer_menu .event_more:active, .footer_menu .back_event:active {
+    margin-top: 3px;
+}

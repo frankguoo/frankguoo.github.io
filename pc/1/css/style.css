@@ -1,0 +1,474 @@
+@charset "utf-8";
+
+#firework {
+	cursor: crosshair;
+	display: block;
+	height: 678px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+
+.hue-rotate-play { 
+		-webkit-animation:hue-rotate-play 2s linear infinite alternate;
+		-moz-animation:hue-rotate-play 2s linear infinite alternate;
+		-ms-animation:hue-rotate-play 2s linear infinite alternate;
+		animation:hue-rotate-play 2s linear infinite alternate;}
+	@keyframes hue-rotate-play {
+	  0% { 
+		-webkit-filter:brightness(100%);
+		-moz-filter:brightness(100%);
+		-ms-filter:brightness(100%);
+	  }
+	  50% { 
+		-webkit-filter:brightness(500%) ;
+		-moz-filter:brightness(500%) ;
+		-ms-filter:brightness(500%) ;
+
+	  }
+	  100% { 
+		-webkit-filter:brightness(70%) ;
+		-moz-filter:brightness(70%) ;
+		-ms-filter:brightness(70%) ;
+	  }
+	}
+
+
+/*心跳A*/
+.heartbeat-play {-webkit-animation-duration: 1s;  animation-duration: 1s;  -webkit-animation-name: heartbeat-play;  animation-name: heartbeat-play;  -webkit-animation-iteration-count: infinite;    animation-iteration-count:infinite;/* -webkit-animation-direction: alternate;animation-direction: alternate;*/}
+	@-webkit-keyframes heartbeat-play {   
+		0%   { -webkit-transform: scale(1); transform: scale(1); } 
+		40%  { -webkit-transform: scale(0.95); transform: scale(0.95);} 
+		60%  { -webkit-transform: scale(1); transform: scale(1);} 
+		80%  { -webkit-transform: scale(0.95); transform: scale(0.95); }
+		100% { -webkit-transform: scale(1); transform: scale(1); } 
+		}
+	@keyframes heartbeat-play { 
+		0%   { -webkit-transform: scale(1); transform: scale(1); } 
+		40%  { -webkit-transform: scale(0.95); transform: scale(0.95); } 
+		60%  { -webkit-transform: scale(1); transform: scale(1);} 
+		80%  { -webkit-transform: scale(0.95); transform: scale(0.95); }
+		100% { -webkit-transform: scale(1); transform: scale(1); } 
+	}
+
+
+
+/*飄-下上*/
+.downtoup-play { -webkit-animation:downtoup-play 1.5s infinite alternate;
+				         animation:downtoup-play 1.5s infinite alternate;}
+	@-webkit-keyframes downtoup-play { 
+		0% { 
+			-webkit-transform: translate(0,0);  
+		} 
+		100% { 
+			-webkit-transform: translate(0,-20px);
+		}
+	}
+	@keyframes downtoup-play { 
+		0% { 
+			transform: translate(0,0);  
+		} 
+		100% { 
+			transform: translate(0,-20px);
+		}
+	}
+
+/*飄-下上*/
+.downtoup-play2 { -webkit-animation:downtoup-play2 1.5s infinite alternate;
+				         animation:downtoup-play2 1.5s infinite alternate;}
+	@-webkit-keyframes downtoup-play2 { 
+		0% { 
+			-webkit-transform: translate(0,0);  
+		} 
+		100% { 
+			-webkit-transform: translate(0,-5px);
+		}
+	}
+	@keyframes downtoup-play2 { 
+		0% { 
+			transform: translate(0,0);  
+		} 
+		100% { 
+			transform: translate(0,-5px);
+		}
+	}
+
+
+.downtoup-play2 { -webkit-animation:flashBg 1.5s infinite alternate;
+				         animation:flashBg 1.5s infinite alternate;}
+@-webkit-keyframes flashBg {
+  0% {
+    opacity: 0.4; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.4; } 
+	}
+
+@keyframes flashBg {
+  0% {
+    opacity: 0.4; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.4; } 
+	}
+
+
+
+.iframe_wrap{
+	position: relative;
+	z-index: 3;
+}
+
+
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img { width:100%; }
+
+body{
+	background-color: #000 !important;
+	color:#000;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 100%;
+}
+.mainBody {
+	background: no-repeat #000;
+
+}
+
+.mainbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000 url(../img/bk12.jpg) no-repeat center top;
+    overflow: hidden;
+
+}
+
+.mainbg2 {
+    position: absolute;
+    top: 444px;
+    left: 0;
+
+    width: 100%;
+    height: 2007px;
+    background: url(../img/light.png) no-repeat center 0px;
+}
+
+
+.mainbg3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	background-color: transparent;
+    background:  url(../img/mainbg.png) no-repeat center top;
+    overflow: hidden;
+	z-index: 1;
+}
+
+.tittle{
+	width: 513px!important;
+	position: absolute;
+	left: 0px;
+	top:45px;
+
+	
+}
+
+
+.tittle_shadow{
+	width: 513px!important;
+	position: absolute;
+	left: 0px;
+	top:45px;
+	
+}
+
+.hotsale_box{
+	width: 479px!important;
+	position: absolute;
+	right: 0px;
+	top:45px;
+	
+}
+.top_KV {
+	width: 1200px!important;
+	height: 522px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	transition: 0s;
+    -webkit-transition: 0s;
+}
+.wrap {
+	width: 932px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*--- 倒數計時 ---*/
+#clock {
+	color: #f9ff00;
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    right: 88px;
+    top: 152px;
+	font-size: 24px;
+    width: 230px;
+}
+#clock span {
+	vertical-align: baseline;
+	padding: 0 3px;
+	font-size: 30px;
+}
+
+
+.count .font3{
+	font-size: 28px;
+    position: absolute;
+    letter-spacing: 0px;
+    right: 46px;
+    top: 14px;
+    color: #d7000e;
+    font-weight: 900;
+	text-shadow: 2px 2px 4px #000;
+}
+
+/*---嚴選豪禮限殺7天專區 ---*/
+
+
+
+
+/*---尾牙家電再加碼專區---*/
+
+#section_02 {
+	margin-top: 238px;
+}
+
+
+/*--- 24同歡 全站狂歡慶專區 --*/
+
+#section_03{
+	z-index: 999;
+}
+
+
+#section_03.wrap{
+	width: 833px!important;
+}
+
+#section_03 ul li.ad01{
+	width: calc(100% / 1)!important; 
+	margin-bottom: -8px;
+}
+
+#section_03 ul li{
+	width: calc(100% / 3);
+	padding: 3px;
+}
+
+#section_03 ul li a{
+	display: block;
+}
+
+
+
+
+#section_03 ul li{
+	width: calc(99% / 3)\9;
+}
+
+
+
+/*#section_03 ul li:nth-child(6) , #section_03 ul li:nth-child(7){
+	
+	margin-bottom: 8px;
+}
+
+#section_03 ul li:nth-child(1), #section_03 ul li:nth-child(2), #section_03 ul li:nth-child(3), #section_03 ul li:nth-child(4) {
+	
+	margin-bottom: -8px;
+}
+
+#section_03 ul li:nth-child(2n){
+	
+	margin-left: -8px;
+}*/
+
+#section_03 ul li.ad01 img{
+	width: 917px!important;
+	height: 171px!important;
+	display: block;
+}
+
+
+#section_03 ul.ad_wrap{
+	margin-top: 204px;
+	margin-left: -6px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	#section_03 ul.ad_wrap{
+		margin-left: -1px;
+		}
+}
+
+
+/*-- 銀行輪播專區 --*/
+	
+#myCarousel-B{
+	width:85%!important;
+	margin: 0 auto!important;
+}
+
+#section_xx #myCarousel-B .owl-nav{
+	display: none!important;
+}
+#section_xx #myCarousel-B .owl-dots{
+	margin-top: 0!important;
+}
+
+.notice{
+	display: block;
+    background: #ffb21f;
+    text-align: center;
+    padding: 5px 0;
+}
+/*--- 24精選 好貨搶優惠專區 --*/
+
+#section_04.wrap{
+	width: 876px;
+	margin-top: 242px;
+	
+}
+
+
+#section_04 #myCarousel-A{
+	margin-left: -2px;
+	padding: 20px;	
+}
+
+#section_04 #myCarousel-A .owl-nav{
+	display: none!important;
+}
+
+
+/*--- 版身專區專區 --*/
+
+#section_05 {
+	margin-top: 70px;
+}
+/*--- 產品內容 ---*/
+ul.pd_wrap {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.hot, .pd_title, ul.pd_wrap p {
+	width: 100%;
+	font-weight: bold;
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+}
+ul.pd_wrap li { 
+	width: calc(100% / 4);
+	font-size: 16px;
+	float: left;
+	/*background-color: #fff;	*/
+}
+
+
+.section_03 {
+	margin-top: 10px;
+}
+
+
+/*--- section_01 ---*/
+#section_01 ul li {
+
+	padding: 10px;
+}
+#section_01 .hot {
+	background-color: #da0000;
+	color: #fff;
+}
+
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+.wrap img  	{ width: 100%; max-width: 100%; }
+
+
+@media only screen and (max-width: 931px) {
+	body {background-color: #c00407 !important;}
+	.desktop 		{ display: none!important; }
+	#clock 			{ top: 0; right: 0; margin: 35.2% 17% 0 0; font-size: 4.5vw; width: 45%; }
+	#clock span 	{ font-size: 6vw; }
+	#section_00 {margin-top:-30px;}
+	#section_01 {background: #980d8f;}
+	#section_02 {margin-top: 0px;background:#0228f5!important;}
+	#section_03.wrap {width: 100%!important; }
+	#section_03 ul.ad_wrap {margin-left: 0px;background: #6a0805;padding: 2px;border: 5px solid #c00407;margin-top: 0px;}
+	#section_03 ul li {width: calc(100% / 2);padding:2px;}
+	.top_KV         { height:100%; }
+	
+	#section_04 #myCarousel-A {background: #6a0805;padding: 4px;border: 5px solid #c00407; margin-left: 0; }
+	#section_04.wrap {width: 100%!important; margin-top: 0px;}
+
+	.tittle, .tittle_shadow{width: 95%!important; left:2.5%!important;}
+	#section_01 ul {
+		background: #010b91;
+    	padding: 6px;
+	}
+
+#section_05 {
+	margin-top: 0px;
+}
+	.mainbg2 {top: 310px;}
+	.diskbox{display:none;}
+	.tittlekv,.barkv{position: relative!important;top:auto!important;}
+	
+	#footer {
+    color: #969696;
+}
+
+	
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	.hot, .pd_title, ul.pd_wrap p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrap p 					{ letter-spacing: -1px; }
+	span.old_price 					{ font-size: 2vw; }
+	span.hot_price 					{ font-size: 6vw; }
+	span.buy 						{ font-size: 2vw; }
+	.hotsale_box{position: absolute;bottom: 27px;top:auto;width: 100%!important;}
+	.count .font3 {font-size: 22px;position: absolute;letter-spacing: 0px;right: 45px;top: 15px;color: #d7000e;font-weight: 900;}
+	.tittlekv, .barkv{position: relative!important;top:auto!important;right:auto!important;left:auto!important;}
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 380px) {
+	.count .font3 {right: 41px;top: 12px;font-size: 20px;}
+}
+

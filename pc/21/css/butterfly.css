@@ -1,0 +1,111 @@
+
+/*蝴蝶*/
+/*.topbn .butterfly { z-index:10; position:absolute; top:70px; left:370px;}*/
+.topbn .butterfly_box { position:relative; filter: drop-shadow(-8px 8px 6px rgba(0,0,0,0.2)); -webkit-transform:rotate(-50deg); transform:rotate(-50deg);}
+.topbn .butterfly_box .butterfly_l { position:absolute; top:0; left:0; transform-origin: center bottom;z-index: -1;}
+.topbn .butterfly_box .butterfly_r { position:absolute; bottom:0; left:0;transform-origin: center top;z-index: -1;}
+
+
+
+	@media screen and (max-width:767px){
+		.topbn .butterfly {z-index:-1; top:12%; left: inherit; right:40%; -webkit-transform:scale(0.3); transform:scale(0.3); -webkit-transform-origin:top right; transform-origin:top right;}
+	}
+	
+/*蝴蝶的位置*/
+.topbn .butterfly2 { 
+    z-index: 4;
+    position: absolute;
+    top: 107px;
+    left: 258px;
+    width: 110px;
+    margin: 0 auto;
+}
+
+
+
+
+/*蝴蝶的位置 水平翻轉*/
+.butterfly2{
+        -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    filter:FlipH;
+}
+
+
+
+	/*蝴蝶動畫*/
+	.butterfly-play { animation-fill-mode:forwards;
+		              -webkit-animation:butterfly-play 24s linear 1;
+							  animation:butterfly-play 24s linear 1;}
+		@media screen and (max-width:767px){
+			.butterfly-play { -webkit-animation:none; animation:none ;}
+		}
+							  
+		@-webkit-keyframes butterfly-play { 
+			0%   { -webkit-transform: translate(-1200px,300px);} 
+			5%   { -webkit-transform: translate(-1000px,150px);}
+			10%  { -webkit-transform: translate(-850px,110px);}
+			15%  { -webkit-transform: translate(-665px,150px);}
+			20%  { -webkit-transform: translate(-580px,220px);}
+
+			30%  { -webkit-transform: translate(-580px,220px);}
+			39%  { -webkit-transform: translate(-370px,-90px);}
+			40%  { -webkit-transform: translate(-350px,-80px);}
+			
+			45%  { -webkit-transform: translate(-350px,-80px);}
+			46%  { -webkit-transform: translate(-330px,-90px);}
+			55%  { -webkit-transform: translate(-130px,30px);}
+			60%  { -webkit-transform: translate(-10px,10px);}
+			61%  { -webkit-transform: translate(0px,0px);}
+		}
+		@keyframes butterfly-play{ 
+			0%   { transform: translate(-1200px,300px);} 
+			5%   { transform: translate(-1000px,150px);}
+			10%  { transform: translate(-850px,110px);}
+			15%  { transform: translate(-665px,150px);}
+			20%  { transform: translate(-580px,220px);}
+
+			30%  { transform: translate(-580px,220px);}
+			39%  { transform: translate(-370px,-90px);}
+			40%  { transform: translate(-350px,-80px);}
+			
+			45%  { transform: translate(-350px,-80px);}
+			46%  { transform: translate(-330px,-90px);}
+			55%  { transform: translate(-130px,30px);}
+			60%  { transform: translate(-10px,10px);}
+			61%  { transform: translate(0px,0px);}
+		}
+	.butterfly_Area-play {-webkit-animation:butterfly_Area-play 1.2s -0.15s ease-in-out infinite alternate;
+							      animation:butterfly_Area-play 1.2s -0.15s ease-in-out infinite alternate;}
+		@-webkit-keyframes butterfly_Area-play { 
+			0%   { -webkit-transform: translateY(0px);} 
+			50%  { -webkit-transform: translateY(6px);}
+			100% { -webkit-transform: translateY(0px);}
+		}
+		@keyframes butterfly_Area-play{ 
+			0%   { transform: translateY(0px);} 
+			50%  { transform: translateY(6px);}
+			100% { transform: translateY(0px);}
+		}
+	.butterfly_l-play { -webkit-animation:butterfly_l-play 0.3s ease-in-out infinite alternate;
+								animation:butterfly_l-play 0.3s ease-in-out infinite alternate;}
+		@-webkit-keyframes butterfly_l-play { 
+			0%   { -webkit-transform: scale(1,1)   skew(10deg,0);} 
+			100% { -webkit-transform: scale(1,0.85) skew(22deg,0deg);}
+		}
+		@keyframes butterfly_l-play { 
+			0%   { transform: scale(1,1)   skew(10deg,0);} 
+			100% { transform: scale(1,0.85) skew(22deg,0deg);}
+		}
+	.butterfly_r-play { -webkit-animation:butterfly_r-play 0.3s -0.3s ease-in-out infinite alternate;
+								animation:butterfly_r-play 0.3s -0.3s ease-in-out infinite alternate;}
+		@-webkit-keyframes butterfly_r-play { 
+			0%   { -webkit-transform: scale(1,1)   skew(0,0);} 
+			100% { -webkit-transform: scale(1,0.8) skew(16deg,0deg);}
+		}
+		@keyframes butterfly_r-play { 
+			0%   { transform: scale(1,1)   skew(0,0);} 
+			100% { transform: scale(1,0.8) skew(16deg,0deg);}
+		}

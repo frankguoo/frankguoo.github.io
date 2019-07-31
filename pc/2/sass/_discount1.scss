@@ -1,0 +1,78 @@
+//變數
+@import 'base';
+
+.discount1{
+    background-image: url(../img/discount1_bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-position-x: center;
+    margin: 60px 0;
+
+    @include breakpoint(m){
+        background-color: #000;
+        margin: 20px 0;
+    }
+    .tittlebox{
+        text-align: center;
+        position: relative;
+        top: -48px;
+
+        @include breakpoint(m){
+            top: -20px;
+        }
+
+        img{
+            @include breakpoint(m){
+                width: 90%;
+            }
+        }
+    }
+    .wrap{
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 20px 0 30px 0px;
+        margin-top: -48px;
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(flex-start);
+        @include align-items(flex-end);
+
+        @include breakpoint(m){
+            margin-top: -28px;
+            padding: 20px 5px 30px 5px;
+        }
+
+        > div{
+            width: 25%;
+            text-align: center;
+            margin: 5px 0;
+            -webkit-transition: all .2s ease;
+			-moz-transition: all .2s ease;
+			-ms-transition: all .2s ease;
+            transition: all .2s ease;
+
+            &:hover{
+                -ms-transform: translateY(-6px);
+                -moz-transform: translateY(-6px);
+                -webkit-transform: translateY(-6px);
+			    transform: translateY(-6px);
+            }
+
+            @include breakpoint(m){
+                width: 50%;
+                margin: 3px 0px;
+                padding: 0 5px;
+            }
+
+            a{
+                img{
+                    @include breakpoint(m){
+                        width: 100%;
+                    } 
+                }
+            }
+        }
+    }
+}

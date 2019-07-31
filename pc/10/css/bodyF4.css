@@ -1,0 +1,124 @@
+ @charset "utf-8";
+
+/*--- 產品內容 ---*/
+
+.boxF4 ul li.pd_kvF4{
+	 padding: 0;
+}
+
+.pd_wrapKV{
+	width: 23%;
+    float: left;
+    border-right: 3px solid #D4ED8E;
+    border-bottom: 3px solid #D4ED8E;
+    overflow: hidden;
+}
+
+
+
+.pd_wrapKV a{
+	display: block;
+}
+
+.pd_wrapKV img{
+	width: 101%;
+}
+
+ul.pd_wrapF4 {
+	width: 77%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+
+}
+.hotF4, .pd_titleF4, ul.pd_wrapF4 p {
+	width: 100%;
+	font-weight: bold;
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+}
+ul.pd_wrapF4 li { 
+	width: calc(100% / 3);
+	font-size: 16px;
+	display: inline-block;
+	background-color: #fff;	
+}
+.pd_titleF4 {
+	color: #000;
+}
+ul.pd_wrapF4 p {
+	color: #666;
+	font-weight: normal;
+}
+ul.pd_wrapF4 span {
+	vertical-align: baseline;
+}
+span.old_priceF2 {
+	text-decoration: line-through;
+	font-size: 15px;
+}
+
+.hotF4{
+	background-color: #da0000;
+	color:#fff;
+}
+
+span.pcs4 {
+	font-size: 15px;
+    text-decoration: none;
+    font-weight: normal;
+	color: #dd0202;
+}
+
+span.hot_priceF4 {
+	color: #d00;
+	font-size: 24px;
+	margin: 0 2px;
+}
+span.hot_priceF4 small {
+	font-size: 60%;
+}
+span.buyF4 {
+	background-color: #d00!important;
+	color: #fffa1e;
+	font-size: 11px;
+	padding: 1px 3px;
+	vertical-align: 3px !important;
+}
+
+
+.desktop{display:block!important;}
+.mobile{display:none!important;}
+
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+ul.pd_wrapF4 img  	{ width: 100%; max-width: 100%; }
+
+
+@media only screen and (max-width: 931px) {
+	.desktop{display:none!important;}
+	.mobile{display:block!important;}
+	.pd_wrapKV{width: 100%;}
+	ul.pd_wrapF4 {width: 100%;}
+	ul.pd_wrapF4 li 	{ width: calc(100% / 2); }
+}
+
+
+@media only screen and (max-width: 450px) {
+	.hotF4, .pd_titleF4, ul.pd_wrapF4 p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrapF4 p 					{ letter-spacing: -1px; }
+	span.old_priceF4 					{ font-size: 2vw; }
+	span.hot_priceF4 					{ font-size: 6vw; }
+	span.buyF4 						{ font-size: 2vw; }
+	.boxF4 ul li.pd_kvF4{
+		margin-top: -4px;
+	}
+}
+
+

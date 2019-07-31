@@ -1,0 +1,51 @@
+//變數
+@import 'base';
+
+
+#section_07{
+    background: url(../img/bg-9.png) no-repeat;
+    background-position: center 140px;
+    background-size: auto;
+    visibility: visible;
+    .content_box{
+        width: 932px;
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+        padding: 0 0 60px 0;
+        .titlebox{
+            text-align: center;
+            padding: 0px;
+            visibility: visible;
+        }
+        .mainbox{
+            padding: 20px 0 10px 0;
+        }
+        .copypchome {
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+            @include align-items(center);
+            .copy{
+                width: 20%;
+                @include breakpoint(m){
+                    width: 60%;
+                    margin: 10px 0;
+                }
+                
+            }
+            p{
+                font-size: 18px;
+                padding-left: 20px;
+                @include breakpoint(m){
+                    font-size: 15px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+

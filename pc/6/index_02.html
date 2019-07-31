@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "http://24h.pchome.com.tw/prod/DMAY01-A9007JUBJ",
+      "PIC": "Joyoung-DJ12M-A901SG.jpg",
+      "HIGHLIGHT": "可做豆漿/濃湯/果汁",
+      "NAME": "九陽 全自動豆漿機",
+      "PRICE": "1888",
+      "PRICE-S": "$3990",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAG4U-A9006R10P",
+      "PIC": "5015S.jpg",
+      "HIGHLIGHT": "304不鏽鋼/附烤盤",
+      "NAME": "大同5L電火鍋鍋鍋鍋鍋鍋鍋鍋鍋",
+      "PRICE": "1190",
+      "PRICE-S": "$1690",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAT1K-A9007G2JV?q=/S/DMBC05",
+      "PIC": "Eclipse.jpg",
+      "HIGHLIGHT": "送蒸煮美食鍋",
+      "NAME": "雀巢Dolce Gusto咖啡機",
+      "PRICE": "5399",
+      "PRICE-S": "$5999",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DMAX2L",
+      "PIC": "P178.jpg",
+      "HIGHLIGHT": "高溫殺菌除螨送荷蘭精品",
+      "NAME": "品諾多功能蒸汽清潔機",
+      "PRICE": "3680",
+      "PRICE-S": "$3680",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DMBA4D",
+      "PIC": "178x178_SANKI.jpg",
+      "HIGHLIGHT": "暖腳暖全身↘破盤61折",
+      "NAME": "日本三貴智能熱SPA足浴機",
+      "PRICE": "1199",
+      "PRICE-S": "$1980",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DMBA0C",
+      "PIC": "178x178_MHP811.jpg",
+      "HIGHLIGHT": "乾/濕兩用↘限時降$200",
+      "NAME": "三樂事熱敷柔毛墊",
+      "PRICE": "1580",
+      "PRICE-S": "$1780",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAU02-A9007RUBO",
+      "PIC": "178_KC-JD50T-W-2.jpg",
+      "HIGHLIGHT": "水離子除菌/保濕",
+      "NAME": "夏普日本原裝空氣清淨機",
+      "PRICE": "13410",
+      "PRICE-S": "$14900",
+      "PCS": "幾入2"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAL8L-A9006NE3L",
+      "PIC": "178_DL-F509RTWS.jpg",
+      "HIGHLIGHT": "SIAA抗菌便座/不銹鋼噴嘴",
+      "NAME": "Panasonic國際牌溫水便座",
+      "PRICE": "8880",
+      "PRICE-S": "$9900",
+      "PCS": "幾入2"
+    }
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+	htmlPD += '<span class="pcs1">' + myArray[i]['PCS'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    padding: 20px 2px 0 2px;
+  }
+	
+  .boxF1 ul li {
+	border: solid 1px #e0e0e0;
+    padding: 3px;
+	 -webkit-transition: all 0.2s ease;
+						 -moz-transition: all 0.2s ease;
+						  -ms-transition: all 0.2s ease;
+						   -o-transition: all 0.2s ease;
+							  transition: all 0.2s ease; 
+  }
+  ul.pd_wrapF1 li:nth-child( ) .hot_priceF1{ 
+		text-decoration: line-through;
+  }		
+  .boxF1 ul li:hover {
+	 -webkit-transform:translateY(-6px); transform:translateY(-6px); box-shadow:0 0 10px rgba(0,0,0,0.2);
+  } 
+
+  .boxF1 .hotF1 {
+        background-color: #3175e0;
+    	color: #ffffff;
+  }
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

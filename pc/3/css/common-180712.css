@@ -1,0 +1,379 @@
+.desktop-header {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.desktop-header img {
+    display: block;
+}
+.desktop-header a:hover  {
+    text-decoration: none !important;
+}
+.desktop-header p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+.desktop-header p img {
+    height: 40px;
+    width: auto;
+}
+p.show24hHelp-text, .appDonload {
+    font-size: 12px;
+    height: 40px;
+    overflow: hidden;
+    padding-top: 18px;
+}
+p.show24hHelp-text a {
+    color: #a9a9a9;
+}
+.appDonload {
+    color: #a9a9a9;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.appQRcode {
+    position: absolute;
+    z-index: 99;
+    top: 40px;
+    width: 160px;
+    left: 50%;
+    right: 50%;
+    margin-left: 273px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 5px 6px 8px rgba(0,0,0,.5);
+    display: none;
+}
+.appDonload:hover .appQRcode {
+    display: block;
+}
+p.FBicon {
+    padding: 6px 0 0 10px;
+    height: 40px;
+    overflow: hidden;
+}
+p.FBicon img {
+    width: 30px;
+    height: 30px;
+}
+
+#menu {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: none;    
+    bottom: 0px;
+    z-index: 999;
+    text-align: center;
+    color: #FFF;
+    padding: 10px 0 5px 0;
+    font-size: 15.5px;
+    font-weight: bold;
+    line-height: 17.5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: #ff0000; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff0000 0%, #9e0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff0000 0%,#9e0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff0000 0%,#9e0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#9e0000',GradientType=0 ); /* IE6-9 */
+}
+#menu .btn-bottom {
+    float: left;
+    border-left: 1px solid #eee;
+    margin-left: -1px;
+    color: #fff;
+    width: calc(100%/3);
+    cursor: pointer;
+}
+#footer {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 0 20px 0;
+    text-align: center;
+    line-height: 28px;
+    font-size: 26px;
+	 color:#cecece;
+}
+.mobile {
+    display: none;
+}
+
+.smallBanner {
+    background: rgba(15%,15%,15%,1);
+    width: 122px;
+    height: 121px;
+}
+.topArrow {
+    width: 20px;
+    height: 20px;
+    vertical-align: -2px;
+}
+#RmenuTop {
+    padding: 5px 8px 8px 0;
+}
+
+#header {
+    text-align: center;
+    display: none;
+    background-color: #fff;
+}
+#return {
+    height: 28px;
+    padding: 5px 0 0 3px;
+    float: left;
+}
+#logo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 15px 3px 0;
+}
+
+/*--- 分享選單 ---*/
+.right_box {
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    z-index: 5;
+    transition: 0s;
+}
+.right_box img {
+    width: 100%;
+}
+a.fb_share {
+    display: block;
+    background-color: #335a9d;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 6px 5px 0;
+    overflow: hidden;
+}
+a.line_share {
+    display: block;
+    background-color: #00c603;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 7px 6px 0;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.gobuy {
+    width: 230px;
+    position: fixed;
+    right: 0;
+    bottom: -5px;
+    z-index: 99;
+}
+/*--- PC 銀行側邊選單 ---*/
+.menu_arrow {
+    position: fixed;
+    width: 40px;
+    z-index: 999;
+    top: 40px;
+    right: 0;
+    cursor: pointer;
+}
+#arrowIn {
+    display: none;
+}
+.menu_box {
+    width: 110px;
+    position: fixed;
+    z-index: 999;
+    top: 85px;
+    right: 0;
+    color: #d6d6d6;
+}
+.menu_title {
+    width: 100%;
+    text-align: center;
+    color: #0d424d;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 2px;
+    font-weight: bold;
+    position: relative;
+}
+.menu_title::before {
+    content: '';
+    width: 130px;
+    height: 46px;
+    background: url('../img/bank_01.png') top left no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: -3px;
+    right: 0;
+}
+.bank_wrap{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgba(106, 106, 106, 0.9);
+}
+a.to_bank {
+    float: left;
+    width: calc(100% / 2 - 1px);
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 1px 1px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-decoration: none;
+}
+a.to_bank:hover {
+    background-color: #ff4e39;
+}
+
+.goTOP {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    color: #0d424d;
+    position: relative;
+}
+.goTOP::before {
+    content: '';
+    width: 130px;
+    height: 46px;
+    background: url('../img/bank_01.png') top left no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: 0;
+    -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+}
+
+.smallBanner {
+    background: rgba(15%,15%,15%,1);
+    width: 122px;
+    height: 121px;
+}
+.topArrow {
+    width: 20px;
+    height: 20px;
+    vertical-align: -2px;
+}
+
+/*--- PC 銀行側邊選單 END ---*/
+
+/*--- Mobile 銀行置底選單 ---*/
+.footer_title {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #d7000e;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 5px 0;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+.footer_mask {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    display: none;
+    transition: 0.3s;
+}
+.footer_bank {
+    position: fixed;
+    z-index: 10;
+    /* bottom: -202px; */
+    bottom: 63px;
+    left: 2.5%;
+    width: 95%;
+    background-color: #2e98db;
+    padding: 10px 10px 7px;
+    border-radius: 13px;
+    display: none;
+    transition: 0.3s;
+}
+.ani_show {
+    display: block;
+    animation: fadeInDown 0.3s;
+    -webkit-animation: fadeInDown 0.3s;
+    animation-fill-mode: both;
+}
+.footer_mask.animated.ani_show {
+
+}
+.footer_bank::before {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -15px;
+    bottom: -20px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 15px 0 15px;
+    border-color: #009ce1 transparent transparent transparent;
+}
+.footer_bank a.to_bank {
+    width: calc(100% /4 - 4px);
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    margin: 0 2px 3px;
+    background-color: #fff;
+    color: #686c6e;
+    font-size: 16px;
+}
+.footer_bank a.to_bank:hover {
+    background-color: #fff272;
+}
+
+
+/*--- Mobile 銀行置底選單 END ---*/
+
+@media only screen and (max-width: 1400px) {
+    .gobuy                  { width: 172px; }
+}
+@media only screen and (max-width: 1130px) {
+    .gobuy                  { width: 160px; }
+}
+@media only screen and (max-width: 600px) {
+    .gobuy                  { width: 130px; }
+}
+@media only screen and (max-width: 960px) {
+    .desktop-header         { height: 30px; }
+    .desktop-header p img   { height: 30px; width: auto; }
+    p.FBicon img            { width: 25px; height: 25px; }
+    .desktop-header p       { height: 30px; }
+    p.show24hHelp-text, .appDonload{ padding-top: 11px; }
+    p.FBicon                { padding-top: 3px; }
+    .appQRcode              { margin-left: 183px; top: 30px; }
+}
+@media only screen and (max-width: 768px) {
+    .mobile                 { display: block; }
+    .menu_arrow, .menu_box  { display: none; }
+    .desktop-header         { display: none; }
+    #header                 { display: block; }
+    #footer                 { line-height: 1.5; font-size: 10px; padding-bottom: 70px;}
+    .footer_title           { display: block; }
+    .right_box              { bottom: 50px; }
+}
+@media only screen and (max-width: 450px) {
+    #footer span       { display: block; }
+    #footer br         { display: none; }
+}
+

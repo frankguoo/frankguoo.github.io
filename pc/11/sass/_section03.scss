@@ -1,0 +1,95 @@
+//變數
+@import 'base';
+
+
+#section_03{
+    background: url(../img/bg-3.png) no-repeat;
+    background-position: center top;
+    background-size: auto;
+    padding: 40px 0px;
+    @include breakpoint(m){
+        padding: 0px;
+    }
+    .content_box{
+        color: #333;
+        width: 980px;
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+        .titlebox{
+            text-align: center;
+            padding: 0px 0px 40px 0px;
+            margin-top: -70px;
+            visibility: visible;
+            @include breakpoint(m){
+                padding: 0 0 0 30px 0;
+                margin-top: 0px;
+            }
+        }
+        #myCarousel-C{
+            text-align: center;
+            width: 860px;
+            margin: 0 auto;
+            @include breakpoint(m){
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .mainbox{
+            padding: 20px 0 10px 0;
+        }
+        h4.font1{
+            padding: 30px 88px;
+            font-size: 1.2em;
+            letter-spacing: 4px;
+            line-height: 39px;
+            color: #228d9a;
+            @include breakpoint(m){
+                font-size: 1em;
+                padding: 0px;
+                margin-top: 10px;
+            }
+        }
+        ul.a1{
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content(flex-start);
+            @include align-items(flex-start);
+
+            li:first-child{
+                width: 45%;
+                @include breakpoint(m){
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            li:nth-child(2){
+                width: 55%;
+                @include breakpoint(m){
+                    width: 100%;
+                    padding: 0 10px;
+                }
+                h4{
+                    padding: 5px 10px;
+                    font-size: 21px;
+                    line-height: 38px;
+                    filter: drop-shadow(2px 2px 7px rgb(0, 90, 123));
+                    color: white;
+                    @include breakpoint(m){
+                        font-size: 15px;
+                        line-height: 25px;
+                    }
+                }
+    
+            }
+        }
+        .btntop2 {
+            text-align: center;
+            padding: 10px 0px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身五</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/bodyF3.css" rel="stylesheet" type="text/css">
+	  
+	  
+<!-- (1) 將css資料夾的bodyF.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<script>
+ 
+$( function(){
+	
+	
+	/* 版身顯示主視覺內容 */ 
+	var myArray1= new Array();
+	myArray1 = [
+        {         
+      "LINK": "http://24h.pchome.com.tw/store/DXAN1F",
+      "PIC": "m_2.jpg",
+      "NAME": "安博盒子 限時殺88折",
+    }, 
+  ];
+
+
+
+	/* 版身顯示商品內容 */ 
+	var myArray= new Array();
+	myArray = [
+        {
+            "排序": "1",
+            "LINK": "http://24h.pchome.com.tw/store/DEBLUG",
+            "PIC": "2-1.jpg",
+            "HIGHLIGHT": "防水x防風x保暖 一件到位",
+            "NAME": "羽絨防水透濕時尚撞色羽絨外套",
+            "PRICE": "2780",
+            "PRICE-S": "$3980",
+            "PCS": ""
+        },
+        {
+            "排序": "2",
+            "LINK": "http://24h.pchome.com.tw/prod/DEBQ8B-A9006PSMN?q=/S/DEBQ8B",
+            "PIC": "2-2.jpg",
+            "HIGHLIGHT": "30秒快速帳▼一房一廳",
+            "NAME": "Turbo Tent專利快速帳篷-8人",
+            "PRICE": "18999",
+            "PRICE-S": "",
+            "PCS": ""
+        },
+        {
+            "排序": "3",
+            "LINK": "http://24h.pchome.com.tw/store/?q=/A/89963",
+            "PIC": "2-3.jpg",
+            "HIGHLIGHT": "提供舒適腳感▼下殺85折",
+            "NAME": "LOTTO跑鞋全系列",
+            "PRICE": "1182",
+            "PRICE-S": "$1390",
+            "PCS": ""
+        },
+        {
+            "排序": "4",
+            "LINK": "http://24h.pchome.com.tw/store/DXAQ1C",
+            "PIC": "2-4.jpg",
+            "HIGHLIGHT": "波浪片避震穩定 柔軟著感!",
+            "NAME": "美津濃MIZUNO RIDER跑鞋",
+            "PRICE": "3680",
+            "PRICE-S": "$2940",
+            "PCS": ""
+        },
+        {
+            "排序": "5",
+            "LINK": "http://24h.pchome.com.tw/store/DXAO3Z",
+            "PIC": "2-5.jpg",
+            "HIGHLIGHT": "時尚與智慧科技完美結合",
+            "NAME": "vivomove HR 心率指針腕錶",
+            "PRICE": "9990",
+            "PRICE-S": "",
+            "PCS": ""
+        },
+        {
+            "排序": "6",
+            "LINK": "http://24h.pchome.com.tw/store/DXAE20",
+            "PIC": "2-6.jpg",
+            "HIGHLIGHT": "鋁合金折疊車▼限時特惠",
+            "NAME": "DAHON Mariner D8折疊車",
+            "PRICE": "14900",
+            "PRICE-S": "$18800",
+            "PCS": ""
+        }
+       
+  ];
+	
+ /* 版身顯示主視覺內容 */ 	
+ var htmlKV = ''; 
+    htmlKV += '<li class="pd_kvF3">';
+    htmlKV += '<a href="' + myArray1[0]['LINK'] + '" target="_blank">';
+    htmlKV += '<img src="pm/' + myArray1[0]['PIC'] + '" title="' + myArray1[0].NAME + '">';
+    htmlKV += '</a></li>';
+	
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF3">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF3">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF3">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_priceF3"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF3">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF3').html(htmlKV).append(htmlPD);	
+  
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+  /*--- box ---*/
+  .boxF3 { 
+    width: 100%; 
+  }
+	
+  .boxF3 ul {
+
+  }
+  .boxF3 ul li {
+    padding: 5px;
+  }
+
+</style>
+
+	  
+</head>
+
+<body>
+  <div class="wrap boxF3">
+    <ul class="pd_wrapF3">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "http://24h.pchome.com.tw/prod/DPADC8-A90087IEQ",
+      "PIC": "0102_vice_01.jpg",
+      "HIGHLIGHT": "淨藍光/免五千",
+      "NAME": "AOC 32吋數位液晶顯示器",
+      "PRICE": "4988",
+      "PRICE-S": "$6988",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMBA5I-A9006JOL7?q=/S/DMBA5I",
+      "PIC": "0102_vice_02.jpg",
+      "HIGHLIGHT": "挑戰同級最低價",
+      "NAME": "巧福七星級桑拿機/暖足機",
+      "PRICE": "4980",
+      "PRICE-S": "$7980",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAFE9-A90084Q15",
+      "PIC": "0102_vice_03.jpg",
+      "HIGHLIGHT": "限時下殺37折",
+      "NAME": "法國香頌 藍芽麥克風",
+      "PRICE": "990",
+      "PRICE-S": "$2690",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAC0D-19008MTKO",
+      "PIC": "0102_vice_04.jpg",
+      "HIGHLIGHT": "尾牙雙入組 狂降71折",
+      "NAME": "PHILIPS音波震動牙刷 ",
+      "PRICE": "4188",
+      "PRICE-S": "$5960",
+      "PCS": ""
+    }
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    background: transparent;
+    padding: 5px 2px 2px 5px;
+  }
+  .boxF1 ul li {
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+  }
+  .boxF1 .hotF1 {
+    background-color: #0425f7;
+    color: #fff;
+  }
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,548 @@
+@charset "utf-8";
+
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  25% {
+    transform: rotate(-10deg);
+
+  }
+
+  35% {
+    transform: rotate(3deg);
+	transform: scale(0.4);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+  }
+	
+  55% {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+  }
+
+  57.5% {
+    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  65% {
+    transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  72.5% {
+    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  80% {
+    transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  87.5% {
+    transform: translate3d(0%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: none;
+  }
+	
+}
+
+
+.jackInTheBox {
+	-webkit-animation-duration: 2s;  
+	animation-duration: 2.5s;  
+	-webkit-animation-name: jackInTheBox;  
+	animation-name: jackInTheBox;  
+	-webkit-animation-iteration-count: 1;    
+	animation-iteration-count: 1;
+}
+
+
+/*心跳A*/
+.heartbeat-play {
+	-webkit-animation-duration: 1s;  
+	animation-duration: 1s;  
+	-webkit-animation-name: heartbeat-play;  
+	animation-name: heartbeat-play;  
+	-webkit-animation-iteration-count: 1;    
+	animation-iteration-count: 1;
+	/* -webkit-animation-direction: alternate;
+	animation-direction: alternate;*/
+}
+
+
+@-webkit-keyframes heartbeat-play {   
+		0%   { -webkit-transform: scale(1); transform: scale(1); } 
+		40%  { -webkit-transform: scale(0.95); transform: scale(0.95);} 
+		60%  { -webkit-transform: scale(1); transform: scale(1);} 
+		80%  { -webkit-transform: scale(0.95); transform: scale(0.95); }
+		100% { -webkit-transform: scale(1); transform: scale(1); } 
+}
+
+
+@keyframes heartbeat-play { 
+		0%   { -webkit-transform: scale(1); transform: scale(1); } 
+		40%  { -webkit-transform: scale(0.95); transform: scale(0.95); } 
+		60%  { -webkit-transform: scale(1); transform: scale(1);} 
+		80%  { -webkit-transform: scale(0.95); transform: scale(0.95); }
+		100% { -webkit-transform: scale(1); transform: scale(1); } 
+}
+
+@keyframes floating {
+	0% {
+		transform: translate3d(0, 0, 0);	
+	}
+	45% {
+		transform: translate3d(0, -10%, 0);	
+	}
+  55% {
+		transform: translate3d(0, -10%, 0);	
+	}	
+	100% {
+		transform: translate3d(0, 0, 0);
+	}			
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img { width:100%; }
+div, * { 
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+}
+body{
+	background-color: #fff !important;
+	color:#000;
+	font-family: '微軟正黑體', Arial, Helvetica, sans-serif;
+	position: relative;
+	
+	overflow-x: hidden!important;
+	
+}
+.mainBody {
+	background: url('../img/bg.jpg') top center no-repeat #000;
+	height:100%;
+	
+}
+
+.bg_ball{
+	background: url('../img/bg_ball.png') top center no-repeat;
+	height: 920px;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+	top: -110px;
+}
+
+.bg_pds{
+	background: url('../img/bg_ww.png') top center no-repeat;
+	height: 700px;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+
+}
+
+.top_KV {
+	width: 932px;
+	margin: 0 auto;
+	transition: 0s;
+    -webkit-transition: 0s;
+}
+
+.wrap {
+	width: 932px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.kvbox{
+	width: 1050px;
+	max-width: 100%;
+	margin: 0 auto;
+	height:521px;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.kv_title{
+	position: absolute;
+	top:0px;
+	left:15px;
+	z-index: 10;
+}
+
+.kv_pd{
+	position: absolute;
+	top:0px;
+	right:140px;
+	z-index: 20;
+	width: 400px;
+}
+
+.kv_line{
+	width: 613px;
+    position: absolute;
+    left: 118px;
+    bottom: 0px;
+    z-index: 12;
+}
+
+.imgBox{
+	float:left;
+}
+
+
+/*--- 銀行儲值 ---*/
+
+#section_01 {
+	position: relative;
+	z-index: 99;
+}
+
+.bankbar{
+  padding: 10px 0;
+}
+
+
+.bankbar ul li{
+	width: calc(100% / 4);
+	float: left;
+	padding: 3px;
+	display: block;
+}
+
+.bankbar ul li a{
+	display: block;
+	border-radius: 10px 0 10px 0;
+	overflow: hidden;
+	box-shadow: 0px 0px 6px #fff;
+	transition: .5s;
+    -webkit-transition: .5s;
+	transform: scale(1) translateY(0px);
+	-webkit-transform: scale(1) translateY(0px);
+
+}
+
+.bankbar ul li:hover > a{
+	-webkit-transform: scale(0.95) translateY(3px);
+	transform: scale(0.95) translateY(3px);
+	filter: brightness(130%);
+}
+
+
+.bankbar img{
+	margin: 0 auto;
+    display: block;
+}
+
+/*--- 12主打品專區 ---*/
+
+#section_02 {
+	margin-top: 20px;
+}
+
+.pdbar{
+  padding: 10px 0;
+  margin-top: 50px; 
+}
+
+
+.pdbar ul li{
+	width: calc(100% / 4);
+	float: left;
+	padding: 5px;
+	display: block;
+}
+
+.pdbar ul li a{
+	display: block;
+	overflow: hidden;
+	transition: .5s;
+    -webkit-transition: .5s;
+	transform: scale(1) translateY(0px);
+	-webkit-transform: scale(1) translateY(0px);
+
+}
+
+.pdbar ul li:hover > a{
+	-webkit-transform: scale(0.95) translateY(3px);
+	transform: scale(0.95) translateY(3px);
+	filter: brightness(110%);
+}
+
+
+/*--- 區館專區 ---*/
+
+#section_03 {
+	margin-top: 80px;
+}
+
+.top4_box{
+}
+
+
+.top4_box ul li{
+	width: calc(100% / 4);
+	float: left;
+	padding: 5px;
+	display: block;
+}
+
+.top4_box ul li a{
+	display: block;
+	overflow: hidden;
+	transition: .5s;
+    -webkit-transition: .5s;
+	transform: scale(1) translateY(0px);
+	-webkit-transform: scale(1) translateY(0px);
+
+}
+
+.top4_box ul li:hover > a{
+	-webkit-transform: scale(0.95) translateY(3px);
+	transform: scale(0.95) translateY(3px);
+	filter: brightness(110%);
+}
+
+
+/*--- 版身專區 ---*/
+
+#section_03 > .wrap {
+	transition: .5s;
+    -webkit-transition: .5s;
+	transform: scale(1) translateY(0px);
+	-webkit-transform: scale(1) translateY(0px);
+}
+
+#section_03 > .wrap:hover{
+	transform: scale(1) translateY(15px);
+	-webkit-transform: scale(1) translateY(15px);
+}
+
+ul.pd2_box li{
+	width: calc(100% / 2);
+	padding: 3px;
+	float: left;
+	transition: .5s;
+    -webkit-transition: .5s;
+	transform: scale(1) translateY(0px);
+	-webkit-transform: scale(1) translateY(0px);
+}
+
+ul.pd2_box li:hover{
+	transform: scale(1) translateY(-6px);
+	-webkit-transform: scale(1) translateY(-6px);
+}
+
+ul.pd2_box li img{
+	box-shadow: 2px 6px 5px #972211;
+}
+
+ul.pd2_box{
+	width:470px;
+}
+
+.pd2_box1, .pd2_box3, .pd2_box5, .pd2_box7{
+	position: absolute;
+	right: 0px;
+	top: 45px;
+}
+
+.pd2_box2, .pd2_box4, .pd2_box6, .pd2_box8{
+	position: absolute;
+	left: 0px;
+	top: 45px;
+}
+
+/*--- Banner ---*/
+#section_12{
+	margin: 45px auto;
+}
+
+/*--- 倒數計時 ---*/
+#clock {
+	color: #f9ff00;
+    font-weight: bold;
+    position: absolute;
+    z-index: 9;
+    right: 88px;
+    top: 152px;
+	font-size: 24px;
+    width: 230px;
+}
+#clock span {
+	vertical-align: baseline;
+	padding: 0 3px;
+	font-size: 30px;
+}
+
+
+/*--- 產品內容 ---*/
+ul.pd_wrap {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.hot, .pd_title, ul.pd_wrap p {
+	width: 100%;
+	font-weight: bold;
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+}
+ul.pd_wrap li { 
+	width: calc(100% / 4);
+	font-size: 16px;
+	float: left;
+	background-color: #fff;	
+}
+.pd_title {
+	color: #000;
+}
+ul.pd_wrap p {
+	color: #666;
+	font-weight: normal;
+}
+ul.pd_wrap span {
+	vertical-align: baseline;
+}
+span.old_price {
+	text-decoration: line-through;
+	font-size: 15px;
+}
+span.hot_price {
+	color: #d00;
+	font-size: 26px;
+}
+span.hot_price small {
+	font-size: 60%;
+}
+span.buy {
+	background-color: #d00;
+	color: #fffa1e;
+	font-size: 11px;
+	padding: 1px 3px;
+	vertical-align: 3px !important;
+}
+
+
+#myCarousel-C.owl-carousel .owl-nav .owl-prev, #myCarousel-C.owl-carousel .owl-nav .owl-next {
+	position: absolute;
+	top: 190px;
+	z-index: 999999; 
+	padding: 0;
+    font-size: 18px;
+}
+#myCarousel-C.owl-carousel .owl-nav .owl-prev {
+    left: 0;
+    width: 48px;
+	height: 82px;
+	display: block;
+	
+	background: url(../img/arrowL.png) no-repeat;
+	background-size: 24px auto;
+}
+#myCarousel-C.owl-carousel .owl-nav .owl-next {
+    right: 20px;
+	width: 48px;
+	height: 41px;
+	display: block;
+	background: url(../img/arrowR.png) no-repeat;
+	background-size: 24px auto;
+}
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+.wrap img  	{ width: 100%; max-width: 100%; vertical-align: middle;}
+
+
+@media only screen and (max-width: 931px) {
+	.desktop 		{ display: none; }
+	#clock 			{ top: 0; right: 0; margin: 35.2% 17% 0 0; font-size: 4.5vw; width: 45%; }
+	#clock span 	{ font-size: 6vw; }
+	ul.pd_wrap li 	{ width: calc(100% / 2); }
+	img	{ vertical-align: middle!important;}
+	.mainBody {background: red; height:auto!important;}
+	.iframe_wrap_01 iframe,.iframe_wrap_02 iframe,.iframe_wrap_03 iframe,.iframe_wrap_04 iframe,.iframe_wrap_05 iframe{margin: 0;}
+	.countdown{display:none;}
+	.kv_boxm{position: relative;}		
+	.mbg1{position: relative;}
+	.bankbar,.line_m{position:absolute}
+	.line_m{bottom:0;left:0;z-index:9;width: 100%;}
+	.bankbar{padding:10px;width:100%;top:0}
+	#section_02,#section_04{position:relative;z-index:2}
+	.bankbar ul li,.pdbar ul li,.top4_box ul li{width:calc(100% / 2)}
+	.bankbar ul li{float:left;padding:3px;display:block}
+	#section_02{margin-top:0;background-color:#fe6514;border:5px solid #fed600;box-shadow:0 3px 10px #2d2d2d}
+	.pdbar{padding:2px;margin-top:0}
+	.pdbar ul li{padding:3px}
+	#section_00{background: red;margin-top: 30px;}
+	#section_03{padding:15px 0;background-color:red;margin-top:0}
+	.bankbox{position: absolute;width: 100%;top: 0;}
+ul.pd2_box{
+	width:100%;
+}
+	
+.pd2_box1, .pd2_box3, .pd2_box5, .pd2_box7{
+	position: relative;
+	right: auto;
+	top: auto;
+}
+
+.pd2_box2, .pd2_box4, .pd2_box6, .pd2_box8{
+	position: relative;
+	left: auto;
+	top: auto;
+}
+	
+	#section_12{
+		margin:0 auto;
+		padding: 20px 0;
+	}	
+	
+}
+
+@media only screen and (max-width: 450px) {
+	.hot, .pd_title, ul.pd_wrap p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrap p 					{ letter-spacing: -1px; }
+	span.old_price 					{ font-size: 2vw; }
+	span.hot_price 					{ font-size: 6vw; }
+	span.buy 						{ font-size: 2vw; }
+}
+
+@media only screen and (max-width: 320px) {
+
+}

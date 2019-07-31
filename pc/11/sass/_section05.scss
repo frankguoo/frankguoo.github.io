@@ -1,0 +1,120 @@
+//變數
+@import 'base';
+
+
+#section_05{
+    margin: 0 auto;
+    visibility: visible;
+    background: url(../img/bg-6.png) no-repeat;
+    background-position: center top;
+    background-size: auto;
+    padding: 0 0 150px 0;
+    @include breakpoint(m){
+        background: none;
+        padding: 0px;
+    }
+
+    .content_box{
+        width: 932px;
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+        visibility: visible;
+        .titlebox{
+            text-align: center;
+            padding: 0px;
+            visibility: visible;
+            @include breakpoint(m){
+                padding: 0;
+            }
+        }
+        .main_box{
+            padding: 0px 0 50px 0;
+            @include breakpoint(m){
+                padding: 0px 0 20px 0;
+            }
+            h2{
+                color: black;
+                font-size: 2.6em;
+                font-weight: 700;
+                text-align: center;
+                padding: 20px 0;
+                @include breakpoint(m){
+                    font-size: 2em;
+                    padding: 10px 0 5px 0;
+                }
+            }
+            p{
+                text-align: center;
+                font-weight: 100;
+                font-size: 1.6em;
+                line-height: 1.6em;
+                @include breakpoint(m){
+                    font-size: 1em;
+                    line-height: 1.5em;
+                }
+                span{
+                    display: block;
+                    font-size: .8em;
+                    line-height: 1.5em;
+                }
+            }
+        }
+        .gift_box{
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content(flex-start);
+            @include align-items(flex-end);
+
+            @include breakpoint(m){
+                @include justify-content(center);
+            }
+
+            > div{
+                width: 33.3333333%;
+                text-align: center;
+                @include breakpoint(m){
+                    width: 50%;
+                }
+            }
+            .btnbox{
+                width: 100%;
+                margin-bottom: 20px;
+                @include breakpoint(m){
+                    margin:20px auto;
+                }
+                img{
+                    width: 50%;
+                    max-width: 100%;
+                }
+            }
+        }
+        #qtbox{
+            padding-top: 20px;
+            @include breakpoint(m){
+                padding: 0;
+            }
+            h3{
+                color: #000;
+                font-size: 20px;
+            }
+            ul{
+                list-style: disc;
+                color: #000;
+                font-weight: 100;
+
+                li{
+                    margin-top: 0px;
+                    font-size: 16px;
+                    @include breakpoint(m){
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

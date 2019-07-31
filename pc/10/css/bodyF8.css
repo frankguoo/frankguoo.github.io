@@ -1,0 +1,161 @@
+ @charset "utf-8";
+
+/*--- 產品內容 ---*/
+
+.boxF8 ul li.pd_kvF8 a{
+	 padding: 0;
+	 background-color: transparent!important;
+}
+
+
+ul.pd_wrapF8 {
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+ul.pd_wrapF8 li > a{
+	display:block;
+	padding: 10px;
+	margin: 10px 3px 0px 3px;
+	background-color: #710908;
+}
+
+.hotF8, ul.pd_wrapF8 p {
+	height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.pd_titleF8{
+	line-height: 22px;
+	
+	font-size: 15px;
+	overflow: hidden;
+	width: 100%;
+	color:#fff!important;
+}
+
+.pd_titlesF8{
+	line-height: 20px;
+	font-size: 13px;
+	height: 20px;
+	color:#e0c182!important;
+}
+
+.contentF8{
+	display: block;
+	color: #c81f1f;
+    font-size: 18px;
+    line-height: 22px;
+	font-weight: 400;
+    padding: 3px 0!important;
+	margin-top: 5px!important;
+    background-color: #e0c182!important;
+	background: #e8d582; /* Old browsers */
+	background: -moz-linear-gradient(top, #e8d582 0%, #e0b665 47%, #b67F37 100%); /* FF8.6-15 */
+	background: -webkit-linear-gradient(top, #e8d582 0%,#e0b665 47%,#b67F37 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #e8d582 0%,#e0b665 47%,#b67F37 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8d582', endColorstr='#b67F87',GradientType=0 ); /* IE6-9 */
+}
+
+.contentF8 img{
+	max-width: 280px!important;
+}
+
+ul.pd_wrapF8 li { 
+	width: calc(100% / 3 - 3px);
+	font-size: 16px;
+	display: inline-block;
+	background-color: #fff;	
+
+}
+
+ul.pd_wrapF8 li.pd_kvF8 { 
+	width: 33.333333%!important;
+	background-color: transparent!important;
+	padding: 15px;
+	
+}
+
+ul.pd_wrapF8 .hotF8{
+	background-color: #c81f21;
+	color: #fff;
+	margin: 5px 0;
+	font-size: 20px;
+}
+
+small{
+	color: #fffa1e;
+	margin-left: 5px;
+	vertical-align: bottom;
+}
+
+ul.pd_wrapF8 p {
+	color: #666;
+	font-weight: normal;
+}
+ul.pd_wrapF8 span {
+	vertical-align: baseline;
+}
+span.old_priceF8 {
+	text-decoration: line-through;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.4);
+}
+
+span.pcs8 {
+	font-size: 16px;
+    text-decoration: none;
+    font-weight: normal;
+	color: #ff0;
+     margin-left: 5px;
+}
+
+span.hot_priceF8 {
+	color: #ff0;
+	font-size: 35px;
+    font-weight: 700;
+}
+span.hot_priceF8 small {
+	font-size: 60%;
+}
+span.buyF8 {
+	background-color: #d00!important;
+	color: #fffa1e;
+	font-size: 11px;
+	padding: 1px 3px;
+	vertical-align: 3px !important;
+}
+
+
+/*--- 共用 ---*/
+.mg_t10		{ margin-top: 20px; }
+.over-hide 	{ overflow: hidden; }
+.nomargin  	{ margin: 0 !important; }
+ul.pd_wrapF8 img  	{ width: 100%; max-width: 100%; }
+
+
+@media only screen and (max-width: 931px) {	
+	ul.pd_wrapF8 li 	{ width: calc(100% / 2); }
+	ul.pd_wrapF8 li.pd_kvF8 { width: 100%!important;}
+	.hotF8, .pd_titleF8, .pd_titlesF8, ul.pd_wrapF8 p{
+		height: auto!important;
+	}
+	.contentF8{margin-bottom: 5px!important;}
+}
+
+
+@media only screen and (max-width: 450px) {
+	.hotF8, .pd_titleF8, ul.pd_wrapF8 p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
+	ul.pd_wrapF8 p 					{ letter-spacing: -1px; }
+	span.old_priceF8 					{ font-size: 2vw; }
+	span.hot_priceF8					{ font-size: 6vw; }
+	span.buyF8 						{ font-size: 2vw; }
+	.boxF8 ul li.pd_kvF8{
+		margin-top: -4px;
+	}
+}
+
+

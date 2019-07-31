@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+.desktop-headerF a{
+	text-decoration: none;
+}
+.desktop-headerF *, #mob_topmenuF *, #mobile-headerF * {
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+	
+
+}
+
+
+/*---------桌機頁頭樣式----------*/
+.desktop-headerF {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+	position: relative;
+	z-index: 999999;
+}
+.desktop-headerF p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+	
+}
+
+.desktop-headerF  p:nth-child(1) {
+	margin-left: -40px;
+}
+.desktop-headerF p img {
+    height: 40px;
+    width: auto;
+}
+
+.desktop-headerF p.show24hHelp-text {
+    font-size: 12px;
+    height: 40px;
+    overflow: hidden;
+    padding-top: 18px;
+}
+.desktop-headerF p.show24hHelp-text a {
+    color: #a9a9a9;
+}
+
+
+.desktop-headerF p.show24hHelp-text, .appDonload {
+    font-size: 12px;
+    height: 40px;
+    overflow: hidden;
+    padding-top: 21px;
+}
+
+.desktop-headerF .appDonload {
+    color: #d7000f;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.desktop-headerF .appQRcode {
+    position: fixed;
+    z-index: 999999;
+    top: 40px;
+    width: 160px;
+    left: 50%;
+    right: 50%;
+    margin-left: 273px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 5px 6px 8px rgba(0,0,0,.5);
+    display: none;
+}
+
+.desktop-headerF .appDonload:hover .appQRcode {
+    display: block!important;
+ 
+}
+
+
+.desktop-headerF p.FBicon {
+    padding: 6px 0 0 30px;
+    height: 40px;
+    overflow: hidden;
+}
+.desktop-headerF p.FBicon img {
+    width: 30px;
+    height: 30px;
+}
+.desktop-headerF .pointer {
+    background-image: url(../img/pointer.png);
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    bottom: 50px;
+    right: 16px;
+    z-index: 9999;
+    display: none;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    cursor: pointer;
+}
+.desktop-headerF .facebook {
+    background-image: url(../img/facebook.png);
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    bottom: 100px;
+    right: 16px;
+    z-index: 9999;
+    display: none;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/*---------end 桌機頁頭樣式----------*/
+
+
+/*---------頁頭貼紙樣式----------*/
+.topstickerF.wrap{
+	width: 932px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.topstickerF .sticker {
+    width: 140px!important;
+	position: absolute;
+    z-index: 999;
+}
+/*---------end 頁頭貼紙樣式----------*/
+
+/*---------手機版頁頭樣式----------*/
+#mob_topmenuF {
+    width: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+#menuF {
+    width: 100%;
+    height: 40px;
+    z-index: 999999;
+	position: relative;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0 10px 5px;
+    font-weight: bold;
+	background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: 0s;
+    -webkit-transition: 0s;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space:nowrap;
+}
+#menuF a {
+    color: #777;
+}
+#menuF span {
+    vertical-align: baseline;
+    font-weight: normal;
+    color: #cacaca;
+}
+#menuF .nav-active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: red;
+    left: 0;
+    bottom: -10px;
+    z-index: 9;
+}
+#menuF .btn-bottom {
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 0 5px;
+    white-space:nowrap;
+}
+/* #menu .btn-bottom::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 95%;
+    background-color: #bebebe;
+    top: 3px;
+    right: 0;
+} */
+#menuF .btn-bottom:nth-last-child(1)::before {
+    width: 0px;
+}
+.mFixedF {
+    position: fixed!important;
+    top: -1px !important;
+	z-index: 999999;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.scroll_mob::-webkit-scrollbar {
+    height: 0px
+}
+.scroll_pc::-webkit-scrollbar {
+    height: 5px
+}
+.scroll_pc::-webkit-scrollbar-track {
+    background-color: #EAEAEA;
+}
+ 
+.scroll_pc::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+#mobile-headerF {
+    text-align: center;
+    display: none;
+}
+#mobile-headerF #return {
+    height: 28px;
+    padding: 6px 0px 8px 3px;
+    float: left;
+}
+#mobile-headerF #logo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 15px 8px 0;
+		background: #fff;
+
+}
+
+/*---------end 手機版頁頭樣式----------*/
+
+
+.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 931px) {
+    .mobile                 { display: block; }
+    .desktop-headerF        { display: none; }
+    #mobile-headerF         { display: block; border-bottom: 1px solid #eee; }
+	.topstickerF .sticker   { top:84px; width: 120px!important; }
+}
+@media only screen and (max-width: 930px) {
+    .desktop-headerF         { height: 30px; }
+    .desktop-headerF p img   { height: 30px; width: auto; }
+    .desktop-headerF p.FBicon img            { width: 25px; height: 25px; }
+    .desktop-headerF p       { height: 30px; }
+    .desktop-headerF p.show24hHelp-text      { padding-top: 11px; }
+    .desktop-headerF p.FBicon                { padding-top: 3px; }
+}
+
+

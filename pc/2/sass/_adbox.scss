@@ -1,0 +1,49 @@
+//變數
+@import 'base';
+
+.adbox{
+    margin: 30px 0;
+    @include breakpoint(m){
+        margin: 10px 0 50px 0;
+    }
+    .tittlebox{
+        text-align: center;
+        position: relative;
+
+        img{
+            @include breakpoint(m){
+                width: 80%;
+            }
+        }
+    }
+    .wrap{
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(flex-start);
+        @include align-items(flex-end);
+
+        .admask{
+            text-align: center;
+            display: block;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 10px 10px;
+
+            @include breakpoint(m){
+                width: 100%;
+            }
+
+            a{
+                img{
+                    @include breakpoint(m){
+                        width: 100%;
+                    } 
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,560 @@
+@charset "UTF-8";
+html, body {
+  background-color: #ca0000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* loading動畫 */
+.loading_mask {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  height: 100%;
+  background-color: #ca0000;
+}
+
+.lds-ellipsis {
+  position: absolute;
+  width: 64px;
+  z-index: 99;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  height: 64px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  width: 11px;
+  z-index: 99;
+  top: 27px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(19px, 0);
+            transform: translate(19px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(19px, 0);
+            transform: translate(19px, 0);
+  }
+}
+
+.wrap {
+  position: relative;
+  max-width: 768px;
+  height: calc(100% - 40px);
+  margin: 0 auto;
+  background-color: #a40101;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    height: 1024px;
+  }
+}
+
+.first {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  height: 100%;
+  background-image: url("../images/bg_01.jpg");
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.start_btn {
+  position: relative;
+  width: 40%;
+  z-index: 20;
+  margin: 5% auto;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .start_btn {
+    margin-top: 0;
+    width: 40%;
+  }
+}
+
+.first_top {
+  position: relative;
+  width: 85%;
+  z-index: 20;
+  margin: 0 auto;
+}
+
+.first_top .first_top-logo {
+  margin: 0 auto;
+}
+
+.first_top img.logo {
+  position: relative;
+  z-index: 21;
+}
+
+.first_top img[class*='cloud'] {
+  position: absolute;
+  width: 35%;
+  z-index: 20;
+  top: 50%;
+  left: 0;
+}
+
+.first_top img.cloud2 {
+  top: 60%;
+  left: 75%;
+}
+
+.first_top img.cloud3 {
+  top: 88%;
+  left: 45%;
+}
+
+.first_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  height: 16%;
+  background-image: url("../images/footer_01.png");
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.first_footer a img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .first_footer {
+    position: absolute;
+    height: inherit;
+  }
+}
+
+.second {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  display: none;
+  background-image: url("../images/bg_02.jpg");
+  background-color: #f8a039;
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.second .food, .second .food_click {
+  position: absolute;
+  width: 80px;
+  z-index: 1;
+  height: 75px;
+  background-image: url("../images/pig.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .second .food, .second .food_click {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.second .food_click {
+  z-index: 15;
+}
+
+.timeUp {
+  position: absolute;
+  width: 60%;
+  z-index: 30;
+  background-color: rgba(189, 0, 0, 0.8);
+  border: 4px solid #f9d473;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.timeUp h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  margin: 10px auto;
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+.second_top {
+  position: relative;
+  width: 100%;
+  z-index: 15;
+  background-color: #b12021;
+  border-top: 6px solid #3b2316;
+  border-bottom: 6px solid #0f131c;
+  height: 13vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .second_top {
+    height: 100px;
+  }
+}
+
+.second_top img {
+  position: absolute;
+  width: 30%;
+  z-index: 16;
+  top: -13%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.second_top .second_top-score, .second_top .second_top-time {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.second_top .second_top-score h3, .second_top .second_top-time h3 {
+  font-size: 4vw;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .second_top .second_top-score h3, .second_top .second_top-time h3 {
+    font-size: 32px;
+  }
+}
+
+.second_top .second_top-score h3 span, .second_top .second_top-time h3 span {
+  font-size: 1.25em;
+  color: #d5de2d;
+  font-weight: 700;
+  width: 20px;
+  display: inline-block;
+}
+
+.second_top .second_top-score {
+  left: 5%;
+}
+
+.second_top .second_top-time {
+  right: 5%;
+}
+
+.second_footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+.second_footer img {
+  vertical-align: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .second_footer {
+    position: absolute;
+  }
+}
+
+.second_desk {
+  bottom: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.second_desk img {
+  vertical-align: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .second_desk {
+    position: absolute;
+  }
+}
+
+.third {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+  height: 100%;
+  display: none;
+  background-image: url("../images/bg_03.jpg");
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.third_top img {
+  position: absolute;
+  width: 30%;
+  z-index: 21;
+  top: 0;
+}
+
+.third_top img:last-child {
+  right: 0;
+}
+
+.third_result {
+  position: absolute;
+  top: 15%;
+  z-index: 30;
+}
+
+.third_result h3.title {
+  color: #fff;
+  font-size: 6vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .third_result h3.title {
+    font-size: 46px;
+  }
+}
+
+.third_result a.resultLink {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 40%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .third_result a.resultLink {
+    top: 62%;
+  }
+}
+
+.third_desk {
+  bottom: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.third_desk img {
+  vertical-align: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .third_desk {
+    position: absolute;
+  }
+}
+
+.third_footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+.third_footer img {
+  vertical-align: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .third_footer {
+    position: absolute;
+  }
+}
+
+.third_btn {
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 35;
+  bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .third_btn {
+    position: absolute;
+  }
+}
+
+/*--- 燈箱 活動辦法 ---*/
+#game-popup {
+  position: relative;
+  background: #fff;
+  color: #262626;
+  padding: 20px;
+  width: auto;
+  max-width: 95%;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  #game-popup {
+    padding: 10px;
+  }
+}
+
+.mfp-content {
+  max-width: 900px;
+}
+
+#game-popup h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #262626;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  padding: 10px 0;
+}
+
+#game-popup h2:nth-child(1) {
+  border-top: 0;
+  padding-top: 0;
+  line-height: 1.2em;
+}
+
+#game-popup ul {
+  list-style-type: decimal;
+  margin: 10px 0 20px 20px;
+}
+
+#game-popup ul li {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+#game-popup .mfp-close {
+  color: #262626;
+}
+/*# sourceMappingURL=all_1226v2.css.map */

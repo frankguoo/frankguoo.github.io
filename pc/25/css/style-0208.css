@@ -1,0 +1,353 @@
+html, body {
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;    
+    height: 100% !important;
+    min-height: 100% !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    border: none !important;
+    background-color: #006d69 !important;
+    position: relative !important;
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif !important;
+    margin: 0 auto !important;
+}
+ul, *html {
+    zoom: expression(function(ele) {
+        ele.style.zoom "1";
+        document.execCommand("BackgroundImageCache", false, true)
+    }
+    (this))
+}
+.game_bg {
+    background: url('../images/main_bg.png') center top repeat #44b6ff;
+    background-size: 100%;
+	position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: fixed;
+}
+
+/*------ 遊戲場景 ------*/
+.countdown {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    
+}
+.countdown_num {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: bold;
+    /* padding-top: 12rem; */
+    padding: 50% 0 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.scenes_title {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 50;
+    margin: 0 auto;
+}
+.scenes_title img {
+    width: 35%;
+}
+.curtain_header {
+    width: 100%;
+    margin-top: 8%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+}
+.curtain_body {
+    position: absolute;
+    top: 0;
+    left: -13px;
+    z-index: 8;
+    width: 100px;
+    height: 74%;
+    margin-top: 10%;
+}
+.curtain_right {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: -13px;
+    left: inherit;
+}
+.money {
+    position: absolute;
+    bottom: 320px;
+    z-index: 2;
+}
+.boxmain {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: fixed;
+    bottom: 113px;
+    z-index: 9;
+}
+.board {
+    position: absolute;
+    z-index: 20;
+    width: 32.5%;
+    top: 1%;
+}
+.board_right {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left: inherit;
+    right: 0;
+}
+.top_bg {
+    width: 100%;
+    height: 60px;
+    background: #a10004;
+}
+.counter, .score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32%;
+    font-size: 1.4em;
+    color: #fff;
+    padding: 4% 0 0 0;
+    text-align: center;
+    z-index: 25;
+}
+.counter span {
+    font-weight: bold;
+    color: #ffff00;
+    padding: 0 3px;
+}
+.score {
+    right: inherit;
+    left: 0;
+    padding: 4% 0 0 2.5%;
+}
+.boxmain img {
+    width: 70%;
+}
+.curtain_body img {
+    width: auto;
+    height: 100%;
+}
+
+
+/*------ 飛天箱 ------*/
+.rain-wrap {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    max-width: 600px;
+    height: 72%;
+    top: 0;
+    overflow: hidden;
+    /* background-color: rgba(238, 74, 74, 0.3); */
+}
+.envelope {
+    width: 40px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    -webkit-user-select: none;
+    border: none;
+}
+
+/*----- 燈箱 -----*/
+.pop {
+    background: rgba(0, 0, 0, 0.8) !important;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    z-index: 999;
+}
+.pop_bg {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -mos-transform: translateY(-50%);
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.pop_content {
+    background-color: #ae0000;
+    border-radius: 15px;
+    padding: 20px 20px 0 20px;
+}
+.pop_content h2 {
+    font-size: 1.7em;
+}
+.get_num {
+    font-size: 18px;
+    margin: 10px auto;
+}
+.get_num span {
+    color: #f1ff00;
+    font-size: 125%;
+    padding: 0 5px;
+}
+.info {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding: 20px 0;
+}
+.pop_content a {
+    color: #fdcd78;
+    text-decoration: underline;
+}
+.cupon {
+    width: 70%;
+    margin: 20px auto 0;
+}
+.cupon_text {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin: 5px 0 15px;
+}
+.winnder_pic {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+p.title {
+    font-size: 1.5em;
+    color: #fceb54;
+    margin-bottom: 15px;
+}
+p.worrying {
+    font-size: 22px;
+    color: #fceb54;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+#explain {
+    z-index: 999;
+}
+#explain .pop_bg {
+    top: 46%;
+}
+#explain .pop_content {
+    padding: 20px;
+}
+#explain ul {
+    height: 10em;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+#explain ul li {
+    color: #fff;
+    text-align: left;
+    list-style-type: decimal;
+    margin: 0 0 10px 20px;
+    font-size: 13px;
+    line-height: 18px;
+}
+.close_btn, .again {
+    display: block;
+    padding: 8px;
+    text-align: center;
+    border-radius: 40px;
+    background: #fceb54;
+    color: #ff3d4b;
+    font-size: 16px;
+}
+.attention {
+    font-size: 18px;
+    line-height: 25px;
+    color: #76f1fd;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.close {
+    background-color: #7d0505;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 1.6em;
+    position: absolute;
+    top: -12px;
+    right: -7px;
+    border: 5px solid #000;
+    cursor: pointer;
+}
+
+/*------ 共用 ------*/
+.hide       { display: none; transition: all 0.3s; -webkit-transition: all 0.3s; }
+.show       { display: block; transition: all 0.3s; -webkit-transition: all 0.3s; }
+span        { vertical-align: baseline; }
+.clearfix   { *zoom: 1 }
+.clearfix:after {
+    content: '\20';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.curtain_header img, .money img, .board img, .winnder_pic img, .cupon img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .counter, .score        { font-size: 0.95em; }
+}
+@media only screen and (max-width: 470px) {
+    .attention              { font-size: 16px; line-height: 22px; }
+	.game_bg {
+		background-size: 100%;
+		background-attachment: fixed;
+		position: fixed !important;
+	}
+}
+@media only screen and (max-width: 450px) {
+    .top_bg                 { height: 40px; }
+}
+@media only screen and (max-width: 430px) {
+    .attention              { text-align: left; font-size: 17px; }
+    .attention br           { display: none;  }
+    .attention span         { display: block; }
+}
+@media only screen and (max-width: 360px) {
+    .rain-wrap              { height: 70%; }
+    .pop_content h2         { font-size: 1.5em; }
+}
+@media only screen and (max-width: 350px) {
+    .counter, .score        { font-size: 0.85em; }
+
+}
+@media only screen and (max-width: 330px) {
+    .act_date               { font-size: 12px; }
+    .rule_btn, .coopera_btn { font-size: 12px; }
+    .voucher_group img      { width: 22%; }
+    .countdown span         { position: absolute; top: 36%; left: 46.5%; }
+    .pop_content h2         { font-size: 1.35em; }
+}

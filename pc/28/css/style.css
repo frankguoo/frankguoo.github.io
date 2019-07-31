@@ -1,0 +1,36 @@
+@charset "utf-8";
+body,div,span,h1,p,a,img,dl,dt,dd {margin:0;padding:0;border:0;vertical-align:baseline;background:transparent;}
+img, object, embed, video {
+	max-width: 100%;
+}
+.ie6 img { width:100%; }
+div, *	 { transition: 0.3s; box-sizing: border-box; }
+html, body{
+	background-color: #fff !important;
+	color:#000;
+	font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+	position: relative;
+}
+
+.wrap {
+	width: 1920px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+}
+
+/*--- 共用 ---*/
+.over-hide { overflow: hidden; }
+.nomargin  { margin: 0 !important; }
+.flex       { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.flex-wrap  { -moz-box-wrap: wrap; -webkit-box-wrap: wrap; -webkit-flex-wrap: wrap; -ms-flexbox-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.photo_wrap img, .step-wrap img, .step-3point img, .recipe-wrap img, ul.buy-A-pd img, ul.buy-B-pd img {
+	width: 100%;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+
+}

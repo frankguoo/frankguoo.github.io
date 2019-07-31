@@ -1,0 +1,785 @@
+//基本變數設定================================================================
+
+
+//無彩色
+$white: #ffffff; //白
+$light: #f2f2f2; //淺
+$light-gray: #d8d8d8; //淺灰
+$gray: #a1a1a1; //灰
+$deep-gray: #7c7c7c; //深灰
+$deep: #5b5b5b; //深
+$black: #3a3a3a; //黑
+
+//版面顏色
+$main-color: #00387b  !default; //主色
+$main-color-hover: darken($main-color, 5); //主色的hover色
+$sec-color: #ff6701 !default; //搭配色
+$sec-color-hover:  darken($sec-color, 5); //搭配色的hover色
+$thir-color: #0a91f8 !default; //輔助色
+$thir-color-hover:  darken($thir-color, 5); //第三色的hover色
+$fourth-color: #e5f2f6 !default; //輔助色
+$fourth-color-hover:  darken($thir-color, 5); //第四色的hover色
+
+//文字顏色
+$title-color: $main-color !default; //文章標題
+$span-color: $sec-color !default; //文章附註
+
+//合成用的套明度
+$opacity: .9;
+
+//字高
+$line-height-s: 1.2;
+$line-height-m: 1.6;
+$line-height-l: 2;
+$line-height-xl: 2.4;
+
+//文字大小
+$font-size-s: .9em;
+$font-size-m: 1em; 
+$font-size-l: 1.1em;
+$font-size-xl: 1.4em;
+
+//間隔設定
+$interval-s: 3px;
+$interval-m: 6px;
+$interval-l: 10px;
+$interval-xl: 20px;
+
+//文字樣式
+$base-font-style: '微軟正黑體', Arial, 'Helvetica Neue', Helvetica, sans-serif, '新細明體';
+
+//文字厚度
+$font-weight-n: 400;
+$font-weight-b: 700;
+
+//其他
+$content: '\200B'; //空偽類的字元
+
+//圖片檔名
+$logo_src: 'logo.png'; //logo圖片
+$font_s_src: 'font-smail.png'; //大小字體
+$font_m_src: 'font-medium.png';
+$font_l_src: 'font-big.png';
+$left_src: 'left.png'; //左右方向按鈕
+$right_src: 'right.png';
+$search_src: 'search.png'; //上方搜尋圖片
+$footer_logo_sec: 'footer.png'; //footer logo 圖片
+$wcag_src: 'index_37.jpg'; //wcag
+$egov_src: 'gov_03.png'; //gov
+
+
+
+//RWD 核心================================================================
+$breakpoints: (
+  l: 1200px,
+  m: 1140px,
+  s: 932px,
+  es: 576px,
+);
+
+// mobile-first breakpoint mixin
+@mixin breakpoint($breakpoint: m, $key: max) {
+    @media (#{$key}-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+}
+
+
+//function 擴充功能================================================================
+
+@function pxToEm($px, $em: 16px ){ //px轉em的方法
+	@return ( $px / $em ) * $font-size-m;
+}
+
+@function fontColor($bg_color, $text_light: $white, $text_dark: $black, $standard_color: #8b8b8b){ //計算背景深淺更改文字顏色，$bg_color是底色，$text_light是黑底文字，$text_dark是白底文字，$standard_color是顏色基準
+	@if( lightness($bg_color) > lightness($standard_color) ){
+		@return $text_dark;
+	}@else{
+		@return $text_light;
+	}
+}
+
+
+
+
+//基本樣式設定================================================================
+
+//全頁文字
+$body-font-color: $black !default; //網站文字顏色
+
+//連結顏色
+$link-color: inherit !default; //連結顏色
+$visited-color: inherit !default; //造訪過連結顏色
+$hover-color: #42a881 !default; //指標移入連結顏色，不可與任何底色重疊 
+$active-color: inherit !default; //點擊連結顏色
+
+//按鈕樣式
+$btn-bg-color: $sec-color; //按鈕背景色
+$btn-hover-bg-color: $sec-color-hover; //按鈕滑入顏色
+$btn-text-color: $white; //按鈕文字顏色
+$btn-padding: $interval-m $interval-l; //按鈕內邊距，決定按鈕大小
+$btn-border: 0; //按鈕線框
+
+//LOGO大小設定
+$logo-pic-width: image-width($logo_src);
+$logo-pic-height: image-height($logo_src);
+$desktop-logo-width: 400px; //桌面版LOGO寬度
+$pad-logo-width: 340px; //PAD版LOGO寬度
+$mobile-logo-width: 280px; //手機版LOGO寬度
+
+//分隔線樣式
+$main-line: 1px dotted $light-gray;
+
+
+
+
+
+//mixin css延伸================================================================
+
+@mixin linear-gradient($color1: $white, $color2: $light, $pos1: 50%, $pos2: 100%){ //漸層 $color1跟$color2是顏色， $pos1跟$pos2是定位
+	background-color: mixin($color1, $color2);
+	background-image: linear-gradient(to bottom, $color1 $pos1,$color2 $pos2); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color1}', endColorstr='#{$color2}',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin opacity($opacity){ //透明度
+	opacity: $opacity;
+	filter: alpha(opacity=#{$opacity * 100}); /* IE6-8 */
+}
+
+@mixin box-shadow($box-shadow: 0 0 6px $deep-gray){ //區塊陰影
+	box-shadow: $box-shadow;
+}
+
+@mixin text-shadow($text-shadow...){ //文字陰影
+	text-shadow: $text-shadow;
+}
+
+@mixin border-radius($border-radius: 4px){ //圓角
+	border-radius: $border-radius;
+}
+
+@mixin container($width: $pc-width){
+	max-width: $width;
+	margin: 0 auto;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+      -webkit-flex: $values;
+  	  -ms-flex: $values;
+  	      flex: $values;
+}
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+     -moz-flex-flow: $flow;
+      -ms-flex-flow: $flow;
+          flex-flow: $flow;
+}
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+     -moz-box-ordinal-group: $val;     
+  	     -ms-flex-order: $val;     
+  	      -webkit-order: $val;  
+  		      order: $val;
+}
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+     -moz-flex-grow: $grow;
+      -ms-flex-grow: $grow;
+          flex-grow: $grow;
+}
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+     -moz-align-content: $align;
+      -ms-align-content: $align;
+          align-content: $align;
+}
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+          align-items: $align;
+}
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+     -moz-align-self: $align;
+      -ms-align-self: $align;
+          align-self: $align;
+}
+
+%multi-ellipsis {
+	overflow: hidden;
+
+	&:before {
+		content: '\200B';
+		display: block;
+		float: left;
+		width: 1px;
+	}
+
+	> * {
+		display: block;
+		float: right;
+		width: 100%;
+		box-sizing: border-box;
+		margin-left: -1px;
+	}
+
+	&:after {
+		content: '...';
+		content: attr(data-more);
+		position: relative;
+		float: right;
+		left: 100%;
+		width: 150px;
+		margin-left: -150px;
+		margin-right: 1px;
+		text-indent: 30px;
+		color: $span-color;
+		text-align: right;
+	}
+}
+
+@mixin multi-ellipsis ($line: 6, $line-height: 20px, $background-color: $white, $position: 60% ){ //多行超過範圍文字變成'...'的方法
+
+	@extend %multi-ellipsis;
+	height: $line-height * $line;
+
+	&:before {
+		min-height: $line-height * $line;
+		height: $line-height * $line;
+	}
+
+	> * {
+		line-height: $line-height;
+	}
+
+	&:after {
+		top: -1 * $line-height;
+		line-height: $line-height;
+		background-image: linear-gradient(to right, transparent 0, $background-color $position);
+	}
+}
+
+
+
+//extend 樣式集================================================================
+
+%clear{ //清除浮動
+	content: $content;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+%hide-text{ //隱藏文字的方法
+	text-indent: -9999px;
+	text-shadow: none;
+	color: transparent;
+}
+
+%ellipsis{ //超過範圍文字變成'...'的方法
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+%content{ //conten左、中、右區塊樣式
+	display: block;
+}
+
+%article{ //內文文章樣式
+	@include border-radius();
+	padding: 20px;
+	display: block;
+	line-height: $line-height-m;
+	background-color: $light;
+
+  ADDRESS,
+  BLOCKQUOTE, 
+  BODY, DD, DIV, 
+  DL, DT, 
+  FIELDSET, FORM,
+  FRAME, FRAMESET,
+  H1, H2, H3, H4, 
+  H5, H6, IFRAME, 
+  NOFRAMES, 
+  OBJECT, OL, P, 
+  UL, APPLET, 
+  CENTER, DIR, 
+  HR, MENU, PRE   { display: block }
+  LI              { display: list-item }
+  HEAD            { display: none }
+  TABLE           { display: table }
+  TR              { display: table-row }
+  THEAD           { display: table-header-group }
+  TBODY           { display: table-row-group }
+  TFOOT           { display: table-footer-group }
+  COL             { display: table-column }
+  COLGROUP        { display: table-column-group }
+  TD, TH          { display: table-cell }
+  CAPTION         { display: table-caption }
+  TH              { font-weight: bolder; text-align: center }
+  CAPTION         { text-align: center }
+  BODY            { padding: 8px; line-height: 1.33 }
+  H1              { font-size: 2em; margin: .67em 0 }
+  H2              { font-size: 1.5em; margin: .83em 0 }
+  H3              { font-size: 1.17em; margin: 1em 0 }
+  H4, P,
+  BLOCKQUOTE, UL,
+  FIELDSET, FORM,
+  OL, DL, DIR,
+  MENU            { margin: 1.33em 0 }
+  H5              { font-size: .83em; line-height: 1.17em; margin: 1.67em 0 }
+  H6              { font-size: .67em; margin: 2.33em 0 }
+  H1, H2, H3, H4,
+  H5, H6, B,
+  STRONG          { font-weight: bolder }
+  BLOCKQUOTE      { margin-left: 40px; margin-right: 40px }
+  I, CITE, EM,
+  VAR, ADDRESS    { font-style: italic }
+  PRE, TT, CODE,
+  KBD, SAMP       { font-family: monospace }
+  PRE             { white-space: pre }
+  BIG             { font-size: 1.17em }
+  SMALL, SUB, SUP { font-size: .83em }
+  SUB             { vertical-align: sub }
+  SUP             { vertical-align: super }
+  S, STRIKE, DEL  { text-decoration: line-through }
+  HR              { border: 1px inset }
+  OL, UL, DIR,
+  MENU, DD        { margin-left: 40px }
+  OL              { list-style-type: decimal }
+  OL UL, UL OL,
+  UL UL, OL OL    { margin-top: 0; margin-bottom: 0 }
+  U, INS          { text-decoration: underline }
+  CENTER          { text-align: center }
+  BR:before       { content: "\A" }
+
+  /* An example of style for HTML 4.0's ABBR/ACRONYM elements */
+
+  ABBR, ACRONYM   { font-variant: small-caps; letter-spacing: 0.1em }
+  A[href]         { text-decoration: underline }
+  :focus          { outline: thin dotted invert }
+
+
+  /* Begin bidirectionality settings (do not change) */
+  BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+  BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+  *[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+  *[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+  /* Elements that are block-level in HTML4 */
+  ADDRESS, BLOCKQUOTE, BODY, DD, DIV, DL, DT, FIELDSET, 
+  FORM, FRAME, FRAMESET, H1, H2, H3, H4, H5, H6, IFRAME,
+  NOSCRIPT, NOFRAMES, OBJECT, OL, P, UL, APPLET, CENTER, 
+  DIR, HR, MENU, PRE, LI, TABLE, TR, THEAD, TBODY, TFOOT, 
+  COL, COLGROUP, TD, TH, CAPTION 
+                  { unicode-bidi: embed }
+  /* End bidi settings */
+
+  [valign="top"] {
+  	vertical-align: top;
+  }
+
+  [valign="top"] td {
+  	vertical-align: top;
+  }
+
+  [align="center"] {
+    text-align: center;
+
+    td,th {
+     text-align: left;
+    }
+  }
+
+  [align="left"] {
+    text-align: left;
+
+    td,th {
+     text-align: left;
+    }
+  }
+
+  [align="right"] {
+    text-align: right;
+
+    td,th {
+     text-align: right;
+    }
+  }
+
+  caption {
+  	padding: 10px 5px;
+  	font-weight: $font-weight-b;
+  	font-size: $font-size-l;
+  }
+
+  table {
+    width: 100% !important;
+    
+    td,th {
+      text-align: left;
+    }
+  }
+  
+  table[border] td,th {
+  		border: 1px solid #555;
+  		padding: 5px;
+  }
+  
+  table[border="0"] td,th {
+  		border-width: 0;
+  }
+
+  table[border="1"] td,th {
+  		border-width: 1px;
+  }
+  
+  table[border="2"] td,th {
+  		border-width: 2px;
+  }
+  
+  table[border="3"] td,th {
+  		border-width: 3px;
+  }
+  
+  table[border="4"] td,th {
+  	border-width: 4px;
+  }
+  
+  table[border="5"] td,th {
+  		border-width: 5px;
+  }
+}
+
+%model{ //模組區塊
+	position: relative;
+}
+
+%model-title{ //模組title
+	$line-height: 42px; //行高
+
+	position: relative;
+	margin-bottom: $interval-l;
+	line-height: $line-height;
+	z-index: 2;
+	text-align: center;
+	font-size: $font-size-l;
+	color: $white;
+	text-shadow: 0 0 $interval-l $deep-gray;
+
+	&:before{
+		display: block;
+		margin: 0 auto -1 * $line-height;
+		line-height: $line-height;
+		text-align: center;
+		font-size: $line-height;
+		z-index: -1;
+		color: mix($white, $sec-color, 20);
+		background-color: $sec-color;
+		text-shadow: 0 0 0;
+	}
+
+	&:after{
+		$linear_height: 2px; //線高
+
+		content: $content;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: $linear_height;
+		top: ( $line-height - $linear_height ) / 2;
+		background: $white;
+		background: linear-gradient(to right, $sec-color 0%, $white 50%, $sec-color 100%);
+		z-index: -2;
+	}
+}
+
+%page-title{
+	padding: $interval-l 0;
+	margin-bottom: $interval-l;
+	font-size: $font-size-l;
+	text-indent: 0;
+}
+
+%text{ //輸入框樣式
+	@include border-radius();
+	border: 1px solid $light-gray;
+	padding: $btn-padding;
+	vertical-align: middle;
+}
+
+%btn{ //按鈕樣式
+	@include border-radius();
+	background-color: $btn-bg-color;
+	display: inline-block;
+	padding: $btn-padding;
+	color: $btn-text-color;
+	border: $btn-border;
+	line-height: 1;
+	cursor: pointer;
+	vertical-align: middle;
+	font-size: $font-size-s;
+	font-family: $base-font-style;
+
+	&:link{
+
+	}
+
+	&:visited{
+
+	}
+
+	&:hover{
+		color: fontColor($btn-hover-bg-color);
+		background-color: $btn-hover-bg-color;
+		background-image: none;
+	}
+
+	&:active{
+
+	}
+}
+
+%list{ //橫條選單樣式
+	@include border-radius();
+	display: block;
+	padding: 6px 10px;
+	background-color: $light;
+	line-height: $line-height-m;
+
+	&:hover{
+		background-color: $sec-color;
+		color: $white;
+	}
+}
+
+%table{ //表單樣式
+
+	tr{
+
+		&:nth-child(2n),&.question_tr + tr,&.css_title + tr{
+			background-color: $light;
+		}
+
+		+ tr {
+
+			+ tr {
+				border-top: 1px solid lighten( $main-color, 60);
+			}
+		}
+
+		th,td{ //th,td共同設定
+			padding: $interval-l;
+			
+			a{
+				color: inherit;
+
+				&:hover{
+					color: $hover-color;
+				}
+			}
+		}
+
+		th{ //標題設定
+			font-size: $font-size-l;
+			color: $title-color;
+		}
+
+		td{
+			line-height: $line-height-m;
+		}
+	}
+}
+
+%tabs{ //頁籤樣式
+	
+	ul{
+		text-align: center;
+
+		li{
+			@include border-radius();
+			position: relative;
+			display: inline-block;
+			font-size: $font-size-m;
+			color: $light-gray;
+
+			+ li{
+				margin-left: $interval-l;
+
+				&:before{
+					content: $content;
+					display: block;
+					position: absolute;
+					top: 8px;
+					bottom: 8px;
+					width: 1px;
+					left: -1 * $interval-l / 2;
+					background-color: $deep;
+				}
+			}
+
+			&:hover{
+				background-color: $light;
+				color: $white;
+			}
+
+			a,span{
+				@include border-radius();
+				display: block;
+				padding: $interval-l 10px;
+				line-height: 1;
+				font-size: $font-size-l;
+				color: $deep;
+
+				span,a{
+					display: inline;
+					padding: 0;
+					font-size: $font-size-m;
+					background-color: transparent;
+				}
+			}
+
+			.tabs_yes,&.data_midlle_news_category_yes{ //開啟的狀態
+				background-color: $sec-color;
+				color: $white;
+
+				a,span{
+					color: $white;
+				}
+			}
+		}
+
+		&:after{
+			@extend %clear;
+		}
+	}
+}
+
+%tab-btns{ //按鈕頁籤樣式
+	margin-bottom: $interval-l;
+	
+	ul{
+
+		li{
+			float: left;
+
+			+ li{
+				margin-left: $interval-m;
+			}
+
+			a{
+				@extend %btn;
+
+				&:hover{
+
+				}
+			}
+		}
+
+		&:after{
+			@extend %clear;
+		}
+	}
+}
+
+
+
+
+//mixin 樣式集================================================================
+
+@mixin bgToPic($img_src, $picsize: true, $size: 1){ //依圖改變大小並置中，$img_src為圖片檔名，$picsize為false就不匯出寬高，$size調整大小比例
+
+	@if( $picsize != false ){
+		width: image-width($img_src) * $size;
+		height: image-height($img_src) * $size;
+	}
+
+	background-image: image-url($img_src);
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+@mixin pic-icon($img_src, $picsize: true, $size: 1){ //依圖改變大小並置中，$img_src為圖片檔名，$picsize為false就不匯出寬高且匯出%btn樣式，$size調整大小比例
+
+	@if( $picsize != false ){
+		@include border-radius();
+		display: inline-block;
+		padding: $btn-padding;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+
+	@include bgToPic($img_src, $picsize, $size);
+	@extend %hide-text;
+}
+
+@mixin left-icon($picsize: true, $size: 1){ //快捷的左箭頭方法，$picsize為false就不匯出寬高且匯出%btn樣式，$size調整大小比例
+	@include pic-icon($left_src, $picsize, $size);
+}
+
+@mixin right-icon($picsize: true, $size: 1){ //快捷的右箭頭方法，$picsize為false就不匯出寬高且匯出%btn樣式，$size調整大小比例
+	@include pic-icon($right_src, $picsize, $size);
+}
+
+@mixin title-before($text: $content, $img_src: none, $size: 1){ //模組title前置物件，變數是要顯示的前輟字串,或改成icon圖
+
+	@if( $img_src != none ){ //如果有傳入圖的路徑，就不顯示字，反之則顯示字
+		@include bgToPic($img_src, $size);
+		content: $content;
+	}@else{
+		@include border-radius();
+		content: $text;
+		padding: $btn-padding;
+		background-color: $main-color;
+		color: $light;
+	}
+	
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: $interval-m;
+}

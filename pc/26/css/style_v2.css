@@ -1,0 +1,419 @@
+@charset "utf-8";
+body,div,span,h1,p,a,img,dl,dt,dd {margin:0;padding:0;border:0;vertical-align:baseline;background:transparent;}
+img, object, embed, video {
+	max-width: 100%;
+}
+.ie6 img { width:100%; }
+div, *	 { transition: 0.3s; box-sizing: border-box; }
+html, body{
+	background-color: #fff !important;
+	color:#000;
+	font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+	position: relative;
+	height: 100%;
+	overflow-x: hidden;
+}
+.wrap, .wrap_pd {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-size: 16px;
+	background: url('../img/bg_01.jpg') top center no-repeat #ffc019;
+}
+.wrap_pd {
+	background: url('../img/bg_02.png') top center no-repeat #fffcac;
+	padding-top: 30px;
+}
+.top_KV {
+	width: 100%;
+	height: 340px;
+	margin: 0 auto;
+	background: url('../img/top_KV.png') top center no-repeat;
+}
+
+
+/*--- 九宮格轉盤 ---*/
+.game_wrap {
+	padding: 10px;
+	width: 890px;
+	max-width: 97%;
+	margin: 0 auto 30px;
+	border-radius: 20px;
+	position: relative;
+	background: url('../img/bg_lottery.png') top center no-repeat #c9141d;
+	background-size: 97%;
+	padding-bottom: 170px;
+	background-position: 50% 80px;
+}
+#lottery {
+	width: 630px;
+	margin: 241px auto 0;
+}
+#lottery img {
+ 	width: 100%;
+ 	box-shadow: 1px 1px 3px #a33f0e;
+}
+#lottery .mask {
+	position: absolute;
+	width: calc(100% - 10px);
+	height: calc(100% - 12px);
+	background: rgba(0, 0, 0, 0.5);
+	top: 5px;
+	left: 5px;
+}
+#lottery table {
+ 	width: 100%;
+	height: 100%;
+ }
+#lottery table td {
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+    position: relative;
+}
+#lottery td.td_start {
+	padding: 0;
+}
+#lottery a img {
+	box-shadow: none;
+}
+#lottery table td.active .mask {
+    display: none;
+}
+ul.game_info {
+	width: 100%;
+	margin: auto;
+	padding: 5px 0 0 7px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+ul.game_info li:nth-child(1) {
+	margin-right: 10px;
+}
+.note {
+	width: 180px;
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    background-color: #ffc01a;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 20px;
+    right: 50%;
+    left: 50%;
+    margin-left: -90px;
+    box-shadow: 2px 3px 0 #fff;
+}
+
+
+/*--- 商品 ---*/
+.section {
+	width: 1000px;
+	max-width: 100%;
+	margin: 0 auto 20px;
+	position: relative;
+}
+.section img {
+	width: 100%;
+	display: block;
+}
+.subtitle {
+    text-align: center;
+}
+.subtitle h3 {
+	z-index: 1;
+	margin: 0 0 0 -50%;
+	width: 100%;
+	color:#fff;
+    font-size: 3em;
+    line-height: 1.9em;
+}
+.section ul {
+	padding: 7px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	padding: 5px 20px 20px;
+}
+.section ul li {
+	background-color: #fff;
+	width: calc(100% / 4);
+	margin-bottom: 5px;
+	padding: 8px 4px 8px 8px;
+	position: relative;
+}
+.section ul li:nth-child(4) {
+	padding: 8px;
+}
+.section ul li:hover {
+	transform: translateY(-10px);
+	/* transform: scale(1.03); */
+}
+.section .hot {
+	text-align: center;
+	color: #fff;
+	background-color: #ff1c02;
+    padding: 5px 3px;
+    font-size: 1.1em;
+}
+.section .pd_title, .section h4 {
+	text-align: center;
+	padding: 5px 3px;
+	font-size: 1.1em;
+	color: #515151;
+	background-color: #fff;
+}
+.section h4 {
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	background-color: #fff;
+}
+.section  span.old_price {
+	font-size: 0.9em;
+	text-decoration: line-through;
+	color: #9f9f9f;
+}
+.section span.hot_price {
+	color: #d00;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.section span.hot_price small {
+	font-weight: normal;
+	font-size: 60%;
+}
+.section span.buy {
+	background-color: #d00;
+    color: #fffa1e;
+    font-size: 0.6em;
+    padding: 3px 5px;
+    vertical-align: 3px !important;
+    border-radius: 4px;
+}
+.anchor {
+	top: 62%;
+    color: #fff;
+    z-index: 999;
+    width: 1px;
+}
+.sec_01 ul 		{ background-color: #ff641a; }
+.sec_02 ul 		{ background-color: #88d33b; }
+.sec_03 ul 		{ background-color: #5ac4ff; }
+.sec_04 ul 		{ background-color: #ff5b7b; }
+.sec_01 ul li 	{ background-color: #ff8f58; }
+.sec_02 ul li 	{ background-color: #afe875; }
+.sec_03 ul li 	{ background-color: #aee2ff; }
+.sec_04 ul li 	{ background-color: #ff9caf; }
+
+/*--- 燈箱 中獎資訊 ---*/
+#youGetit {
+	position: relative;
+	/* background: #fff; */
+	color: #262626;
+	padding: 20px;
+	/* width: auto; */
+	width: 640px;
+	height: 100%;
+	max-width: 95%;
+	margin: 20px auto;
+	text-align: center;
+}
+#youGetit .mfp-close {
+    color: #333;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 100%;
+    font-size: 3rem;
+}
+#youGetit img {
+	width: 100%;
+}
+
+
+/*--- 燈箱 活動辦法 ---*/
+#game-popup {
+	position: relative;
+	background: #fff;
+	color: #262626;
+	padding: 20px;
+	width: auto;
+	width: 950px;
+	height: 100%;
+	max-width: 95%;
+	margin: 20px auto;
+	border-radius: 20px;
+}
+#game-popup h2 {
+	width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #262626;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    padding: 10px 0;
+}
+#game-popup h2:nth-child(1) {
+	border-top: 0;
+	padding-top: 0;
+	line-height: 1.2em;
+}
+#game-popup ul.decimal {
+    list-style-type: decimal;
+    margin: 10px 0 20px 20px;
+}
+#game-popup ul.decimal li {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+#game-popup .mfp-close {
+	color: #262626;
+}
+#game-popup h3 {
+	padding: 8px 5px;
+	background-color: #e3e3e3;
+}
+#game-popup a {
+	color: #1790f0;
+	text-decoration: underline;
+}
+ul.thaitown {
+	overflow: hidden;
+	line-height: 22px;
+    font-size: 15px;
+}
+ul.thaitown li {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+ul.thaitown .left_box {
+	border: 1px solid #e3e3e3;
+	border-right: 0;
+	padding: 8px;
+	width: 250px;
+}
+ul.thaitown .right_box {
+	border: 1px solid #e3e3e3;
+	padding: 8px;
+	width: calc(100% - 250px);
+}
+
+/* animate in */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+ /* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8);
+	opacity: 0;
+}
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+/*--- 共用 ---*/
+.over-hide  { overflow: hidden; }
+.nomargin   { margin: 0 !important; }
+.hide 		{ display: none; }
+
+.photo_wrap img, .step-wrap img, .step-3point img, .recipe-wrap img, ul.buy-A-pd img, ul.buy-B-pd img {
+	width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+	.top_KV 					{ background-size: 132%; height: 305px; height: 0; padding-bottom: 30%;}
+}
+@media only screen and (max-width: 960px) {
+	.wrap_pd 					{ font-size: 14px; }
+}
+@media only screen and (max-width: 930px) {
+	.game_wrap 					{ padding-bottom: 17%; }
+	#lottery 					{ width: 73%; margin-top: 28.5%; }
+	.section ul 				{ padding: 5px; overflow: hidden; padding-top: 10px; display:inline-flex; flex-wrap:wrap;}
+	.note 						{ bottom: 2.1%; width: 34%; margin-left: -17.5%; font-size: 4.2vw; padding: 1.8vw 0 1.6vw; box-shadow: 0.4vw 0.6vw 0 #fff; line-height: 0.8; }
+	.section ul li 				{ width: 49%; padding: 5px; margin: 0 2% 2% 0; }
+	.section ul li:nth-child(even) { padding: 5px; margin-right: 0; }
+}
+@media only screen and (max-width: 768px) {
+	.wrap 						{ background-size: 170%; }
+	.top_KV 					{ background: none; height: auto; padding-bottom: 0; }
+	.pc 						{ display: none; }
+	#lottery 					{ margin-top: 29.5%; }
+	.game_wrap 					{ background-position: 50% 91%; }
+	ul.game_info 				{ flex-wrap: wrap; -webkit-flex-wrap: wrap; }
+	ul.game_info img 			{ margin: auto; width: 100%; }
+	ul.game_info li 			{ width: 100%; }
+	ul.game_info li:nth-child(1){ margin: 0 0 10px; }
+}
+@media only screen and (max-width: 767px) {
+	.mfp-inline-holder .mfp-content { height: 100%; overflow: hidden; }
+	#game-popup 				{ height: 94%; }
+	.popup_wrap 				{ height: 100%; overflow-x: auto; }
+	.game_wrap 					{ padding-bottom: 18%; }
+	
+}
+@media only screen and (max-width: 500px) {
+	.wrap_pd 					{ font-size: 12px; overflow: hidden; }
+	img.sec_title 				{ width: 160%; max-width: none; margin-left: -30%; }
+	.game_wrap 					{ padding-bottom: 17.2%; }
+	#lottery 					{ width: 76%; }
+	#lottery table td 			{ padding: 3px; }
+	#lottery .mask 				{ width: calc(100% - 6px); height: calc(100% - 8px); top: 3px; left: 3px; }
+	#youGetit .mfp-close 		{ width: 30px; height: 30px; line-height: 30px; font-size: 2.2rem; top: 5px; right: 5px; }
+	#game-popup 				{ padding: 20px 10px; }
+	ul.thaitown .left_box 		{ width: 120px; }
+	ul.thaitown .left_box br 	{ display: none; }
+	ul.thaitown .right_box 		{ width: calc(100% - 120px); }
+	.section span.buy 			{ font-size: 10px; padding: 2px 4px; }
+}
+@media only screen and (max-width: 350px) {
+	.wrap_pd 					{ font-size: 11px; }
+}

@@ -1,0 +1,444 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{padding:0; margin:0;}
+
+body{
+	font-family:  Arial, Helvetica, "Microsoft JhengHei", sans-serif;
+	background: #FFF url("../img/bg.jpg") center top no-repeat !important;
+}
+
+img{
+	border: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.col-m-bg{
+	background: url(../img/main.jpg) center top no-repeat;
+	width: 932px;
+	height: 702px;
+	margin-left: 0px;
+}
+.body-a-m-bg{
+	background: url(../img/a_title.jpg) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-b-m-bg{
+	background: url(../img/a_title-2.png) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-c-m-bg{
+	background: url(../img/a_title-3.png) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-d-m-bg{
+	background: url(../img/a_title-4.png) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-e-m-bg{
+	background: url(../img/a_title-5.png) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-f-m-bg{
+	background: url(img/f_title.jpg) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-g-m-bg{
+	background: url(img/g_title.jpg) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+.body-h-m-bg{
+	background: url(img/h_title.jpg) center top no-repeat;
+	width: 932px;
+	height: 63px;
+}
+/*  桌機版表格底色請改這裡(一格) S */
+.row-1{
+	width: 932px;
+	height: 1940px;
+	background: #194aec;
+}
+/*  桌機版表格底色請改這裡(一格) E */
+
+/*  桌機版表格底色請改這裡(兩格) S */
+.row-2a{
+	width: 932px;
+	height: 695px;
+	background: #D4ED8E;
+}
+/*  桌機版表格底色請改這裡(兩格) E */
+
+/*  桌機版表格底色請改這裡(兩格) S */
+.row-2b{
+	width: 932px;
+	height: 695px;
+	background: #F4BF67;
+}
+/*  桌機版表格底色請改這裡(兩格) E */
+
+/*  桌機版表格底色請改這裡(兩格) S */
+.row-2c{
+	width: 932px;
+	height: 695px;
+	background: #DEB6DE;
+}
+/*  桌機版表格底色請改這裡(兩格) E */
+
+/*  桌機版表格底色請改這裡(兩格) S */
+.row-2d{
+	width: 932px;
+	height: 695px;
+	background: #F4B8B9;
+}
+/*  桌機版表格底色請改這裡(兩格) E */
+
+/*  桌機版表格底色請改這裡(兩格) S */
+.row-2e{
+	width: 932px;
+	height: 695px;
+	background: #91D1F7;
+}
+/*  桌機版表格底色請改這裡(兩格) E */
+
+/*  桌機版表格底色請改這裡(三格) S */
+.row-3{
+	width: 932px;
+	height: 1900px;
+	background: #ef5a01;
+}
+/*  桌機版表格底色請改這裡(三格) E */
+
+/*  桌機版表格底色請改這裡(四格) S */
+.row-4{
+	width: 932px;
+	height: 1110px;
+	background: #D4ED8E;
+}
+/*  桌機版表格底色請改這裡(四格) E */
+
+/*  桌機版表格底色請改這裡(五格) S */
+.row-5{
+	width: 932px;
+	height: 1670px;
+	background: #194aec;
+}
+/*  桌機版表格底色請改這裡(五格) E */
+
+.col-m-12{
+	width: 100%;
+}
+.col-m-3{
+	float: left;
+	margin: 0 0px 0 4px;
+	margin-bottom: 4px;
+}
+
+#footer p{
+	color: #eee;
+	font-size: 9pt;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+#content-s{
+	display: none;
+}
+
+/* 單格商品START */
+
+#main-s{
+	margin-left: -10px;
+}
+
+.box0{
+	margin-left: 0px;
+}
+
+.box{
+	background-color: #FFF;
+}
+.highlight{
+	background-color: #f00;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+	height: 25px;
+	text-align: center;
+	border-left: 6px solid #FFF;
+	border-right: 6px solid #FFF;
+}
+.name{
+	color: #000;
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+}
+.price{
+    color: #d00;
+    z-index: 999;
+    font-size: 26px;
+    padding: 0 5px 3px 5px;
+    text-decoration: none;
+	text-align: center;
+}
+.price .money{
+	font-size: 16px;
+}
+.price .pcs{
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.price .price-s{
+	text-decoration: line-through;
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* 單格商品END */
+
+.box img:first-child{
+	width: 228px !important;
+	height: 228px !important;
+}
+
+
+#footer p{
+	color: #333333;
+	font-size: 9pt;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+
+body{
+	background: #FFF !important;
+	font-family: Arial, Helvetica, "Microsoft JhengHei", sans-serif;
+}
+
+.col-m-bg{
+	background: url(../img/main-C-s.jpg) center top no-repeat;
+	width: 480px;
+	height: 659px;
+}
+
+.body-a-m-bg{
+	background: url(../img/a_title-s.jpg) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-b-m-bg{
+	background: url(../img/a_title-s-2.png) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-c-m-bg{
+	background: url(../img/a_title-s-3.png) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-d-m-bg{
+	background: url(../img/a_title-s-4.png) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-e-m-bg{
+	background: url(../img/a_title-s-5.png) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-f-m-bg{
+	background: url(../img/f_title-s.jpg) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-g-m-bg{
+	background: url(../img/g_title-s.jpg) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+.body-h-m-bg{
+	background: url(../img/h_title-s.jpg) center top no-repeat;
+	width: 480px;
+	height: 63px;
+}
+
+/*  手機版表格底色請改這裡(一格) S */
+.row-1{
+	width: 480px;
+	height: 3925px;
+	background: #194aec;
+}
+/*  手機版表格底色請改這裡(一格) E */
+
+/*  手機版表格底色請改這裡(兩格) S */
+.row-2a{
+	width: 480px;
+	height: 1390px;
+	background: #D4ED8E;
+}
+/*  手機版表格底色請改這裡(兩格) E */
+
+/*  手機版表格底色請改這裡(兩格) S */
+.row-2b{
+	width: 480px;
+	height: 1390px;
+	background: #F4BF67;
+}
+/*  手機版表格底色請改這裡(兩格) E */
+
+/*  手機版表格底色請改這裡(兩格) S */
+.row-2c{
+	width: 480px;
+	height: 1390px;
+	background: #DEB6DE;
+}
+/*  手機版表格底色請改這裡(兩格) E */
+
+
+/*  手機版表格底色請改這裡(兩格) S */
+.row-2d{
+	width: 480px;
+	height: 1390px;
+	background: #F4B8B9;
+}
+/*  手機版表格底色請改這裡(兩格) E */
+
+/*  手機版表格底色請改這裡(兩格) S */
+.row-2e{
+	width: 480px;
+	height: 1390px;
+	background: #91D1F7;
+}
+/*  手機版表格底色請改這裡(兩格) E */
+
+/*  手機版表格底色請改這裡(三格) S */
+.row-3{
+	width: 480px;
+	height: 3920px;
+	background: #ef5a01;
+}
+/*  手機版表格底色請改這裡(三格) E */
+
+/*  手機版表格底色請改這裡(四格) S */
+.row-4{
+	width: 480px;
+	height: 2240px;
+	background: #ee0084;
+}
+/*  手機版表格底色請改這裡(四格) E */
+
+
+/*  手機版表格底色請改這裡(五格) S */
+.row-5{
+	width: 480px;
+	height: 3401px;
+	background: #194aec;
+}
+/*  手機版表格底色請改這裡(五格) E */
+
+
+.col-m-12{
+	width: 100%;
+}
+.col-m-6{
+	float: left;
+	margin: 0 0px 0 4px;
+	margin-bottom: 4px;
+}
+
+
+/* 單格商品START */
+
+.box0{
+	margin-left: -4px;
+}
+
+.box{
+	width: 238px !important;
+	background-color: #FFF;
+}
+.highlight{
+	background-color: #f00;
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFF;
+	height: 30px;
+	text-align: center;
+	border-left: 12px solid #FFF;
+	border-right: 12px solid #FFF;
+}
+.name{
+	color: #000;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+}
+.price{
+    color: #d00;
+    z-index: 999;
+    font-size: 26px;
+    padding: 0 5px 3px 5px;
+    text-decoration: none;
+	text-align: center;
+}
+.price .money{
+	font-size: 16px;
+}
+.price .pcs{
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.price .price-s{
+	text-decoration: line-through;
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* 單格商品END */
+
+#footer p{
+	color: #eee;
+	font-size: 9pt;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 5pt;
+}
+
+.pointer{
+	background-image:url(../img/pointer.png);
+	width:69px;
+	height:69px;
+	position:fixed;
+	bottom: 50px;
+	left: 50%;
+	margin-left: 200px;
+	z-index:999;
+	display: none;
+}
+
+#content-s{
+	display: block;
+}
+
+.box img:first-child{
+	width: 238px !important;
+	height: 238px !important;
+}
+}

@@ -1,0 +1,299 @@
+/*--- header ---*/
+ul.header_desktop, .header_mobile {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    vertical-align: top;
+}
+ul.header_desktop li img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+ul.header_desktop li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    position: relative;
+}
+ul.header_desktop li.description, li.description a {
+    font-size: 12px;
+    color: #a9a9a9;
+    padding-top: 26px;
+    line-height: 0;
+    height: 40px;
+}
+ul.header_desktop li.description span {
+    color: #dd0202;
+}
+ul.header_desktop li.FBicon {
+    padding: 6px 0 0 10px;
+}
+ul.header_desktop li.FBicon img {
+    height: 30px;
+}
+.appQRcode {
+    position: absolute;
+    z-index: 9999;
+    top: 40px;
+    width: 160px;
+    left: 50%;
+    right: 50%;
+    margin-left: -114px;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 5px 6px 8px rgba(0,0,0,.5);
+    display: none;
+}
+ul.header_desktop li .appQRcode img {
+    width: 100%;
+    height: auto;
+}
+li.description.appDonload:hover span {
+    color: #00a1e8;
+}
+.appDonload:hover .appQRcode {
+    display: block;
+}
+.header_mobile {
+    display: none;
+    position: relative;
+    padding: 8px 0 4px;
+}
+.header_mobile img {
+    height: 25px;
+    margin-right: 18px;
+}
+img.return {
+    float: left;
+    height: 36px;
+    margin: -6px 0 0;
+}
+
+/*--- footer ---*/
+.footer {
+    width: 100%;
+    text-align: center;
+    color: #b0b0b0;
+    padding: 15px 10px 20px;
+    line-height: 28px;
+    font-size: 16px;
+    background-color: #f4f4f4;
+}
+/*--- goTOP/FB  ---*/
+.right_box {
+    opacity: 0;
+    width: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    z-index: 99;
+}
+.right_box img {
+    width: 100%;
+}
+.gotop, .share, .more_promo {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgba(164, 164, 164, 0.85);
+    padding: 7px 6px 3px;
+    border-radius: 100%;
+}
+.more_promo {
+    background-color: rgba(195, 0, 0, 0.85);
+    padding: 4px;
+}
+.gotop:hover {
+    background-color: rgba(164, 164, 164, 1);
+}
+.share_box {
+    width: 200px;
+    float: right;
+    margin: 5px 0;
+    position: relative;
+}
+.share {
+    float: right;
+}
+.more_shore {
+    position: relative;
+    float: right;
+    transition: all,.5s;
+}
+.more_shore>div {
+    transition: all,.5s;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: -42px;
+    z-index: -1; 
+    opacity: 0;
+}
+.fb_box {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    background-color: #335a9d;
+    padding: 6px 5px 2px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+}
+.line_box {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    background-color: #00c603;
+    padding: 8.71px 7px 5px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+}
+.open_all .fb_box, .open_all .line_box {
+    transform: rotate(0deg);
+    z-index: 1;
+    display: block;
+    opacity: 1;
+}
+.open_all .line_box {
+    right: 8px;
+}
+.open_all .fb_box {
+    right: 57px;
+}
+
+
+/*--- 側邊選單 ---*/
+.arrow_left {
+    display: none;
+}
+.menu_arrow {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 40px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.65);
+    line-height: 0;
+}
+.menu_arrow:hover {
+    background-color: #dd0202;
+}
+ul.menu_box {
+    width: 120px;
+    position: fixed;
+    right: 0;
+    top: 142px;
+    background-color: rgba(0,0,0,.65);
+    text-align: center;
+    color: #fff;
+}
+ul.menu_box li {
+    padding: 12px 0;
+    margin-bottom: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+ul.menu_box li:hover {
+    background-color: #dd0202;
+}
+ul.menu_box li::before {
+    content: '';
+    position: absolute;
+    width: 86%;
+    height: 1px;
+    bottom: -1px;
+    right: 7%;
+    background: rgba(0,0,0,.5);
+    z-index: 9;
+}
+ul.menu_box li.top::before {
+    height: 0;
+}
+img.topArrow {
+    width: 12px;
+    vertical-align: -1px;
+}
+
+/*--- 置底APP Banner ---*/
+.app_download {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    text-align: center;
+    display: none;
+}
+.app_box {
+    width: 768px;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 99;
+}
+.app_close {
+    z-index: 99;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #000;
+}
+.app_download img {
+    display: block;
+}
+.footer.noAPP, .noAPP {
+    padding-bottom: 20px !important;
+}
+.right_box.noAPP {
+    bottom: 20px;
+}
+
+/*--- 共用 ---*/
+.mobile, .app_download.mobile.useAPP { display: none; }
+.right_box.useAPP       { bottom: 10px; }
+.keyword.useAPP         { padding-bottom: 20px; }
+
+@media only screen and (max-width: 10230px) {
+    .app_download.mobile                { display: none; }
+}
+@media only screen and (max-width: 950px) {
+    ul.header_desktop li img            { height: 30px; width: auto; }
+    ul.header_desktop li.description, li.description a  { height: 30px; padding-top: 20px; }
+    ul.header_desktop li.FBicon         { padding: 3px 0 0 10px; }
+    ul.header_desktop li.FBicon img     { height: 25px; }
+    .appQRcode                          { top: 30px; }
+}
+@media only screen and (max-width: 768px) {
+    ul.header_desktop, .desktop         { display: none; }
+    .app_download.mobile, .header_mobile{ display: block; }
+    .footer                             { line-height: 1.5; font-size: 11px; /* padding-bottom: 20%; */ }
+    .right_box                          { bottom: 15%; }
+}
+@media only screen and (max-width: 767px) {
+    .app_close              { top: 5px; right: 5px; width: 25px; height: 25px; line-height: 25px; }
+}
+@media only screen and (max-width: 480px) {
+    .footer span                        { display: block; }
+    .footer br                          { display: none; }
+    .app_close                          { width: 20px; height: 20px; line-height: 20px; font-size: 0.8em; }
+    .right_box                          { bottom: 12%; width: 42px; }
+    .fb_box                             { padding: 6px 5px 4px; }
+    .line_box                           { padding: 9px 7px 6px; margin: 8px 0; }
+    .gotop                              { padding: 8px 6px 4px; }
+}
+@media only screen and (max-width: 330px) {
+    .footer                             { padding: 15px 0 20px; }
+}
+

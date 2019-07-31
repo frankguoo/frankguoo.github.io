@@ -1,0 +1,153 @@
+//變數
+@import 'base';
+
+
+#section_06{
+    margin: 0 auto;
+    visibility: visible;
+    background: url(../img/bg-6.png) no-repeat;
+    background-position: center top;
+    background-size: auto;
+    padding: 0 0 120px 0;
+    @include breakpoint(m){
+        background: none;
+        padding: 0px;
+    }
+
+    .content_box{
+        width: 932px;
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+        visibility: visible;
+        .titlebox{
+            text-align: center;
+            padding: 0px;
+            visibility: visible;
+            @include breakpoint(m){
+                padding: 0;
+            }
+        }
+        .main_box{
+            padding: 20px 0 20px 0;
+            @include breakpoint(m){
+                padding: 0px 0 20px 0;
+            }
+            h2{
+                color: black;
+                font-size: 2.6em;
+                font-weight: 700;
+                text-align: center;
+                padding: 20px 0;
+                @include breakpoint(m){
+                    font-size: 2em;
+                    padding: 10px 0 5px 0;
+                }
+            }
+            p{
+                text-align: center;
+                font-weight: 100;
+                font-size: 1.6em;
+                line-height: 1.6em;
+                @include breakpoint(m){
+                    font-size: 1em;
+                    line-height: 1.5em;
+                }
+                span{
+                    display: block;
+                    font-size: .8em;
+                    line-height: 1.5em;
+                }
+            }
+        }
+        .btnbox{
+            width: 100%;
+            margin-bottom: 20px;
+            @include breakpoint(m){
+                width: 50%;
+                margin: 20px auto;
+            }
+            img{
+                width: auto;
+                max-width: 100%;
+            }
+        }
+
+        .poster{
+            @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include justify-content(flex-start);
+            @include align-items(flex-start);
+
+            @include breakpoint(m){
+                @include justify-content(center);
+            }
+
+            img{
+                width: 30%;
+                @include breakpoint(m){
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+            .poster_msg{
+                width: 66%;
+                background-color: #49bac8;
+                border: solid 8px #1fa0b0;
+                border-radius: 20px;
+                padding: 20px 20px;
+                margin: 0 2%;
+                box-shadow: 0px 0px 10px #909090;
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(flex-start);
+                @include align-items(center);
+
+                @include breakpoint(m){
+                    width: 100%;
+                    margin: 15px auto;
+                }
+                ul{
+                    li{
+                        color: #fff;
+                        font-size: 23px;
+                        letter-spacing: 2px;
+                        margin-top: 0px;
+                        text-shadow: 1px 1px 2px #707070;
+                        @include breakpoint(m){
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        #qtbox{
+            padding-top: 20px;
+            @include breakpoint(m){
+                padding: 0;
+            }
+            h3{
+                color: #000;
+                font-size: 20px;
+            }
+            ul{
+                list-style: disc;
+                color: #000;
+                font-weight: 100;
+
+                li{
+                    margin-top: 0px;
+                    font-size: 16px;
+                    @include breakpoint(m){
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,33 @@
+
+//宣告語系
+@charset 'UTF-8';
+@import 'base';
+html{overflow-x: hidden;}
+body{background-color:#f12c2e!important;}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+div,*{box-sizing:border-box;-webkit-box-sizing:border-box;font-family:'微軟正黑體',Arial,Helvetica,sans-serif}
+body{background-color:#24b2c9!important;color:#000;font-family:'微軟正黑體',Arial,Helvetica,sans-serif;position:relative;height:100%}
+img{max-width: 100%;}
+.mobile{display:none}
+@media only screen and (max-width: 932px) {
+.mobile{display:block!important}
+.desktop{display:none!important}
+}
+.main01{
+    background:url(../img/bg_01.jpg) top center no-repeat #24b2c9;
+}
+.main02{
+    background:url(../img/bg_02.jpg) top center no-repeat #24b2c9;
+} 
+@import 'others';
+@import 'kv';
+@import 'section01';
+@import 'section02';
+@import 'section03';
+@import 'section04';
+@import 'section05';
+@import 'section06';
+@import 'section07';
+@import 'section08';

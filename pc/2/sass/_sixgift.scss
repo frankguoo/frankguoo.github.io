@@ -1,0 +1,68 @@
+//變數
+@import 'base';
+
+.sixgift{
+    .tittlebox{
+        text-align: center;
+        
+        img{
+            @media (max-width: 1342px) {
+                width: 100%;
+            }
+        }
+    }
+    .wrap{
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(flex-start);
+        @include align-items(flex-end);
+            @include breakpoint(m){
+                padding: 10px;
+            }
+
+        > div.flip-container{
+            width: 33.3333333%;
+            position: relative;
+            text-align: center;
+            margin: 10px 0 0 0;
+            -ms-transform: perspective(1px) translateZ(0);
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -ms-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            @include breakpoint(m){
+                width: 50%;
+                height: auto;
+                margin: 0;
+                padding: 2px;
+            }
+
+            &:hover {
+                z-index: 2;
+                -ms-transform: scale(0.8);
+                -webkit-transform: scale(0.8);
+                transform: scale(0.8);
+                -ms-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+            }
+            a{
+                display: block;
+                height: 100%;
+                img{
+                    @include breakpoint(l){
+                        width: 100%;
+                    } 
+                }
+
+            }
+        }
+
+    }
+}

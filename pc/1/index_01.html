@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "http://24h.pchome.com.tw/store/DYAJ00",
+      "PIC": "0102_main_01.jpg",
+      "HIGHLIGHT": "加碼送配件組",
+      "NAME": "Apple iPhone X 64G/256G",
+      "PRICE": "35900<span>起</span>",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/prod/DHAFBJ-A9007NFT2",
+      "PIC": "0102_main_02.jpg",
+      "HIGHLIGHT": "窄邊獨顯 狂降兩千",
+      "NAME": "ASUS 13.3吋輕薄NB UX410",
+      "PRICE": "26900",
+      "PRICE-S": "$28900",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DMAX2J-19008M12H?q=/S/DMAX1L",
+      "PIC": "0102_main_03.jpg",
+      "HIGHLIGHT": "降24折 再送好禮",
+      "NAME": "Mdovia V10吸塵器5入組",
+      "PRICE": "14990",
+      "PRICE-S": "$64000",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DPADK9-A9007TXT2",
+      "PIC": "0102_main_04.jpg",
+      "HIGHLIGHT": "知名品牌 再送豪禮",
+      "NAME": "JVC 48吋LED液晶顯示器48E",
+      "PRICE": "11999",
+      "PRICE-S": "$14999",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DCAKC5",
+      "PIC": "0102_main_05.jpg",
+      "HIGHLIGHT": "送伊萊克斯咖啡機",
+      "NAME": "NEW AERON 人體工學椅",
+      "PRICE": "39999",
+      "PRICE-S": "$46325",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DYAM9A",
+      "PIC": "0102_main_06	.jpg",
+      "HIGHLIGHT": "尾牙超夯品",
+      "NAME": "Apple iPad 32G WiFi",
+      "PRICE": "9900",
+      "PRICE-S": "$10900",
+      "PCS": ""
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/prod/DAAW0L-19007BO5Z",
+      "PIC": "0102_main_07.jpg",
+      "HIGHLIGHT": "結帳再折$600",
+      "NAME": "3M淨呼吸空氣清淨機6+10坪",
+      "PRICE": "8288",
+      "PRICE-S": "$16890",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DEBCE1",
+      "PIC": "0102_main_08.jpg",
+      "HIGHLIGHT": "100%純天絲3色選",
+      "NAME": "夢特嬌200織紗天絲被床組",
+      "PRICE": "1580",
+      "PRICE-S": "$2280",
+      "PCS": ""
+    },
+    {         
+      "LINK": "http://24h.pchome.com.tw/store/DXAO4V",
+      "PIC": "0102_main_09.jpg",
+      "HIGHLIGHT": "行動支付超便利",
+      "NAME": "GARMIN 心率智慧錶",
+      "PRICE": "8990",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DICY0X",
+      "PIC": "0102_main_10.jpg",
+      "HIGHLIGHT": "強勢大牌 現省$3000",
+      "NAME": "Delsey 28吋行李箱",
+      "PRICE": "4900",
+      "PRICE-S": "$7900",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DECP03",
+      "PIC": "0102_main_11.jpg",
+      "HIGHLIGHT": "歲末年終 狂降49折",
+      "NAME": "WMF萬用雙鍋剪刀組",
+      "PRICE": "2690",
+      "PRICE-S": "$5540",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DDCA06",
+      "PIC": "0102_main_12.jpg",
+      "HIGHLIGHT": "全館滿1500折250",
+      "NAME": "理膚寶水 多容安乳液天后組",
+      "PRICE": "800",
+      "PRICE-S": "$1245",
+      "PCS": ""
+    }
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    background: transparent;
+    padding: 5px 2px 2px 5px;
+  }
+  .boxF1 ul li {
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding: 10px;
+  }
+  .boxF1 .hotF1 {
+    background-color: #c80202;
+    color: #fff;
+  }
+	
+	
+	ul.pd_wrapF1 li:nth-child(7) .hot_priceF1 small:before { 
+		content: "折後";
+		font-size: 16px;
+	}
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>
