@@ -1,0 +1,1093 @@
+@charset "UTF-8";
+/* line 8, ../sass/agency.scss */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, "微軟正黑體", Arial, sans-serif;
+}
+
+/* line 13, ../sass/agency.scss */
+.text-muted {
+  color: #777777;
+}
+
+/* line 17, ../sass/agency.scss */
+.text-primary {
+  color: #55acee;
+}
+
+/* line 21, ../sass/agency.scss */
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* line 26, ../sass/agency.scss */
+p.large {
+  font-size: 16px;
+}
+
+/* line 30, ../sass/agency.scss */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+
+/* line 38, ../sass/agency.scss */
+a {
+  color: #55acee;
+}
+
+/* line 42, ../sass/agency.scss */
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #2795e9;
+}
+
+/* line 49, ../sass/agency.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 54, ../sass/agency.scss */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* line 58, ../sass/agency.scss */
+.bg-light-gray {
+  background-color: #eeeeee;
+}
+
+/* line 62, ../sass/agency.scss */
+.bg-darkest-gray {
+  background-color: #222222;
+}
+
+/* line 68, ../sass/agency.scss */
+.btn-primary {
+  color: white;
+  background-color: #55acee;
+  border-color: #55acee;
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 15px 10px !important;
+  padding: 15px 15px !important;
+  border-radius: 0px !important;
+}
+/* line 10, ../sass/_mixins.scss */
+.btn-primary:focus, .btn-primary.focus {
+  color: white;
+  background-color: #2795e9;
+  border-color: #126db2;
+}
+/* line 16, ../sass/_mixins.scss */
+.btn-primary:hover {
+  color: white;
+  background-color: #2795e9;
+  border-color: #1d91e8;
+}
+/* line 21, ../sass/_mixins.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: white;
+  background-color: #2795e9;
+  border-color: #1d91e8;
+}
+/* line 28, ../sass/_mixins.scss */
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
+  color: white;
+  background-color: #1583d7;
+  border-color: #126db2;
+}
+/* line 36, ../sass/_mixins.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+/* line 44, ../sass/_mixins.scss */
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+/* line 52, ../sass/_mixins.scss */
+.btn-primary .badge {
+  color: #55acee;
+  background-color: white;
+}
+
+/* line 78, ../sass/agency.scss */
+.btn-xl {
+  color: white;
+  background-color: #55acee;
+  border-color: #55acee;
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+/* line 10, ../sass/_mixins.scss */
+.btn-xl:focus, .btn-xl.focus {
+  color: white;
+  background-color: #2795e9;
+  border-color: #126db2;
+}
+/* line 16, ../sass/_mixins.scss */
+.btn-xl:hover {
+  color: white;
+  background-color: #2795e9;
+  border-color: #1d91e8;
+}
+/* line 21, ../sass/_mixins.scss */
+.btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
+  color: white;
+  background-color: #2795e9;
+  border-color: #1d91e8;
+}
+/* line 28, ../sass/_mixins.scss */
+.btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus, .open > .btn-xl.dropdown-toggle:hover, .open > .btn-xl.dropdown-toggle:focus, .open > .btn-xl.dropdown-toggle.focus {
+  color: white;
+  background-color: #1583d7;
+  border-color: #126db2;
+}
+/* line 36, ../sass/_mixins.scss */
+.btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
+  background-image: none;
+}
+/* line 44, ../sass/_mixins.scss */
+.btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus, fieldset[disabled] .btn-xl:hover, fieldset[disabled] .btn-xl:focus, fieldset[disabled] .btn-xl.focus {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+/* line 52, ../sass/_mixins.scss */
+.btn-xl .badge {
+  color: #55acee;
+  background-color: white;
+}
+
+/* line 89, ../sass/agency.scss */
+.navbar-custom {
+  border-color: transparent;
+}
+/* line 92, ../sass/agency.scss */
+.navbar-custom .navbar-brand {
+  color: #55acee;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, "微軟正黑體", Arial, cursive;
+}
+/* line 95, ../sass/agency.scss */
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
+  color: #2795e9;
+}
+/* line 102, ../sass/agency.scss */
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.98);
+}
+/* line 105, ../sass/agency.scss */
+.navbar-custom .navbar-toggle {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ddd;
+  font-size: 12px;
+}
+/* line 109, ../sass/agency.scss */
+.navbar-custom .navbar-toggle:hover {
+  background-color: #55acee;
+}
+/* line 116, ../sass/agency.scss */
+.navbar-custom .nav li a {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+}
+/* line 121, ../sass/agency.scss */
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+  color: #333333;
+  outline: none;
+}
+/* line 129, ../sass/agency.scss */
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #55acee;
+}
+/* line 134, ../sass/agency.scss */
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #2795e9;
+}
+
+/* line 142, ../sass/agency.scss */
+.navbar-header {
+  background-color: white;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+/* line 148, ../sass/agency.scss */
+.navbar-header .intro-heading {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 52px;
+  padding-left: 15px;
+  letter-spacing: 5px;
+  color: #e7e7e7;
+  text-shadow: rgba(128, 128, 128, 0.22) 0px 0px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  /* line 165, ../sass/agency.scss */
+  .navbar-header {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  /* line 171, ../sass/agency.scss */
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  /* line 178, ../sass/agency.scss */
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 184, ../sass/agency.scss */
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 193, ../sass/agency.scss */
+  .navbar-custom.affix {
+    background-color: white;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+  }
+  /* line 197, ../sass/agency.scss */
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* line 203, ../sass/agency.scss */
+header {
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: #999;
+}
+/* line 211, ../sass/agency.scss */
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* line 214, ../sass/agency.scss */
+header .intro-text .intro-lead-in {
+  font-family: "Helvetica Neue", Helvetica,"微軟正黑體", Arial, sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  letter-spacing: 20px;
+  text-shadow: rgba(128, 128, 128, 0.22) 2px 1px;
+  text-align: right;
+}
+/* line 223, ../sass/agency.scss */
+header .intro-text .intro-heading {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 20px;
+  text-shadow: rgba(128, 128, 128, 0.22) 2px 2px;
+  text-align: right;
+}
+
+@media (min-width: 1680px) {
+  /* line 236, ../sass/agency.scss */
+  header {
+    background-image: url("../img/header-bg2.jpg");
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    max-height: 1250px;
+    position: relative;
+  }
+  /* line 245, ../sass/agency.scss */
+  header .intro-text {
+    padding-top: 500px !important;
+    padding-bottom: 268px !important;
+  }
+}
+@media (min-width: 1366px) {
+  /* line 255, ../sass/agency.scss */
+  header {
+    background-image: url("../img/header-bg2.jpg");
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    max-height: 1250px;
+    position: relative;
+  }
+  /* line 264, ../sass/agency.scss */
+  header .intro-text {
+    padding-top: 500px !important;
+    padding-bottom: 200px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 275, ../sass/agency.scss */
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  /* line 278, ../sass/agency.scss */
+  header .intro-text .intro-lead-in {
+    font-family: "Helvetica Neue", Helvetica,"微軟正黑體", Arial, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 32px;
+    margin-bottom: 25px;
+    letter-spacing: 20px;
+    text-shadow: rgba(128, 128, 128, 0.22) 2px 1px;
+  }
+  /* line 287, ../sass/agency.scss */
+  header .intro-text .intro-heading {
+    font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 75px;
+    letter-spacing: 20px;
+    text-shadow: rgba(128, 128, 128, 0.22) 2px 2px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 301, ../sass/agency.scss */
+  header {
+    margin-top: 45px;
+  }
+
+  /* line 305, ../sass/agency.scss */
+  .intro-text {
+    padding-top: 200px !important;
+  }
+  /* line 307, ../sass/agency.scss */
+  .intro-text .intro-heading {
+    display: none !important;
+  }
+  /* line 311, ../sass/agency.scss */
+  .intro-text .intro-lead-in {
+    display: none !important;
+  }
+}
+/* line 319, ../sass/agency.scss */
+section {
+  padding: 100px 0;
+}
+/* line 321, ../sass/agency.scss */
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+/* line 326, ../sass/agency.scss */
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica,"微軟正黑體", Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+  /* line 337, ../sass/agency.scss */
+  section {
+    padding: 70px 0;
+  }
+}
+/* line 344, ../sass/agency.scss */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* Isotope Items
+---------------------------------- */
+/* line 351, ../sass/agency.scss */
+.filters {
+  margin: 0 0 30px 0;
+}
+
+/* line 355, ../sass/agency.scss */
+.nav-pills {
+  margin-top: 20px;
+}
+
+/* line 358, ../sass/agency.scss */
+.filters .nav-pills > li {
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+/* line 362, ../sass/agency.scss */
+.filters .nav-pills > li + li {
+  margin-left: 0px;
+}
+
+/* line 365, ../sass/agency.scss */
+.text-center.filters .nav-pills > li {
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  display: inline-block;
+  float: none;
+}
+
+/* line 372, ../sass/agency.scss */
+.isotope-container {
+  overflow: hidden;
+}
+
+/* line 375, ../sass/agency.scss */
+.isotope-item {
+  margin-bottom: 20px;
+}
+
+/* line 378, ../sass/agency.scss */
+.isotope-item .btn-default {
+  color: #999999;
+}
+
+/* line 381, ../sass/agency.scss */
+.isotope-item .btn-default:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  /* line 385, ../sass/agency.scss */
+  .filters .nav-pills > li {
+    width: 100%;
+    display: block;
+  }
+}
+/* Pills
+---------------------------------- */
+/* line 393, ../sass/agency.scss */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav-pills > li > a:hover {
+  background-color: #55acee;
+  border-color: #55acee;
+  color: #ffffff;
+}
+
+/* line 401, ../sass/agency.scss */
+.nav-pills > li > a {
+  border-radius: 0;
+  padding: 8px 20px;
+  border: 1px solid #cacaca;
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* line 414, ../sass/agency.scss */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+/* line 417, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* line 422, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(85, 172, 238, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+/* line 431, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+/* line 434, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+/* line 443, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+/* line 446, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+/* line 453, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+/* line 459, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+/* line 463, ../sass/agency.scss */
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Helvetica Neue", Helvetica,"微軟正黑體", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+/* line 471, ../sass/agency.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 478, ../sass/agency.scss */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 486, ../sass/agency.scss */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+/* line 490, ../sass/agency.scss */
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+/* line 500, ../sass/agency.scss */
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+/* line 504, ../sass/agency.scss */
+.timeline > li:before, .timeline > li:after {
+  content: " ";
+  display: table;
+}
+/* line 509, ../sass/agency.scss */
+.timeline > li:after {
+  clear: both;
+}
+/* line 512, ../sass/agency.scss */
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+/* line 518, ../sass/agency.scss */
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+/* line 524, ../sass/agency.scss */
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+/* line 532, ../sass/agency.scss */
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #55acee;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+/* line 544, ../sass/agency.scss */
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+/* line 551, ../sass/agency.scss */
+.timeline > li .timeline-image2 {
+  background-color: #efb921;
+}
+/* line 555, ../sass/agency.scss */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+/* line 559, ../sass/agency.scss */
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+/* line 565, ../sass/agency.scss */
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+/* line 572, ../sass/agency.scss */
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+/* line 577, ../sass/agency.scss */
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+/* line 580, ../sass/agency.scss */
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+/* line 586, ../sass/agency.scss */
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 595, ../sass/agency.scss */
+  .timeline:before {
+    left: 50%;
+  }
+  /* line 598, ../sass/agency.scss */
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  /* line 601, ../sass/agency.scss */
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  /* line 607, ../sass/agency.scss */
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  /* line 612, ../sass/agency.scss */
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  /* line 618, ../sass/agency.scss */
+  .timeline > li .timeline-image2 {
+    background-color: #efb921;
+  }
+  /* line 621, ../sass/agency.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 632, ../sass/agency.scss */
+  .timeline > li {
+    min-height: 60px;
+  }
+  /* line 634, ../sass/agency.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  /* line 637, ../sass/agency.scss */
+  .timeline > li .timeline-image {
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+  }
+  /* line 641, ../sass/agency.scss */
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  /* line 647, ../sass/agency.scss */
+  .timeline > li .timeline-image2 {
+    background-color: #efb921;
+  }
+  /* line 650, ../sass/agency.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 659, ../sass/agency.scss */
+  .timeline > li {
+    min-height: 60px;
+  }
+  /* line 661, ../sass/agency.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  /* line 664, ../sass/agency.scss */
+  .timeline > li .timeline-image {
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+  }
+  /* line 668, ../sass/agency.scss */
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  /* line 672, ../sass/agency.scss */
+  .timeline > li .timeline-image2 {
+    background-color: #efb921;
+  }
+  /* line 675, ../sass/agency.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* line 684, ../sass/agency.scss */
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 687, ../sass/agency.scss */
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+/* line 691, ../sass/agency.scss */
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+/* line 696, ../sass/agency.scss */
+.team-member p {
+  margin-top: 0;
+}
+
+/* line 704, ../sass/agency.scss */
+aside.clients img {
+  margin: 50px auto;
+}
+
+/* line 711, ../sass/agency.scss */
+.message {
+  margin-top: 50px;
+}
+
+/* line 715, ../sass/agency.scss */
+section#contact {
+  background-color: #222222;
+  background-image: url("../img/map-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 720, ../sass/agency.scss */
+section#contact .section-heading {
+  color: white;
+}
+/* line 723, ../sass/agency.scss */
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+/* line 725, ../sass/agency.scss */
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+/* line 729, ../sass/agency.scss */
+section#contact .form-group input.form-control {
+  height: auto;
+}
+/* line 732, ../sass/agency.scss */
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+/* line 736, ../sass/agency.scss */
+section#contact .form-control:focus {
+  border-color: #55acee;
+  box-shadow: none;
+}
+/* line 740, ../sass/agency.scss */
+section#contact ::-webkit-input-placeholder {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 745, ../sass/agency.scss */
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 750, ../sass/agency.scss */
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 755, ../sass/agency.scss */
+section#contact :-ms-input-placeholder {
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 760, ../sass/agency.scss */
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+/* line 767, ../sass/agency.scss */
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+/* line 770, ../sass/agency.scss */
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+/* line 775, ../sass/agency.scss */
+footer ul.quicklinks {
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Helvetica Neue", Helvetica, "微軟正黑體",  Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+/* line 785, ../sass/agency.scss */
+ul.social-buttons {
+  margin-bottom: 0;
+}
+/* line 788, ../sass/agency.scss */
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 801, ../sass/agency.scss */
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+  background-color: #55acee;
+}
+
+/* line 810, ../sass/agency.scss */
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+
+/* line 818, ../sass/agency.scss */
+.portfolio-modal .modal-dialog {
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+/* line 823, ../sass/agency.scss */
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 832, ../sass/agency.scss */
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+  text-transform: none;
+}
+/* line 837, ../sass/agency.scss */
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+/* line 840, ../sass/agency.scss */
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Helvetica Neue", Helvetica,"微軟正黑體", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+/* line 846, ../sass/agency.scss */
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+/* line 850, ../sass/agency.scss */
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+/* line 854, ../sass/agency.scss */
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+/* line 862, ../sass/agency.scss */
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+/* line 865, ../sass/agency.scss */
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+/* line 876, ../sass/agency.scss */
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+/* line 889, ../sass/agency.scss */
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+/* line 897, ../sass/agency.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #55acee;
+}
+
+/* line 902, ../sass/agency.scss */
+::selection {
+  text-shadow: none;
+  background: #55acee;
+}
+
+/* line 907, ../sass/agency.scss */
+img::selection {
+  background: transparent;
+}
+
+/* line 911, ../sass/agency.scss */
+img::-moz-selection {
+  background: transparent;
+}
+
+/* line 915, ../sass/agency.scss */
+body {
+  webkit-tap-highlight-color: #55acee;
+}
+
+/* line 922, ../sass/agency.scss */
+.progressbar-area p {
+  font-family: "Helvetica" "微軟正黑體";
+  margin-bottom: 21px;
+  font-weight: 500;
+  color: #6E6E6E;
+  font-size: 15px;
+  text-align: left;
+}
