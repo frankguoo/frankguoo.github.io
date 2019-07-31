@@ -1,0 +1,220 @@
+@charset "UTF-8";
+.shadow_effect{box-shadow:0px 5px 20px #adadad;}
+.shadow_effect2{box-shadow: 0px 0px 16px #0000006b;}
+.container-default{max-width: 1180px;}
+.row-default{margin: 0px;}
+h1{position: absolute;}
+.fixedbar{display: inline-block;background: #e1382a;border-radius: 50%;overflow: hidden;width: 145px;height:145px;text-align: center;text-decoration: none!important;position: fixed;bottom:10px;left:10px;z-index: 999;}
+.fixedbar img{margin-top: 42px;}
+.fixedbar h4{font-size: 20px;color:#fff;line-height: 0.6;}
+.fixedbar h4:nth-child(3){font-size: 20px;color:#fff;line-height: 0.6;color: yellow;}
+.fixedbar:hover{background: #c10f00;}
+.gotop {background-image: url(../images/top.svg);background-size: 35px auto;background-repeat: no-repeat;background-position-x: center;background-position-y: center;background-position: center;width: 50px;height: 50px;position: fixed;bottom: 10px;right: 10px;z-index: 999;opacity: 1;display:none;cursor: pointer;filter: alpha(opacity=80);background-color: rgba(164,164,164,0.85);-moz-border-radius: 99em;-webkit-border-radius: 99em;border-radius: 99em;}
+.btn:visited{color:#fff!important;}
+@media (max-width: 1270px){
+	.gotop {bottom:120px;}
+	.fixedbar{bottom:120px;}
+}
+@media (max-width: 970px){
+  .fixedbar {width: 100px;height: 100px;}
+  .fixedbar img {margin-top: 23px;}
+  .fixedbar h4 {font-size: 14px;}
+	.fixedbar h4:nth-child(3) {font-size: 14px;}
+}
+/* 選單區 */
+.ts-header{position:relative;color:#000;background-color:rgba(0,0,0,0);margin-bottom:0;padding:30px 0 0}
+.ts-header .container-default{background:rgba(255,255,255,0.7);max-width:1140px;background:rgba(255,255,255,0.7)}
+.ts-header .container-default .rightbar{height:39px;margin-right:10px;font-size:12px}
+.ts-header .container-default .rightbar span{padding-top:9px;display:block}
+.ts-header .container-default .rightbar span a{text-decoration:underline}
+.ts-header .container-default .rightbar span img{margin-top:-5px;width:80px}
+header .navbar-nav .dropdown img{display:none;width:25px}
+.header-wrap{padding:15px 0;display:block}
+.header-wrap .nav{float:left}
+.header-wrap .nav > li > a{border-left:solid 1px #000}
+.header-wrap .nav > li > a:hover{border-left:solid 1px #000;color:#fff;background:#e1382a!important}
+.header-wrap .nav > li:first-child > a{border-left:none;display:inline-block}
+.header-wrap .nav > li:first-child > a img{display:inline-block;padding-right:2px;margin-right:5px;vertical-align:top}
+@media (max-width: 970px) {
+header .row-default{margin:0}
+.ts-header{display:block;padding:10px 0}
+.rightbar{display:none}
+.header-wrap .nav{margin:10px 0}
+.header-wrap .nav > li{display:inline-block}
+.header-wrap .nav > li a{line-height:25px;font-size:15px;padding:0 4px!important}
+}
+
+/* 選單區 */
+
+/*-----海外直送專區開始-----*/
+.ts-subkv{padding: 40px 0;}
+.ts-subkv__carousel__words__title{text-align: center;color:#fff;margin-bottom: 60px;margin-top: 50px;}
+.ts-allrateplan__row{margin-top: 0px;}
+.ts-subkv__carousel__words__title h2{font-size: 180px;font-weight:500;letter-spacing: 0px;}
+.ts-subkv__carousel__words__title h3{font-size: 32px;font-weight:100!important;}
+.ts-allrateplan__col__content {border-bottom: solid 1px #fff;}
+.bidding_box.container{max-width: 992px;margin: 30px auto;}
+.bidding_box.container .ts-allrateplan__col{background-size: cover!important; color:#fff;padding: 20px 30px}
+.bidding_box.container .ts-allrateplan__col .bidding_box_word{padding-top: 150px;}
+.bidding_box.container h3{font-size: 2.2em;margin-bottom: 0px;}
+.bidding_link{position: relative;}
+.bidding_link .btn:before{content:"";display:block;width: 1px;background: #fff;height:50%;position: absolute;margin-left: -11px;}
+.bidding_link .btn:nth-child(1):before{content:"";display:none;width: 1px;background: #fff;height:50%;position: absolute;margin-left: -11px;}
+
+.btn--allrateplan{background-color: transparent;padding: 6px 11px;}
+.btn--allrateplan:hover{background-color: transparent;color:#e1382a;}
+.btn.btn--allrateplan:visited:hover{color:#e1382a!important;} 
+@media (max-width: 970px){
+  .ts-subkv__carousel__words__title img{width: 100%;}
+  .ts-subkv__carousel__words__title{margin-bottom: 5px;margin-top: 0px;}
+  .ts-subkv__carousel__words__title h2{font-size: 2em;}
+  .ts-subkv__carousel__words__title h3{font-size: 0.4em;}
+  .ts-subkv{padding: 0px 0;}
+  .bidding_box.container{max-width: 992px;margin: 0px auto 0px auto;}
+} 
+/*-----海外直送專區結束-----*/
+
+/*-----購買三步驟開始-----*/
+.step_box{padding: 90px 0;}
+.step_box_title{text-align: center;color:#fff;}
+.step_box_title h2{font-size: 90px;font-weight:600;margin: 0;}
+.step_box_title h3{font-size: 28px;font-weight:100!important;}
+.step_box_content{margin-top: 40px;margin-bottom: 40px;}
+.step_circle{border:solid 1px #fff;text-align: center; width: 250px;height:250px;border-radius: 50%;margin: 0 auto;}
+.circle_grid:nth-child(1):before{content:'';width: 20px;height: 30px;display: block;color:#fff;background: none;margin-top: -15px;margin-left:-10px;top: 140px;position: relative;}
+.circle_grid:nth-child(2):before, .circle_grid:nth-child(3):before{content:'';width: 20px;height: 30px;display: block;color:#fff;background: url(../images/arrow.svg) no-repeat;margin-top: -15px;margin-left:-10px;top: 140px;position: relative;}
+.step_circle img{width:220px;height:220px;display:block; margin:auto!important;max-width: 100%;padding-top: 37px;}
+.step_box_link{text-align: center;color:#fff;font-size: 20px;font-weight: 100;text-decoration: underline;}
+@media (max-width: 970px){
+  .step_box_title h2{font-size: 3em;}
+  .step_box_title h3{font-size: 1.2em;}
+  .step_box_content{margin-top: 10px;margin-bottom: 10px;}
+  .col-xs-6{padding:0px 10px}
+  .step_circle{margin: 10px auto;}
+  .circle_grid:nth-child(1):before{display:none;}
+  .circle_grid:nth-child(2):before, .circle_grid:nth-child(3):before{display:none;}
+
+
+} 
+/*-----購買三步驟結束-----*/
+
+/*-----空運費用專區開始-----*/
+.onsale_box{padding: 60px 0;}
+.onsale_box .onsale_box_link{text-align: center;font-size: 35px;}
+.onsale_box .onsale_box_link a{color: #fff;background: #e1382a;padding: 10px 60px;margin-top: 60px;display: inline-block;border-radius: 50px;text-decoration: none;}
+.onsale_box .onsale_box_link a:hover{background: #c10f00;}
+.onsale_box_title{text-align: center;line-height: 1!important;}
+.onsale_box_title h2{font-size: 90px;font-weight:600;margin: 0;color:#4d4d4d;}
+.onsale_box_title h3{font-size: 28px;font-weight:100!important;color:#4d4d4d;}
+.flight_box_content h3{display: block;font-size:48px;color:#fff;background-color: #e1382a;text-align: center;padding: 30px 0;margin: 0px;}
+.flight_box_content{border-radius:12px;overflow:hidden;line-height:1!important;margin-top:60px}
+.flight_box_content .percentage{color:#d32226;background-color:#fff;font-weight:400;text-align:center;margin-top:0;padding:25px 0;position:relative}
+.flight_box_content .percentage span.currency{font-size:44px}
+.flight_box_content .percentage span.price{font-size:90px}
+.flight_box_content .percentage span.unit{font-size:28px;color:#737373;font-weight:400px}
+.flight_box_notice h6{font-weight:100;line-height:1.5rem;margin:20px 0 0;font-size:18px;text-align:right;color:#4d4d4d}
+.shipping_fee_box h3{font-size: 38px;font-weight: 400;padding-left: 20px;}
+.shipping_fee_box_content{padding:30px;border-radius:12px;overflow:hidden;line-height:1!important;margin-top:0px;background-color: #fff;}
+.shipping_fee_imgbox img{width: 100%;}
+.shipping_fee_box_content h4{text-align: center;font-size: 22px;}
+.shipping_fee_box_content .percentage{text-align: center;}
+.shipping_fee_box_content .percentage span.country{font-size: 22px;}
+.pricebox{font-size: 16px;color:red;border: solid 1px red;padding: 0px 10px;}
+@media (max-width: 970px){
+  .onsale_box_title h2{font-size: 3em;}
+  .onsale_box_title h3{font-size: 1.2em;}
+  .onsale_box .onsale_box_link {font-size: 1.5em;}
+  .flight_box_content {margin-top: 15px;}
+  .flight_box_content h3 {font-size: 2.2em;}
+  .flight_box_content .percentage span.currency {font-size: 2em;}
+  .flight_box_content .percentage span.price {font-size: 4em;}
+  .flight_box_content .percentage span.unit {font-size: 1.5em;}
+  .flight_box_notice h6 {font-size: 1em;}
+  .shipping_fee_box_content {margin-top: 15px;padding: 15px;}
+  .shipping_fee_box_content h4{font-size: 19px;}
+  .shipping_fee_box_content .percentage span.country{font-size: 19px;}
+  .pricebox{display: inline-block;padding: 6px;width: 100%;    margin-top: 7px;}
+}
+
+/*-----空運費用專區結束-----*/
+
+/* fatfooter開始*/
+.no{ border: solid 1px rgba(255, 255, 255, 0.4)!important; color:rgba(255, 255, 255, 0.4)!important;}
+.fatfootersection{background-color: rgba(0, 0, 0, 0.8);padding: 40px 0;background: url(../images/mainbg-4.jpg) no-repeat center;background-size: cover;}
+.fatfootersection .fatfooterbox_big_title{text-align: center;color:#fff;margin: 20px 0 40px 0;}
+.fatfootersection .fatfooterbox_big_title h2{font-size: 76px;font-weight: 600;}
+.fatfootersection .fatfooterbox_big_title h4{font-size: 28px;margin-top: 20px;font-weight: 100;}
+.fatfootersection .fatfooterbox{color:#fff;}
+.fatfootersection .fatfooterbox .title{width: 100%;text-align: center;opacity: 0.7;}
+.fatfootersection .fatfooterbox h4{font-size: 1.8em;display: inline-block;font-weight: 700;font-family: "微軟正黑體";}
+.fatfootersection .fatfooterbox h4:before{content:"";display: inline-block;border: solid 0.5px #fff;vertical-align: middle;width: 400px;margin: 0 30px;}
+.fatfootersection .fatfooterbox h4:after{content:"";display: inline-block;border: solid 0.5px #fff;vertical-align: middle;width: 400px;margin: 0 30px;}
+.fatfootersection .fatfooterbox .buttonbox{padding: 0 100px;text-align: center;}
+.fatfootersection .fatfooterbox .buttonbox a{letter-spacing: 2px;font-size: 1.2em;margin:10px 10px;display: inline-block;padding: 10px 20px;border: solid 1px #fff;border-radius: 50px;text-decoration: none;}
+.fatfootersection .fatfooterbox .buttonbox a:hover:nth-child(-n+12){background-color: #e1382a;color:#fff;border-color: rgb(255, 50, 70)!important;}
+.fatfootersection .fatfooterbox .small_notice{text-align: center;margin-top: 60px;}
+.fatfootersection .fatfooterbox span{color:#b6b6b6;text-align: center;}
+@media (max-width: 992px){
+  .fatfootersection .fatfooterbox_big_title h2 {font-size: 2.1em;}
+  .fatfootersection .fatfooterbox_big_title h4 {font-size: 1em;}
+  .fatfootersection .fatfooterbox h4{display: block;}
+  .fatfootersection .fatfooterbox h4:before{display: block;width: 100%;margin: 10px;}
+  .fatfootersection .fatfooterbox h4:after{display: block;width: 100%;margin: 10px;}
+  .fatfootersection .fatfooterbox .buttonbox{padding: 0px;}
+  .no{display: none;}
+}
+/* fatfooter結束 */
+
+
+.pchome_only_box{padding: 50px 0;}
+.pchome_only_box_title{text-align: center;}
+.pchome_only_box_title h2{font-size: 90px;color:#4d4d4d;font-weight: 600;}
+.pchome_only_box_title h2 img.pchomelogo{width: 320px;margin-right: 20px;vertical-align: unset;}
+.pchome_only_box_content{border-radius:12px;overflow:hidden;line-height:1!important;margin-top:60px;padding: 0 30px;text-align: center;}
+.pchome_only_box_content h3{display: inline-block;font-size:48px;color:#4d4d4d;text-align: center;border-bottom:solid 1px #4d4d4d; padding: 15px 0;margin: 0 auto;}
+.pchome_only_box_content .percentage{color:#d32226;font-weight:400;text-align:center;margin-top:0;padding:10px 0;position:relative}
+.pchome_only_box_content .percentage span.currency{font-size:45px;color:#4d4d4d;}
+.pchome_only_box_content .percentage span.price{font-size:90px;font-weight: 700;}
+.pchome_only_box_content .percentage span.unit{font-size:35px;color:#4d4d4d;font-weight:400px}
+.pchome_only_box_content .percentage h4.code{color:#d32226;font-size:90px;font-weight:700;text-align:center;margin-top:0;position:relative}
+.pchome_only_box_content .percentage .offer{font-size:26px;color:#4d4d4d;}
+.pchome_only_box .onsale_box_link{text-align: center;font-size: 35px;}
+.pchome_only_box .onsale_box_link a{color: #fff;background: #e1382a;padding: 10px 60px;margin-top: 60px;display: inline-block;border-radius: 50px;text-decoration: none;}
+.pchome_only_box .onsale_box_link a:hover{background: #c10f00;}
+
+.pchome_only_box .small_notice{text-align: center;margin-top: 60px;}
+.pchome_only_box .small_notice span{color:#565656;text-align: center;line-height: 30px;}
+.pchome_only_box_row .line:nth-child(2):before{content:""; display: block; width: 1px;margin-top:15%;margin-left:-20px;height: 60%;background-color: #4d4d4d;position: absolute;}
+@media (max-width: 992px){
+  .pchome_only_box_title h2 {font-size: 3em;}
+  .pchome_only_box_content h3 {font-size: 2.2em;}
+  .pchome_only_box_content .percentage span.currency {font-size: 2em;}
+  .pchome_only_box_content .percentage span.price {font-size: 4em;}
+  .pchome_only_box_title h2 span{display: block;}
+  .pchome_only_box_content .percentage h4.code{font-size: 4em;}
+  .pchome_only_box_content .percentage span.unit {font-size: 2em;}
+  .pchome_only_box .onsale_box_link  {font-size: 1.5em;}
+}
+/* footer */
+.footersection{background-color: #000;text-align: left;padding: 20px 0 140px 0;}
+.footersection .container-default{max-width: 970px;color:#9d9d9d;}
+.footer_row{border-bottom: solid 1px #9d9d9d;padding: 20px 0;}
+.footer_row img{width: 75px;padding-top: 9px;padding-bottom: 15px;}
+.footersection .footer_top p{margin: 2px 0;font-size: 14px;letter-spacing: 2px;padding-left: 10px;}
+.footersection .footer_bottom {margin: 2px 0;padding: 20px 0;font-size: 14px;letter-spacing: 2px;padding-left: 10px;text-align: center;}
+@media (max-width: 992px){
+.footer_row img {margin: 0 auto;display: block;}
+}
+/* footer */
+
+/*--- 新的bottombar效果 ---*/  
+.bottombar{position:fixed;width:100%;bottom:0;background:rgba(0,0,0,0.78);padding:5px}
+.bottombar > .container{max-width:932px}
+.bottombar .fixedbar_carousel{position:fixed;z-index:99;bottom:0;width:100%;display:block;background:rgba(0,0,0,0.78)}
+.bottombar .fixedbarbox-2 img{width:calc(100% / 2);float:left;padding:10px}
+.bottombar .fixedbarbox a{display:block;margin:3px 2px}
+.bottombar.open{display:block!important;opacity:1!important}
+.bottombar.hide{display:none!important;opacity:1!important}
+.bottombar .close_under{width:100%;position:relative}
+.bottombar .close_under .btn{position:absolute;border-radius:0;top:-25px;left:0;width:20px;height:20px;color:#fff;font-size:13px;font-weight:100;font-family:Arial,Helvetica,sans-serif;opacity:1;border:0 solid #fff;background:rgba(0,0,0,0.78);padding:0;line-height:21px;z-index:999;cursor:pointer}
+/*--- end 新的fixedbar效果 ---*/

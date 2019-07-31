@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="820" height="301" viewBox="0 0 820 301">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        font-size: 9.685px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Microsoft JhengHei";
+      }
+
+      .cls-3 {
+        font-size: 8.65px;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="8" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-opacity="0.28"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="群組_38" data-name="群組 38" class="cls-1">
+    <text id="海外直送" class="cls-2" transform="translate(405.339 193.141) scale(19.619)"><tspan x="0">海外直送</tspan></text>
+    <text id="不用出國就可以買到國外商品" class="cls-3" transform="translate(417.039 261.085) scale(4.393)"><tspan x="0">不用出國就可以買到國外商品</tspan></text>
+  </g>
+</svg>
