@@ -1,0 +1,223 @@
+
+#product-hub.collection .list li .switch-panel .option-link { display:inline-block; }
+
+#main-content .cart-table .option-remove { text-align:right; }
+
+#standard-content .container ol{list-style-type:decimal;list-style-position:outside;}
+#standard-content .container ol li{margin-left:30px;}
+#standard-content .form-controls .form-part{float:left;margin-right:14px;width:122px;}
+#standard-content .form-controls .form-label{display:block;margin-bottom:10px;font-weight:bold;}
+#standard-content .form-controls .form-part-search{float:right;width:220px;}
+#standard-content #sidebar{position:relative;float:left;top:auto;margin-left:20px;margin-right:20px;padding-top:8px;width:190px;}
+
+#watchfinder-form .watchfinder-drops{position:relative;top:-22px;margin-bottom:-22px;border-right:1px solid #ebebeb;padding-top:22px;padding-bottom:13px;width:701px;zoom:1;}
+#watchfinder-form .watchfinder-input{position:absolute;right:0;top:0;height:190px;width:232px;}
+#watchfinder-form .watchfinder-input .search-line .style-input-text input{width:120px;}
+#watchfinder-form .watchfinder-input .hint{position:relative;top:3px;}
+#watchfinder-form .watchfinder-line{position:relative;margin-bottom:14px;margin-right:-7px;height:45px;}
+
+#watchfinder-form .form-part { position:relative; float:left; margin:10px 13px 15px 13px; padding-right:2px; width:145px; }
+* html #watchfinder-form .form-part { display:inline; }
+
+#watchfinder-form .drop-label,#watchfinder-form .input-label { display:block; margin-bottom:7px; padding:0 2px; font-family:verdana; font-size:10px; color:white; text-align: center; }
+#watchfinder-results { position:relative; clear:both; }
+#watchfinder-results div.title { clear:left; margin-bottom:0; padding:20px 10px 10px; background:url(../images/hub-title-bg.png) repeat-x left top; }
+* html #watchfinder-results div.title { background-image:url(../images/hub-title-bg.png); }
+
+.favorites div.empty-list { clear:left; margin-bottom:0; padding:0 10px 10px; }
+
+#watchfinder-results .title h2,.favorites .empty-list h2 { position:relative; display:block; margin:0!important; padding-top:5px; padding-bottom:10px; font-family:verdana; font-size:16px; border-bottom:1px solid #dbdbdb; }
+
+#finder-reset { position:absolute; right:18px; bottom:7px; }
+* html #finder-reset { display:block; zoom:1; }
+#finder-input-reset { position:absolute; right:1px; bottom:7px; }
+
+/*.omega-forms-dropdown input,.omega-forms-dropdown label.checkbox,.omega-forms-dropdown select { position:absolute; left:-9999px; }*/
+.omega-forms-dropdown .style-drop-container label { left:auto; right:auto; position:relative; margin: 0px!important;  padding: 0px 0px 0px 30px!important;}
+.style-drop {
+	position:relative;
+	width:100%;
+	height:19px;
+	font-family:verdana;
+	font-size:10px;
+	background-image: url(../../images/forms.png);
+	background-repeat: no-repeat;
+	background-position: -445px -500px;
+	border-left: solid 1px #CECECE;
+}
+* html .style-drop { background-image:url(../images/forms.gif); }
+.style-drop .style-drop-title {
+	position:relative;
+	left:2px;
+	right:2px;
+	padding:3px 20px 3px 6px;
+	
+	line-height:14px;
+	color:#444;
+	cursor:default;
+	overflow:hidden;
+	z-index:10;
+	background-image: url(../images/forms.png);
+	background-repeat: no-repeat;
+	background-position: 100% -500px;
+}
+
+* html .style-drop .style-drop-title { height:19px; background-image:url(../images/forms.gif); }
+ /*.style-drop-container {
+	display:block;
+	position:absolute;
+	top:18px;
+	padding:0 4px 4px 0;
+	background-image: url(../images/dropdown-shadow.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}*/
+
+ .style-drop-container-box {
+	display:block;
+	position:absolute;
+	top:25px;
+	padding:0 4px 4px 0;
+	background-image: url(../images/dropdown-shadow.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+* html .style-drop-container { background-image:url(../images/dropdown-shadow.gif); }
+.style-drop .style-drop-container-right { left:auto; right:auto; }
+
+.style-drop .style-drop-container-inner { border-left:1px solid #cecece; background:#fff;     border-right: 1px solid #cecece; position:relative; top:-1px;left:-1px}
+.style-drop-focus { background:#bf1b2f; border-right:4px solid #bf1b2f; }
+.style-drop-open .style-drop-title { background:url(../images/forms.png) no-repeat 100% -600px; }
+* html .style-drop-open .style-drop-title { background-image:url(../images/forms.gif); }
+.style-drop-simple a { display:block; color:#666; padding:5px 5px 4px 5px; border-top:1px solid #e6e6e6; background:#333333; white-space:nowrap; cursor:default; }
+
+.style-drop-simple .highlight { background-color:#f1f1f1; }
+.style-drop-multiple label { display:block; padding:6px 0 6px 30px; background:url(../images/forms.png) no-repeat 10px -795px; }
+* html .style-drop-multiple label { background-image:url(../images/forms.gif); }
+
+.style-drop-multiple label.checked { background-position:10px -895px; }
+.style-drop-multiple .style-drop-container-inner { padding:5px 0; overflow:hidden; border-top:1px solid #cecece; }
+
+.style-drop-multiple .check-set { float:left; }
+.style-drop .style-drop-controls { position:relative; clear:both; overflow:hidden; border-top:1px solid #cecece; border-left:1px solid #cecece; background:#f1f1f1; }
+.style-drop .style-drop-controls-inner { position:relative; border-top:1px solid #fff; padding:4px 13px 5px 10px; overflow:hidden; }
+* html .style-drop .style-drop-controls-inner { zoom:1; width:100%; }
+.style-drop .style-drop-controls .cancel { position:absolute; left:5px; top:5px; }
+
+.style-drop .style-drop-controls .close { position:relative; float:right; }
+* html .style-drop .style-drop-controls .close { width:0; }
+.style-drop .style-drop-controls .close span { position:relative; float:right; cursor:default; }
+.style-drop .style-drop-controls .close:hover { background-position:0 -101px; }
+.style-drop .style-drop-controls .close:hover span { background-position:100% -101px; }
+.style-drop-controls { display:none; }
+
+.style-drop .style-drop-controls { display:block; }
+.basic-dropdown select { display:block; height:19px; background:#fff; border:1px solid #dbdbdb; width:100%; font-size:12px; outline:none!important; }
+* html .site-form .basic-dropdown select { width:315px; }
+.basic-dropdown select option { border-top:1px solid #e6e6e6; color:#666; cursor:default; display:block; padding:5px 5px 4px; white-space:nowrap; outline:none!important; }
+
+.option-link { display:block; padding-right:16px; padding-top:2px; padding-bottom:2px; font-size:10px; font-family:arial,sans-serif; background:url(../images/sprites.png) no-repeat 100% -198px; text-transform:uppercase; cursor:pointer; line-height:13px; }
+.option-link:hover { color:#bf1b2f!important; }
+
+.option-find { background-position:100% -398px!important; }
+
+.option-remove { padding-right:12px; background-position:100% -895px!important; }
+
+#watch-carrousel .panel .option-link,.watch-carrousel .panel .option-link { display:inline-block; }
+.layout-sidebar { position:relative; overflow:hidden; }
+.layout-sidebar .column-01 { position:relative; left:20px; float:left; width:611px; }
+
+.watchfinder-result-hint span { padding:3px 15px; }
+
+.form-line .style-input-checkbox { display:block; margin-bottom:5px; background:none; zoom:1; height:15px; }
+.form-line .style-input-checkbox div { background:none; }
+
+.form-line .style-input-checkbox label { display:block; position:relative; line-height:4px; padding-left:24px; padding-top:1px; background:url(../images/forms.png) no-repeat 0 -800px; overflow:hidden; }
+* html .form-line .style-input-checkbox label { background-image:url(../images/forms.gif); }
+
+* html .form-line .style-input-submit div{float:left;background-image:url(..images/forms.gif);}
+.form-line .style-input-checkbox label.style-input-checked { background-position:0 -900px; }
+.form-line .style-input-checkbox label input { position:absolute; left:-9999px; }
+* html .form-line .style-input-radio label{background-image:url(../images/forms.gif);}
+.form-line .style-input-checkbox label a { color:#bf1b2f; }
+.form-line .style-input-checkbox label a:hover { text-decoration:underline; }
+.form-line .style-input-radio { margin-bottom:5px; background:none; }
+.form-line .style-input-radio div { background:none; }
+.form-line .style-input-radio label { display:block; position:relative; line-height:14px; padding-left:24px; padding-top:1px; background:url(../images/forms.png) no-repeat 0 -1100px; overflow:hidden; }
+
+.locator-form .form-line .style-input-text input { width:107px; }
+.form-button { height:19px;margin-top:-5px;font-weight:bold; background:url(../images/forms.png) no-repeat 0 0; text-decoration:none; }
+.form-button:hover { text-decoration:none; }
+.form-button span { position:relative; left:3px; padding:0px 10px 3px 7px; background:url(../images/forms.png) no-repeat 100% 0; font-family:verdana; font-size:11px; color:#000; font-weight:bold; }
+#fancy-outer { padding:0; }
+.modal-dialog { display:none; position:relative; background-color:#fff; }
+
+.modal-dialog-close { float:right; }
+.modal-dialog-container { padding:0 20px 0 20px; text-align:left; }
+#fancy_content { overflow:hidden; }
+.modal-dialog-nav { position:relative; margin-top:10px; margin-bottom:5px; height:15px; }
+.modal-dialog-close { display:block; padding-right:12px; font-size:10px; font-family:arial,sans-serif; background:url(../images/sprites.png) no-repeat 100% -897px; text-transform:uppercase; cursor:pointer; line-height:13px; }
+
+* html .modal-dialog-close { background-image:url(../images/sprites.gif); }
+.modal-dialog-close:hover { color:#bf1b2f; }
+.modal-dialog-prev { position:absolute; display:block; width:90px; padding-left:12px; font-size:10px; font-family:arial,sans-serif; background:url(../images/sprites.png) no-repeat 0 -997px; text-transform:uppercase; }
+* html .modal-dialog-prev { background-image:url(../images/sprites.gif); }
+.modal-dialog-prev:hover { color:#bf1b2f; }
+
+#main-content .vintage-watches .container .drop-label { font-family:verdana; font-size:10px;  display:block; font-weight:bold;  margin-bottom:10px;  }
+
+#main-content .vintage-watches .container .search-result-menu .form-part { float:left; width:auto; margin-right:8px; }
+
+#main-content .vintage-watches .container .search-result-menu .omega-forms-dropdown { width:90px; margin-right:2px; }
+
+*html #standard-content.faq .faq-btn a span { position:relative; }
+#standard-content.faq .faq-btn a span { -moz-margin-end:-2px; }
+#standard-content.faq .faq-btn a:hover { background-position:0 -101px; }
+#standard-content.faq .faq-btn a:hover span { background-position:right -101px; }
+#standard-content.faq .faq-answer .label { float:left; padding:9px 0 0 10px; }
+div.rating-cancel,div.star-rating { float:left; width:17px; height:15px; text-indent:-999em; cursor:pointer; display:block; background:transparent; overflow:hidden; }
+
+_vdiv.rating-cancel,div.rating-cancel a { background:url(delete.gif) no-repeat 0 -16px; }
+_vdiv.rating-cancel { display:none!important; }
+_vdiv.star-rating,div.star-rating a { background:url(../images/sprites.gif) no-repeat -4px -1698px; }
+_vdiv.rating-cancel a,div.star-rating a { display:block; width:11px; margin:0 13px 0 0; height:100%; background-position:-4px -1698px; border:0; }
+_vdiv.star-rating-on a { background-position:-4px -598px!important; }
+
+#share-main-content-confirm .style-input-close,.style-input-close button { width:60px; }
+
+.pagebtn2 a , .pagebtn2 b{
+   color:#000!important;
+}
+
+@media screen and (max-width: 1250px) {
+
+
+#watchfinder-form .form-part {
+    position: relative;
+    float: none;
+    margin: 10px auto 32px auto;
+    padding-right: 2px;
+    width: 145px;
+    clear: both;
+}
+}
+
+@media screen and (max-width: 737px){
+	.omega-forms-dropdown input{
+		left:10px!important;
+	}
+
+
+}
+
+.checkbox input {
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+.pagebtn {
+    padding-bottom:0px;
+}
+
