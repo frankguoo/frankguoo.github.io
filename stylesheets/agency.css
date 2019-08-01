@@ -327,7 +327,7 @@ header .intro-text .intro-heading {
   text-align: right;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1367px) {
   /* line 236, ../sass/agency.scss */
   header {
     background-image: url("../img/header-bg2.jpg");
