@@ -1,0 +1,19 @@
+
+//宣告語系
+@charset 'UTF-8';
+
+//變數
+@import 'base';
+
+ol,ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+@import 'header';
+@import 'rightbox';
+@import 'menu';
+@import 'btfixedbar';
+@import 'footer';
+

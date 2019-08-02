@@ -327,23 +327,8 @@ header .intro-text .intro-heading {
   text-align: right;
 }
 
-@media (min-width: 1367px) {
-  /* line 236, ../sass/agency.scss */
-  header {
-    background-image: url("../img/header-bg2.jpg");
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    max-height: 1250px;
-    position: relative;
-  }
-  /* line 245, ../sass/agency.scss */
-  header .intro-text {
-    padding-top: 500px !important;
-    padding-bottom: 100px!important;
-  }
-}
+
+
 @media (min-width: 1366px) {
   /* line 255, ../sass/agency.scss */
   header {
@@ -359,6 +344,31 @@ header .intro-text .intro-heading {
   header .intro-text {
     padding-top: 500px !important;
     padding-bottom: 200px;
+  }
+}
+@media (min-width: 1367px) {
+  /* line 236, ../sass/agency.scss */
+  header {
+    background-image: url("../img/header-bg2.jpg");
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    max-height: 1250px;
+    position: relative;
+  }
+
+  /* line 245, ../sass/agency.scss */
+  header .intro-text {
+    padding-top: 300px !important;
+    padding-bottom: 100px!important;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 245, ../sass/agency.scss */
+  header .intro-text {
+    padding-top: 500px !important;
+    padding-bottom: 100px!important;
   }
 }
 @media (min-width: 768px) {

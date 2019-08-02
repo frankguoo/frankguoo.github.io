@@ -1,0 +1,182 @@
+//變數
+@import 'base';
+
+//頁頭模組
+%header_base{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    vertical-align: top;
+}
+%header_right_base{
+    font-size: 12px;
+    color: #a9a9a9;
+    padding-top: 26px;
+    line-height: 0;
+    height: 40px;
+}
+%header_icon_base{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    background-color: #00c603;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.header_desktop{
+    @extend %header_base;
+    @include breakpoint(s){
+        display: none;
+    }  
+	li{
+		margin: 0;
+		padding: 0;
+		display: inline-block; 
+		cursor: pointer;
+		vertical-align: top;
+        position: relative;
+        
+		img{
+			height: 40px;
+			width: auto;
+            display: block;
+            @include breakpoint(m){
+                height: 30px; 
+                width: auto;
+            }
+        }
+
+        &.description{
+            @extend %header_right_base;
+            @include breakpoint(m){
+                height: 30px; 
+                padding-top: 20px;
+            }
+            a{
+                @extend %header_right_base;
+            }
+            span{
+                color: #dd0202; 
+            }
+        }
+
+        &.appDonload{
+            .appQRcode{
+                position: absolute;
+                z-index: 9999;
+                top: 100%;
+                width: 160px;
+                right: -9px;
+                padding: 8px;
+                background: #fff;
+                box-shadow: 5px 6px 8px rgba(0,0,0,.3);
+                border: 1px solid rgba(0,0,0,.15);
+                border-radius: 4px;
+                display: none;
+                @include breakpoint(m){
+                    top: 30px;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                }   
+            }
+            &:hover{
+                .appQRcode{
+                    display: block;
+                }
+                span{
+                    color: #00a1e8;
+                }
+            }
+        }
+        &.media_share{
+            @extend %header_right_base;
+            margin: 0 0 0 0px;
+            padding-top: 17px;
+            @include breakpoint(m){
+                height: 30px; 
+                padding-top: 11px;
+            }
+
+            img.media_share{
+                width: 16px;
+                height: auto;
+                display: inline-block;
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+                margin: 0 2px 0 5px;
+                vertical-align: -2px;
+            }
+
+            .social_media{
+                position: absolute;
+                z-index: 9999;
+                top: 100%;
+                width: 120px;
+                right: -9px;
+                padding: 8px;
+                background: #fff;
+                box-shadow: 5px 6px 8px rgba(0,0,0,.3);
+                border: 1px solid rgba(0,0,0,.15);
+                padding: 3px 8px;
+                border-radius: 4px;
+                display: none;
+                li{
+                    width: 100%;
+                    border-top: 1px dotted #ccc;
+                    padding: 5px 0;
+                    line-height: 2;
+                    font-size: 14px;
+                    &:first-child{
+                        border: 0;
+                    }
+                    a{
+                        @include flexbox();
+                        color: #333;
+                        text-decoration: none;
+
+                        .line{
+                            @extend %header_icon_base;
+                            img{
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                        }
+                        .fb{
+                            @extend %header_icon_base;
+                            background-color: #335a9d;
+                            img{
+                                width: 100% !important;
+                                height: auto !important;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover .social_media{
+                display: block;
+            }
+        }
+
+	}
+}
+
+.header_mobile {
+    @extend %header_base;
+    display: none;
+    position: relative;
+    padding: 8px 0 0;
+    height: 40px;
+    
+
+    @include breakpoint(s){
+        display: block;
+    }
+    
+    img.logo{
+        height: 25px;
+        margin-right: 18px;
+    }
+}

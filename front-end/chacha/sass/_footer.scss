@@ -1,0 +1,68 @@
+//變數
+@import 'base';
+
+.credit{
+    background-color:#333;
+    color:#fff;
+    .container{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-pack:distribute;
+        justify-content:center;
+        -webkit-box-align:center;
+        -ms-flex-align:center;
+        align-items:center;
+        padding:15px 0;
+        @include breakpoint(s){
+            display:block;
+            text-align:center;
+            padding:10px;
+        }
+        h4{
+            display:inline-block;
+            color:#fff;
+            border:1px solid #fff;
+            font-weight:300;
+            font-size:20px;
+            letter-spacing:3px;
+            padding:5px 20px;
+            margin:0 10px;
+            @include breakpoint(s){
+                margin-bottom:10px;
+            }
+        }
+        p{
+            color:#fff;
+            font-size:14px;
+            font-weight:300;
+            margin-bottom:0;
+        }
+        a{
+            color:#84acce;
+            &:hover{
+                color:#6c99bf;
+                text-decoration:none;
+            }
+        }
+    }
+}
+
+footer{
+    padding:30px 30px 100px 30px;
+    text-align:center;
+    background-color:#fff;
+    color:#333;
+    @include breakpoint(s){
+        margin-bottom:0;
+    }
+    p{
+        font-weight:300;
+        margin: 0 0 10px;
+        @include breakpoint(s){
+            font-size: 12px;
+        }
+    }
+}
+
+

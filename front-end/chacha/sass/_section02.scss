@@ -1,0 +1,145 @@
+//變數
+@import 'base';
+
+
+
+#section_02{
+    background: url(../img/bg_02.png) no-repeat;
+    background-size: auto;
+    background-position: center top;
+    position: relative;
+    z-index: 99;
+    margin-top: -200px;
+    visibility: visible;
+    padding: 190px 0 80px 0;
+    @include breakpoint(s){
+        margin-top: -220px;
+        padding: 170px 0 90px 0;
+    }
+    @include breakpoint(es){
+        margin-top: -220px;
+        padding: 170px 0 60px 0;
+        background-size: 1970px auto;
+    }
+    .container{
+        .row{
+            @include breakpoint(s){
+                padding: 0 10px;
+            }
+            .tittle{
+                @include flexbox();
+                @include flex-direction(column);
+                @include flex-wrap(nowrap);
+                @include justify-content(center);
+                @include align-items(center);
+                margin: 30px 0 0 0 ;
+                h4{
+                    display: block;
+                    font-size: 33px;
+                    margin-bottom: 10px;
+                    @include breakpoint(s){
+                        font-size: 1.5em; 
+                        text-align: center;
+                    }
+                }
+                p{
+                    display: block;
+                    text-align: center;
+                    font-size: 21px;
+                    line-height: 35px;
+                    @include breakpoint(s){
+                        font-size: 1.2em; 
+                        line-height: 1.5em; 
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .content{
+                display: block;
+                margin: 0 auto;
+                max-width: 932px;
+                .mainbox{
+                    @include flexbox();
+                    @include flex-direction(row);
+                    @include flex-wrap(wrap);
+                    @include justify-content(space-between);
+                    @include align-items(flex-end);  
+                }
+                #myCarousel-B{
+                    max-width: 50%;
+                    @include breakpoint(es){
+                        max-width: 100%;
+                    }
+                
+                }
+                .inform_box{
+                    margin-top: 0px;
+                    width: 50%;
+                    @include breakpoint(es){
+                        width: 100%;
+                    }
+                    .inform_text{
+                        float:left;
+                        text-align:left;
+                        padding-left: 0px;
+                        h3{
+                            color:#fff!important;
+                            font-weight: 700;
+                            display: table;
+                            background: #0d1b27;
+                            padding: 10px 20px;
+                            border-left: solid 10px #848b91;
+                            @include breakpoint(s){
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                        h5{
+                            @include breakpoint(s){
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                } 
+                .btnbox{
+                    margin: 40px 0;
+                    @include breakpoint(s){
+                        margin: 10px 0 100px 0;
+                    }
+                    @include breakpoint(es){
+                        margin: 10px 0 60px 0;
+                    }
+                    img{
+                        @include breakpoint(es){
+                            max-width: 50%;
+                        }
+                    }
+                    img:hover{
+                        transform:translateY(-20px);
+                        filter:brightness(120%);
+                        -ms-filter:brightness(120%);
+                    }	
+                }
+
+                .qtbox{
+                    color:#fff;
+                    h3{
+                        margin-top: 10px;
+                        font-size: 16px;
+                    }
+                    ul.notice_list{
+                        padding-left: 15px;
+                        li{
+                            margin: 5px 0;
+                            padding: 0 0 0 0px;
+                            list-style: disc!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

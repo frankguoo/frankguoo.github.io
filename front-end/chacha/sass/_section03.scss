@@ -1,0 +1,57 @@
+//變數
+@import 'base';
+
+
+#section_03{
+    background: url(../img/bg_03.jpg) no-repeat;
+    background-size: auto;
+    background-position: center top;
+    margin-top: -210px;
+    visibility: visible;
+    padding: 250px 0 80px 0;
+    position: relative; 
+    z-index: 2;
+    @include breakpoint(l){
+        background-position: center bottom;
+    }
+    @include breakpoint(s){
+        padding: 200px 0 60px 0;
+        margin-top: -200px;
+    }
+    @include breakpoint(es){
+        padding: 190px 0 50px 0;
+    }
+    .container{
+        .row{
+            @include breakpoint(s){
+                padding: 0 10px;
+            }
+            .tittle{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(center);
+                @include align-items(flex-start);
+                margin: 0;
+            }
+            .content{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(center);
+                @include align-items(flex-start);
+
+                .btnbox{
+                    @include flexbox();
+                    @include flex-direction(row);
+                    @include flex-wrap(nowrap);
+                    @include justify-content(center);
+                    @include align-items(flex-start);
+                    a{
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

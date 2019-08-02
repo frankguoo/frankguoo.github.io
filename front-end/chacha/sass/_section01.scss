@@ -1,0 +1,87 @@
+//變數
+@import 'base';
+
+
+#section_01{
+    background: url(../img/bg01.jpg) no-repeat;
+    background-size: auto;
+    background-position: center top;
+    margin-top: 0px;
+    visibility: visible;
+    padding: 0;
+    position: relative; 
+    @include breakpoint(s){
+        background-size: auto;
+        padding: 10px 0 60px 0;
+    }
+    @include breakpoint(es){
+
+        padding: 10px 0 0px 0;
+    }
+    .container{
+        .row{
+            @include breakpoint(s){
+                padding: 0 10px;
+            }
+            .tittle{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+                @include justify-content(center);
+                @include align-items(flex-start);
+                margin: 0;
+            }
+            .content{
+                @include flexbox();
+                @include flex-direction(row);
+                @include flex-wrap(nowrap);
+                @include justify-content(center);
+                @include align-items(flex-start);
+                .left{
+                    text-align: right;
+                    @include breakpoint(s){
+                       width: 45%;
+                    }
+                    #myCarousel-A{
+                        max-width: 350px;
+                    }
+                }
+                .right{
+                    text-align: center;
+                    @include breakpoint(s){
+                        width: 55%;
+                     }
+                    .logo73{
+
+                    }
+                    .bonus{
+                        display: block;
+                        position: absolute;
+                        top:0;
+                    }
+                }
+            }
+
+            .subtittle{
+                margin: 160px 0 0 0 ;
+                text-align: center;
+                @include breakpoint(s){
+                    margin: 0 0 0 0 ;
+                }
+            }
+            .subcontent{
+                margin: 0 0 160px 0;
+                text-align: center;
+                @include breakpoint(m){
+                    margin: 0 0 120px 0;
+                }
+                @include breakpoint(s){
+                    margin: 0 0 80px 0;
+                }
+            }
+        }
+    }
+}
+
+
+
