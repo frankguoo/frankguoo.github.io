@@ -1,0 +1,57 @@
+[
+  {
+    "category": "3c",
+    "id": "-Ln2QFmYXriXWzoFfpaH",
+    "image": "https://d.ecimg.tw/items/DGBMBYA9009Q5BO/000001_1547202242.jpg",
+    "is_enabled": 1,
+    "origin_price": "4300",
+    "price": "3790",
+    "title": "HTC Desire 12s(3G/32G)",
+    "unit": "件",
+    "num": 1
+  },
+  {
+    "category": "3c",
+    "id": "-Ln2Pw0FiSD6TLoq5jp6",
+    "image": "https://c.ecimg.tw/items/DYAN5EA900A29EK/000002_1559721237.jpg",
+    "is_enabled": 1,
+    "origin_price": "4300",
+    "price": "3799",
+    "title": "Redmi 7 3G/32G 亮黑色",
+    "unit": "件",
+    "num": 2
+  },
+  {
+    "category": "3c",
+    "id": "-Ln2PUo8zU7h6erqxAKA",
+    "image": "https://d.ecimg.tw/items/DYAN5TA900A7RVH/000001_1566462043.jpg",
+    "is_enabled": 1,
+    "origin_price": "16999",
+    "price": "14999",
+    "title": "小米9T Pro",
+    "unit": "件",
+    "num": 3
+  },
+  {
+    "category": "3c",
+    "id": "-Ln2P7F6Gu7Pc9vAnehf",
+    "image": "https://d.ecimg.tw/items/DYAJDNA9009N87U/000001_1565864944.jpg",
+    "is_enabled": 1,
+    "origin_price": "26900",
+    "price": "24788",
+    "title": "Apple iPhone XR (64G)",
+    "unit": "件",
+    "num": 4
+  },
+  {
+    "category": "3c",
+    "id": "-Ln2Od5Lt5t8EP8H13-_",
+    "image": "https://d.ecimg.tw/items/DYAJF2A9009VXA8/000001_1563242581.jpg",
+    "is_enabled": 1,
+    "origin_price": "17900",
+    "price": "16900",
+    "title": "Apple iPad Air 10.5吋 64G WiFi 銀色",
+    "unit": "件",
+    "num": 5
+  }
+]
